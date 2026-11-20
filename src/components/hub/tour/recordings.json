@@ -1,0 +1,272 @@
+{
+  "1990-02-16": {
+    "en": {
+      "audioHash": "cf1f1d05d13738fdef4db8d69d0f4b79cc9b0f01e777c0f2a1b9b76e81f55ae5",
+      "duration": 25.89,
+      "textHash": "ba799ba4d399b301c9df642fb579551cd802a95cdb76e166b1d0b777110e569d"
+    },
+    "fr": {
+      "audioHash": "0911e6e68cbe505f654a5e1c4b960f304c30d0815d065e053b236e616b9720b3",
+      "duration": 27.34,
+      "textHash": "5e532110bcacfc79d10c3601dc04fd69d1c7d706cf452ebfacc7cd8b6510befd"
+    },
+    "ja": {
+      "audioHash": "5aa228403d20493489575436e251376c2dc0b546719f2fc2cd14f45d0b755b92",
+      "duration": 36.82,
+      "textHash": "5b84adfa9427ce6fddeed8c03c9b969a15abf38e1626a1af8836c5169d83439d"
+    },
+    "ru": {
+      "audioHash": "432a8081240422b4d0b985ec013f76f2f5cf8fe55697b8fabb7bc1bfc6018302",
+      "duration": 31.58,
+      "textHash": "350199659738c1656994d0709b370f6cb2cdfaf5e5c2aa624e12c0f6a4987cce"
+    },
+    "zh": {
+      "audioHash": "fbbd52bb7d625a6478f6b606ebf8a5fde40fecf40997aabdacbc3312579eadc4",
+      "duration": 27.79,
+      "rate": "-12%",
+      "textHash": "6b2d134b08d2598941786f848c6bf5bc7fd5e663b2f99b34ffe1ffe50f99f12a",
+      "voice": "zh-CN-YunyangNeural"
+    }
+  },
+  "1999-05-07": {
+    "en": {
+      "audioHash": "cf0e6f0f5caa179736c1c440dd12ef8476724c91bb32132fed88b3aa81906829",
+      "duration": 24.68,
+      "textHash": "4666dea90ab3266dbd5b622f85df6dcff5c71cbc00ad02f14a054de72eb9a3e2"
+    },
+    "fr": {
+      "audioHash": "6233c819ae99ddd969bab9d2ff60ff37c2c326b5fe6677f278084bba598eecf2",
+      "duration": 22.44,
+      "textHash": "5df91d7ca78c9c06fd5076ecaedac40c0388bd338fd7634dab6adab4d297faa5"
+    },
+    "ja": {
+      "audioHash": "db7fd273abea45439329c03d1c1d5c729db7db83d4d16c8a676b44a9abea7134",
+      "duration": 32.52,
+      "textHash": "4592752c699f7ef7b1415d4837ea80c9cd72c78fb98e4448a2f3390e88de660d"
+    },
+    "ru": {
+      "audioHash": "ce87a64da983edd5af67122b60828a29fce84c76cb48749fc55a5cca70da5ef6",
+      "duration": 30.26,
+      "textHash": "63378dfbbcf79d2719477ab23f8e9f45d3154c083769de6e5ba77d12ab90bb19"
+    },
+    "zh": {
+      "audioHash": "5c56439faf07a99c986c54d5478d49a7528bc4bbf0318e80953a4a8896435786",
+      "duration": 28.82,
+      "rate": "-12%",
+      "textHash": "227c76c180b59c7cfbd24fb5733835163a26d3d8f750fdcc73a4a119765bd537",
+      "voice": "zh-CN-YunyangNeural"
+    }
+  },
+  "2001-04-01": {
+    "en": {
+      "audioHash": "802035994dd5a92e616554d5bd40d7fc5c7e6ba72e0e1cb616e4f02594147758",
+      "duration": 27.15,
+      "textHash": "882e28de45395571eb5a3f313847b1b6a734609af3e771d2aa99d0c44099dddc"
+    },
+    "fr": {
+      "audioHash": "3999201552e365eceac1ead2d8568e87481f050512d1c3879f2f3106c51d0a82",
+      "duration": 26.9,
+      "textHash": "385f2b9f74391037dcc971c4afec0428feabf9b4c1d30dea21622f0473a9a744"
+    },
+    "ja": {
+      "audioHash": "cc28cba65058844321047caac28f499476cca1ec73008cff4bca627513620eef",
+      "duration": 36.48,
+      "textHash": "f76211d13e00a9f2c8fe46f21772763b702b09a04857ea62a9caacf51cd0e923"
+    },
+    "ru": {
+      "audioHash": "e28decdf6f3c2d7cd3f56e6cc5842ad951d7620ef4dea5494cab83002a9b7695",
+      "duration": 31.3,
+      "textHash": "018eb716dd917901b5283cbf0326e0cf16b0c07c2ffb55bc7c381a4d9a2e3412"
+    },
+    "zh": {
+      "audioHash": "5255688daf77617cc9fb0eef76ed20af08583599d251145816f594c39468d003",
+      "duration": 27.74,
+      "rate": "-12%",
+      "textHash": "d36c94f8e312f1fb45abca5747f3aae6d82c6d72aae1bad200ac5ce29a59ea0e",
+      "voice": "zh-CN-YunyangNeural"
+    }
+  },
+  "2009-09-11": {
+    "en": {
+      "audioHash": "16c2054b2d08981742dda897aa7942731de5ac7db555a1b473be690bd739a828",
+      "duration": 26.39,
+      "textHash": "0c71293e5eed00d3fd0398dcbd08de2a7384a96f0a5839298f365fe4f03f0b38"
+    },
+    "fr": {
+      "audioHash": "174abe597324105289029aa1c7f67d9ac4f61c328d6ae69428dacc1d2c52a44d",
+      "duration": 26.33,
+      "textHash": "50c8ce8cffc36a18d4df8d45cd750db5efbafcddd2fa36aad15002f1e06af606"
+    },
+    "ja": {
+      "audioHash": "23faf4134551c923e320720abdd0e0647b28374166f5d3ab14529239aba919ba",
+      "duration": 35.42,
+      "textHash": "5a1d213d8aa25a0e044b3618b5c586b549087ed362fe7e40a42e95f0a56dc4a4"
+    },
+    "ru": {
+      "audioHash": "a960567ff663a347aa8693d31d933b45b690dae24d591ef2defb80dca5c60390",
+      "duration": 31.49,
+      "textHash": "a5973f978fab9cdf94096874cbe02a594fa9318affe90e5110fbe71172591705"
+    },
+    "zh": {
+      "audioHash": "bbad38e3046c791329529bc6d4d6ec219a5c03b58b2c95644eb3c01d18cf4b38",
+      "duration": 26.98,
+      "rate": "-12%",
+      "textHash": "f2b0cf00135edb3897e0a2896a0ad5257267df6bb77a38feb9f12ef30dc99f4a",
+      "voice": "zh-CN-YunyangNeural"
+    }
+  },
+  "2016-07-12": {
+    "en": {
+      "audioHash": "1dccb8c43c9668da2586c2ad7770ece440dfba7fa7394489a67ad3c469596f38",
+      "duration": 24.54,
+      "textHash": "6ca80aeb0168d72845eb67632e709de3bf02cfac997c57d0f5ea624c3a661045"
+    },
+    "fr": {
+      "audioHash": "c8d346a69c15e9609f3fb9c27baae089706a7b696a0e13227ab0254b915c37b7",
+      "duration": 24.05,
+      "textHash": "61fb626852c08235afebd377fd052a482f6e26f4c9d691b8c905aed5b6a805a0"
+    },
+    "ja": {
+      "audioHash": "f1ab33b6d6741a62ffcb81a00664a33231a23a07b680103b4ab7173422d29dd0",
+      "duration": 30.84,
+      "textHash": "c71a16f9ad43029e12059ac71870ff37ed3fc1cbe1af3279549b433201de70d0"
+    },
+    "ru": {
+      "audioHash": "33acfc81315d4822b08f1798fcd3f43cc5571e92d508b9d2fa73ee01f59dbefc",
+      "duration": 30.31,
+      "textHash": "aae85f479af748a835995f71c70161477f75612c017f2b2284ac355d466ef080"
+    },
+    "zh": {
+      "audioHash": "f6dd230804e2212bcd06266d16d21014f3926f1b00b5bb9644ff3b7f929e0c4a",
+      "duration": 28.58,
+      "rate": "-12%",
+      "textHash": "a18208147da9023278512dc0b6a84dad216ef897e37c3bd828f34bec55227c4e",
+      "voice": "zh-CN-YunyangNeural"
+    }
+  },
+  "2018-12-01": {
+    "en": {
+      "audioHash": "e5dea438c18ab6f109f64166881765815a9f0f390495cefb75c77cd65965c0d0",
+      "duration": 32.26,
+      "textHash": "534e87aac01b77b1f926e78433ce0cce74f2e20213f54238d68644a04167a43a"
+    },
+    "fr": {
+      "audioHash": "3b5a94dd4529eed8e3c4dc226eb30058de0a98039cdadf4175056c07ad2373e6",
+      "duration": 30.46,
+      "textHash": "ed5b8bc6d05e013efe5d566232996a601e2a8e6b4529beb2220c05f743528dd8"
+    },
+    "ja": {
+      "audioHash": "392b35ba50b7a2c9f91cc22e38d5eb8ef94e04f312f501fb175bde1ef97c4379",
+      "duration": 38.38,
+      "textHash": "067ed3664794707fe48c03f1bed02f212cf832ce88e435518a41b3044d9d4024"
+    },
+    "ru": {
+      "audioHash": "844547ac24d1f73d9d4a176d8f01976c538d978fe73d9e45e707d98a7b3f3bb3",
+      "duration": 39.96,
+      "textHash": "5670e215cde03727857024712f796f87bba344c4bda54495182618619faced74"
+    },
+    "zh": {
+      "audioHash": "9f5f57a7247a2ebe21d23fa826a88690dd167cb9e4211721535b9aeda41afa8c",
+      "duration": 32.71,
+      "rate": "-12%",
+      "textHash": "43cfb7e0f06aaad3115901a07d539b06845ffc85c47a2f16c8ffa039045f1e3c",
+      "voice": "zh-CN-YunyangNeural"
+    }
+  },
+  "2024-11-07": {
+    "en": {
+      "audioHash": "fe693388631962290a4a964b7b59ccdd3074cf5d7cfb2d8295091d7a30b2cdbf",
+      "duration": 23.85,
+      "textHash": "7e1c9e0e609349c5b6d8587f18d61e56279987ce385d52aa127d47c4a5d59b21"
+    },
+    "fr": {
+      "audioHash": "9c80274b1db05383f1623dd5981ac476a5f33ba0912435cb624ba3698ba23963",
+      "duration": 23.14,
+      "textHash": "894b676f67c3cd2f148607f927eb9e99d0a1283ac831c718f52f327e191e6a8f"
+    },
+    "ja": {
+      "audioHash": "19040734ee394ad2ad74958c0aa5267d637d3356645cf64a8c8f7c7070c1e2b4",
+      "duration": 35.11,
+      "textHash": "6c127d085fec7e328e7b6867528e37e013a840e65083ce415552e54756844dc2"
+    },
+    "ru": {
+      "audioHash": "f2c4ea41cda08942d370429ec5695885fb5ffe822bf685f499a9f7d219872096",
+      "duration": 30.38,
+      "textHash": "42faaa8bdb322cd172c3b45083736f01048ae9f10096b5bb4b28d38e82a1a9c1"
+    },
+    "zh": {
+      "audioHash": "7eb69fed741be70829092351641359c97ab2ca3c62452cc8c2e1d61b9bf641c3",
+      "duration": 24.94,
+      "rate": "-12%",
+      "textHash": "e6a3ffb6cd9e314f1f0fe8736ac11eb6740df1d96965a3930c8c1d60e3243306",
+      "voice": "zh-CN-YunyangNeural"
+    }
+  },
+  "2026-11-16": {
+    "en": {
+      "audioHash": "8e41aeed7fa662d4f3cd15b97157471c6bdb881b110a028dc673f6c085af2d35",
+      "duration": 25.14,
+      "textHash": "7e25294a8854b7b6737ad8aee9ecbab9ed99711a85202d73859b09ca9bef01fd"
+    },
+    "fr": {
+      "audioHash": "55f1f8beaf63bb1a4fcf15cb24127890c83d0cd68706bb02e5eaf0e53f9c3521",
+      "duration": 23.33,
+      "textHash": "7beb3e74ded303e04fa7483b907f9f92c5b75cb2eab774e6f53a4a232a3842c5"
+    },
+    "ja": {
+      "audioHash": "ecb1eb301b4bb47afa7282bf93cfe26cbc02284ff34a264d1c707966e8cb6dfb",
+      "duration": 33.46,
+      "textHash": "01c0d9152cedc3509dfe695fc1a4b5a6d3caa1c8db1553b5b9f3be16002889a0"
+    },
+    "ru": {
+      "audioHash": "9f384ec752c8ba7913d361550564906aaa2b9899fac3ef530299abfc05365af6",
+      "duration": 29.95,
+      "textHash": "6b177e5d249757e288ad888a525ac6eff3ea23291dd3146c30b9312ec092584a"
+    },
+    "zh": {
+      "audioHash": "c4fd27b0bb8177d50b227b03432d657acc3cf802f24146b4fa2951e94b035723",
+      "duration": 30.94,
+      "rate": "-12%",
+      "textHash": "f6d146fafad06b8c0619b78354103737f153569099ef00efd35f1030659758f4",
+      "voice": "zh-CN-YunyangNeural"
+    }
+  },
+  "author": {
+    "zh": {
+      "audioHash": "d3522926f796b38bc1be9041883e20c37efdc88644cf6cff3ea1337e65c6cbe5",
+      "duration": 58.97,
+      "rate": "-12%",
+      "textHash": "161fa58597ed0ad0babe9275c2db3c33d8841ac9bd7b7bfd2b77a8bb4783fbbc",
+      "voice": "zh-CN-YunyangNeural"
+    }
+  },
+  "opening": {
+    "en": {
+      "audioHash": "8bd0a19e45670588824e9003717cd0886cb5aff0381846d6af9081bdb7fa523e",
+      "duration": 48.64,
+      "textHash": "7b048694777f905a2b1980943da1b91cd375fae2c9a7c6c64a0129656f23ab47"
+    },
+    "fr": {
+      "audioHash": "91150afb47d514ffa74c9a646145e9e1b32690c2af81284cbf4de0941c1c8128",
+      "duration": 52.63,
+      "textHash": "54ef36c1761302e6c9fb770fab5a2baf6447938214fa1bafdece0c1f46fdaf85"
+    },
+    "ja": {
+      "audioHash": "dc6d3691fffeacaa5113c70dc650388f8ef2366fe722ca6f88ec62d83d9df379",
+      "duration": 72.29,
+      "textHash": "050b9285f46b8d94794425c3da83adae83d98f87ddd4ca374ec4bca5b1629bbb"
+    },
+    "ru": {
+      "audioHash": "053e95020245eb7722dc45e35b80a150701a9ee1f1fbf4b7a04d15150218ddcc",
+      "duration": 64.61,
+      "textHash": "47a7c3654ff72a2ce06772f50ec64b7c4b49c791bd12e416c85587c1d4379e1a"
+    },
+    "zh": {
+      "audioHash": "6b32ad6133239a8e21ce793aeabb72e119525630ab70b45d4ace5dfc03f91998",
+      "duration": 47.69,
+      "rate": "-12%",
+      "textHash": "58d9356766685755fa42f6c19327c7e7815f954e819a35909c7d3a0e462fe55b",
+      "voice": "zh-CN-YunyangNeural"
+    }
+  }
+}

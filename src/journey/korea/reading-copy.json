@@ -1,0 +1,317 @@
+{
+  "hook": {
+    "chapter": {
+      "zh": "开战与参战",
+      "en": "Outbreak and intervention",
+      "ja": "開戦と中国の参戦"
+    },
+    "sections": [
+      {
+        "title": {
+          "zh": "战线从三八线向南移动",
+          "en": "The advance south from the 38th parallel",
+          "ja": "北緯38度線を越えて南へ"
+        },
+        "body": {
+          "zh": "1950年6月25日，朝鲜人民军越过三八线，向韩国进攻。三天后，汉城（今首尔）失守。到夏末，韩军和以美军为主的联合国军已退到半岛东南角，身后是仍可接收人员和物资的釜山港。",
+          "en": "On 25 June 1950, the North Korean army crossed the 38th parallel and attacked South Korea. Seoul fell three days later. By late summer, South Korean and US-led UN forces held only a corner of the southeast. The port of Pusan remained open for reinforcements and supplies.",
+          "ja": "1950年6月25日、朝鮮人民軍は北緯38度線を越え、韓国に攻め込んだ。3日後にソウルが陥落した。夏の終わりには韓国軍と米軍を中心とする国連軍は半島南東部まで後退したが、釜山港ではなお増援や物資を受け入れることができた。"
+        }
+      },
+      {
+        "title": {
+          "zh": "中国是在什么时候参战的？",
+          "en": "When did China enter the war?",
+          "ja": "中国が参戦したのはいつか"
+        },
+        "body": {
+          "zh": "从6月开战到中国参战，中间隔了近四个月。其间，联合国军在仁川登陆，战线转而向北。10月19日，中国政府派出的部队开始渡过鸭绿江，进入朝鲜。这支部队的正式名称是“中国人民志愿军”。",
+          "en": "Nearly four months passed between the outbreak of war in June and China’s entry. In the meantime, UN forces had landed at Inchon and the front had turned north. On 19 October, troops sent by the Chinese government began crossing the Yalu into North Korea. Their official name was the Chinese People’s Volunteers.",
+          "ja": "6月の開戦から中国の参戦までは、4か月近く間がある。その間に国連軍は仁川に上陸し、戦線は北へ動いた。10月19日、中国政府が派遣した部隊が鴨緑江を渡り始めた。この部隊の正式名称が「中国人民志願軍」である。"
+        }
+      },
+      {
+        "title": {
+          "zh": "三八线和鸭绿江在哪里？",
+          "en": "Two landmarks on the peninsula",
+          "ja": "38度線と鴨緑江の位置"
+        },
+        "body": {
+          "zh": "三八线横穿半岛，开战前南北双方以它为界。鸭绿江则在更北面，隔开朝鲜西北部与中国东北。两者之间有一座重要城市：平壤。1950年秋冬，战线两次经过这座城市，一次向北，一次向南。",
+          "en": "The 38th parallel runs across the peninsula. Before the war it divided North and South Korea. Farther north, the Yalu separates northwestern Korea from northeastern China. Pyongyang lies between the two. In the autumn and winter of 1950 the front passed through the city twice, first going north and then south.",
+          "ja": "北緯38度線は半島を横切り、開戦前は南北の境界だった。さらに北を流れる鴨緑江は、朝鮮半島の北西部と中国東北部を隔てている。その間にあるのが平壌だ。1950年の秋から冬にかけて、戦線は北上と南下の二度、この都市を通過した。"
+        }
+      }
+    ]
+  },
+  "why": {
+    "chapter": {
+      "zh": "出兵缘由",
+      "en": "The decision to intervene",
+      "ja": "参戦の経緯"
+    },
+    "sections": [
+      {
+        "title": {
+          "zh": "6月27日，半岛之外发生了什么？",
+          "en": "27 June: Korea and the Taiwan Strait",
+          "ja": "6月27日、台湾海峡でも動きがあった"
+        },
+        "body": {
+          "zh": "开战两天后，美国总统杜鲁门下令用海空军支援韩国，同时命令第七舰队阻止对台湾的进攻。从北京看，这两道命令关系到两个不同的地方：一处紧邻东北边境，一处隔着台湾海峡。",
+          "en": "Two days into the war, US President Harry Truman ordered American air and naval forces to support South Korea. He also ordered the Seventh Fleet to prevent an attack on Taiwan. For Beijing, the same announcement concerned two different places: a peninsula bordering northeastern China and the strait separating the mainland from Taiwan.",
+          "ja": "開戦から2日後、トルーマン米大統領は韓国を支援するよう海空軍に命じた。同時に、台湾への攻撃を阻止するよう第7艦隊に命じている。北京から見ると、この日の声明は中国東北部に接する朝鮮半島と、大陸と台湾を隔てる海峡の両方に関わるものだった。"
+        }
+      },
+      {
+        "title": {
+          "zh": "仁川登陆后，北京发出警告",
+          "en": "After Inchon, a warning from Beijing",
+          "ja": "仁川上陸後の北京の警告"
+        },
+        "body": {
+          "zh": "9月15日，联合国军在半岛西岸的仁川登陆。韩军和联合国军很快收复汉城，韩军率先越过三八线。10月3日，周恩来向印度驻华大使表示，如果美军也越过三八线，中国不会置身事外。",
+          "en": "UN forces landed at Inchon on the west coast on 15 September. South Korean and UN forces soon retook Seoul, and South Korean troops crossed the 38th parallel first. On 3 October, Zhou Enlai told India’s ambassador that China would intervene if American troops also crossed the line.",
+          "ja": "9月15日、国連軍が西海岸の仁川に上陸した。韓国軍と国連軍はまもなくソウルを奪還し、まず韓国軍が北緯38度線を越えた。10月3日、周恩来は駐中国インド大使に、米軍もこの線を越えるなら中国は介入すると伝えた。"
+        }
+      },
+      {
+        "title": {
+          "zh": "战场逼近东北边境",
+          "en": "The war approaches China’s northeast",
+          "ja": "中国東北部に近づく戦線"
+        },
+        "body": {
+          "zh": "美军随后也越过三八线，继续向北推进。北京担心，如果朝鲜北部也被占领，战火就会逼近鸭绿江对岸的城镇和工厂。10月13日，毛泽东在给周恩来的电报中明确主张出兵；六天后，首批志愿军渡江。",
+          "en": "American troops subsequently crossed the parallel and continued north. Beijing feared that if North Korea fell, the fighting would reach the towns and factories on China’s side of the Yalu. In a telegram to Zhou Enlai on 13 October, Mao Zedong argued for sending troops. The first Chinese units crossed six days later.",
+          "ja": "その後、米軍も38度線を越えて北上した。北京が懸念したのは、朝鮮北部まで占領されれば、鴨緑江の中国側にある町や工場のすぐ近くまで戦火が及ぶことだった。10月13日、毛沢東は周恩来宛ての電報で派兵を主張した。先発部隊が渡河したのはその6日後である。"
+        }
+      }
+    ]
+  },
+  "means": {
+    "chapter": {
+      "zh": "装备与经验",
+      "en": "Armies in the field",
+      "ja": "装備と経験"
+    },
+    "sections": [
+      {
+        "title": {
+          "zh": "同一条山路，两支不同的军队",
+          "en": "Two armies on the same mountain roads",
+          "ja": "同じ山道を進んだ二つの軍隊"
+        },
+        "body": {
+          "zh": "最先入朝的志愿军以步兵为主。许多人有多年作战经验，但部队缺少车辆和重炮，山路往往要靠双脚走。对面的美军有更多卡车、火炮和飞机。同样一段路，两军运送一批弹药或一名伤员的条件很不一样。",
+          "en": "The first Chinese forces to enter Korea were mainly infantry. Many were veterans, but their units had few vehicles or heavy guns and often had to travel on foot. US forces had far more trucks, artillery and aircraft. Moving a load of ammunition or an injured soldier along the same road was a very different undertaking for the two armies.",
+          "ja": "最初に参戦した志願軍は歩兵が中心だった。実戦経験の長い兵士は多かったが、車両や重砲は少なく、山道の移動は徒歩に頼ることが多かった。米軍はトラックも火砲も航空機も豊富だった。同じ道でも、弾薬や負傷者を運べる条件には大きな差があった。"
+        }
+      },
+      {
+        "title": {
+          "zh": "为什么行军常在夜间？",
+          "en": "Why did so many marches take place at night?",
+          "ja": "夜間の行軍が多かった理由"
+        },
+        "body": {
+          "zh": "白天，联合国军的飞机容易发现公路上的队伍。志愿军缺少空中掩护，许多山路只能趁天黑走。两地相隔多远，在地图上就能量出来；一支部队走完这段路要花几天，却还得看每天有多少时间能用来行军。",
+          "en": "In daylight, UN aircraft could spot columns on the roads. With little air cover, the distance Chinese troops could travel depended as much on the hours available as on the length of the road. Much of their marching through the mountains took place after dark.",
+          "ja": "昼間は、道路を進む隊列が国連軍機の目にとまりやすかった。航空支援の乏しい志願軍にとって、一日に進める距離は、道の長さだけでなく、移動に使える時間にも左右された。山道の行軍の多くは日が暮れてからだった。"
+        }
+      },
+      {
+        "title": {
+          "zh": "渡江时，空中掩护还没有到",
+          "en": "The first crossing came before air cover",
+          "ja": "航空支援を待たずに渡河"
+        },
+        "body": {
+          "zh": "出兵前，北京曾向苏联寻求空中掩护，但这项支援赶不上首批部队渡江。中国领导人面对的选择很具体：是再等一等，还是让步兵先进入朝鲜？10月的决定是先出兵。后来鸭绿江一带出现的空战，是下一阶段的事。",
+          "en": "Before sending troops, Beijing sought Soviet air cover. It would not be available for the first crossings. Chinese leaders had to decide whether to wait or send the infantry into Korea without it. In October they chose to go ahead. The air battles later fought near the Yalu belong to a different stage of the war.",
+          "ja": "派兵に先立ち、北京はソ連に航空支援を求めた。しかし先発部隊の渡河には間に合わなかった。支援を待つか、歩兵を先に送るか。10月に中国指導部が選んだのは、先に派兵することだった。鴨緑江付近で空中戦が繰り広げられるのは、その後のことである。"
+        }
+      }
+    ]
+  },
+  "hardship": {
+    "chapter": {
+      "zh": "前线补给",
+      "en": "Supplying the front",
+      "ja": "前線への補給"
+    },
+    "sections": [
+      {
+        "title": {
+          "zh": "过了江，粮食怎样跟上？",
+          "en": "How did supplies reach the troops?",
+          "ja": "渡河した兵士にどう食糧を届けたか"
+        },
+        "body": {
+          "zh": "从中国东北运来的粮食、冬衣和药品，也要渡过鸭绿江。过江之后，还有一段山路才到前线。10月底志愿军打响第一次战役时，士兵随身背的口粮已经在路上吃掉了一部分，下一批粮食却未必能及时送到。",
+          "en": "Food, winter clothing and medicine had to cross the Yalu too. Beyond the river lay mountain roads and a front that kept moving. By the time the first Chinese campaign began in late October, soldiers had already eaten some of the rations they carried. The next delivery could not be counted on to arrive in time.",
+          "ja": "中国東北部から運ぶ食糧も冬服も医薬品も、鴨緑江を渡らなければならなかった。対岸から前線までは、さらに山道が続く。10月末に志願軍の第一次戦役が始まった時には、兵士は背負ってきた食糧をすでにいくらか消費しており、次の補給が間に合う保証はなかった。"
+        }
+      },
+      {
+        "title": {
+          "zh": "冬衣和伤员走的是同一条路",
+          "en": "Winter clothing in, wounded soldiers out",
+          "ja": "冬服を届け、負傷者を運び戻す道"
+        },
+        "body": {
+          "zh": "1950年入冬后，严寒让补给不足的后果更加严重。运到前方的是棉衣和食物，从前方送回来的是伤员，还有冻伤的士兵。后方一座桥被炸断，受影响的是来回两个方向。",
+          "en": "As winter set in, the cold made shortages more dangerous. Padded uniforms and food travelled toward the front. In the other direction came soldiers with battle wounds or frostbite. A bombed bridge could interrupt both journeys at once.",
+          "ja": "1950年の冬、厳しい寒さが補給不足に追い打ちをかけた。前線へ向かうのは防寒服や食糧で、逆方向に運ばれるのは戦傷を負った兵士や凍傷にかかった兵士だった。後方の橋が一つ破壊されれば、往復どちらにも影響が及んだ。"
+        }
+      },
+      {
+        "title": {
+          "zh": "战线停在山地，战斗没有停",
+          "en": "A static front did not mean a ceasefire",
+          "ja": "戦線が動かなくても戦闘は続いた"
+        },
+        "body": {
+          "zh": "1951年夏，战线在三八线附近逐渐稳定，停战谈判开始。此后地图上的线很少大幅移动，山头上的争夺却持续了两年。1952年秋的上甘岭战役就发生在这段相持期：双方争夺的是几处高地，而不再是整座城市。",
+          "en": "By the summer of 1951 the front had settled near the 38th parallel, and armistice talks began. The line moved little on a map of the whole peninsula, yet fighting for individual hills continued for two more years. At Shangganling, or Triangle Hill, in autumn 1952, the contested ground was a handful of heights rather than a city.",
+          "ja": "1951年夏には戦線が38度線付近で落ち着き、休戦交渉が始まった。半島全体の地図では線がほとんど動かなくても、高地をめぐる戦闘はその後も2年続いた。1952年秋の上甘嶺の戦いで双方が争ったのも、都市ではなく、いくつかの高地だった。"
+        }
+      }
+    ]
+  },
+  "unexpected": {
+    "chapter": {
+      "zh": "战线逆转",
+      "en": "The front reverses",
+      "ja": "反転する戦線"
+    },
+    "sections": [
+      {
+        "title": {
+          "zh": "渡江六天后，志愿军投入战斗",
+          "en": "Six days from the crossing to combat",
+          "ja": "渡河から6日後の初戦"
+        },
+        "body": {
+          "zh": "10月19日，志愿军开始渡江；10月25日，先头部队在朝鲜北部与韩军交战。对联合国军司令部来说，知道有中国部队出现，与弄清来了多少人，是两回事。直到11月，联合国军仍在向北推进。",
+          "en": "Chinese forces began crossing the Yalu on 19 October. On 25 October their leading units fought South Korean troops in the north. For UN Command, encountering Chinese troops was one thing; judging the scale of China’s intervention was another. The UN advance north continued into November.",
+          "ja": "志願軍が鴨緑江を渡り始めたのは10月19日で、先発部隊が朝鮮北部で韓国軍と交戦したのは25日だった。国連軍司令部は中国軍の存在を知ったが、参戦の規模まで把握できたわけではない。国連軍の北進は11月に入っても続いた。"
+        }
+      },
+      {
+        "title": {
+          "zh": "11月底，北进变成南撤",
+          "en": "Late November: northward advance turns to retreat",
+          "ja": "11月末、北進から南への撤退へ"
+        },
+        "body": {
+          "zh": "11月下旬，志愿军发起第二次战役。在西线，原来向北推进的部队开始南撤，三所里成为撤退途中的争夺点。半岛另一侧，长津湖地区的联合国军也开始向东海岸撤退。两处战场相隔群山，撤退的方向并不相同。",
+          "en": "In late November Chinese forces launched their second campaign. On the western front, troops that had been advancing north turned south; Sansoli became a contested point on their retreat. Across the mountains, UN troops around the Chosin Reservoir withdrew toward the east coast. The two withdrawals ran in different directions.",
+          "ja": "11月下旬、志願軍が第二次戦役を開始した。西部戦線では北進していた部隊が南へ退き、その途中にある三所里で戦闘が起きた。山地を挟んだ長津湖周辺でも国連軍が撤退を始めたが、こちらの行き先は東海岸だった。"
+        }
+      },
+      {
+        "title": {
+          "zh": "为什么汉城又换了守军？",
+          "en": "Why did Seoul change hands again?",
+          "ja": "ソウルを守る軍が再び入れ替わったのはなぜか"
+        },
+        "body": {
+          "zh": "12月，联合国军撤出平壤，战线退回三八线一带。1951年1月，中朝军队越过三八线，攻占汉城；3月，韩军和联合国军又收复这座城市。战线并没有在第一次退到三八线时停住，直到当年夏天才大致稳定下来。",
+          "en": "UN forces left Pyongyang in December and the front fell back toward the 38th parallel. In January 1951 Chinese and North Korean troops crossed the line and took Seoul. South Korean and UN forces retook the city in March. The first return to the parallel had not been the end of the fighting; the front settled only that summer.",
+          "ja": "12月に国連軍は平壌から撤退し、戦線は38度線付近まで南下した。1951年1月、中朝両軍は38度線を越えてソウルを占領し、3月には韓国軍と国連軍が奪還した。戦線は最初に38度線に戻ったところでは止まらず、おおむね落ち着いたのはその年の夏だった。"
+        }
+      }
+    ]
+  },
+  "world": {
+    "chapter": {
+      "zh": "半岛之外",
+      "en": "Beyond Korea",
+      "ja": "半島の外で"
+    },
+    "sections": [
+      {
+        "title": {
+          "zh": "战场之外：中国在联合国的席位",
+          "en": "Who spoke for China at the UN?",
+          "ja": "国連では誰が中国を代表したか"
+        },
+        "body": {
+          "zh": "1950年，美国第七舰队驶入台湾海峡时，代表中国出席联合国的仍是已迁往台湾的中华民国政府。同年10月，北京派兵参战，却不能在联合国代表中国发言。直到1971年，联大第2758号决议才确认由中华人民共和国政府的代表在联合国代表中国。",
+          "en": "When the US Seventh Fleet entered the Taiwan Strait in 1950, the Republic of China government, by then based in Taiwan, still held China’s UN seat. Beijing could send troops to Korea, but it did not speak for China at the UN. In 1971 General Assembly Resolution 2758 recognized the representatives of the People’s Republic as China’s representatives there.",
+          "ja": "1950年に米第7艦隊が台湾海峡に入った当時、国連で中国を代表していたのは、すでに台湾に移っていた中華民国政府だった。北京は朝鮮半島に派兵しても、国連で中国を代表する立場にはなかった。1971年、国連総会は決議2758を採択し、中華人民共和国政府の代表を中国の代表と認めた。"
+        }
+      },
+      {
+        "title": {
+          "zh": "日本的港口成了补给基地",
+          "en": "Japan becomes a supply base",
+          "ja": "海を隔てた日本が補給拠点に"
+        },
+        "body": {
+          "zh": "战争期间，日本的港口和工厂为联合国军提供物资和维修服务。1951年9月8日，对日和约和《日美安全保障条约》在旧金山分别签署。前者为结束盟军对日本的占领铺路，后者使美军在占领结束后仍可驻留日本。",
+          "en": "Japanese ports and factories supplied and repaired equipment for UN forces. Two separate treaties were signed in San Francisco on 8 September 1951. The peace treaty paved the way for the end of the Allied occupation of Japan; the US–Japan security treaty allowed American forces to remain after the occupation ended.",
+          "ja": "戦争中、日本の港や工場は国連軍への物資の供給や装備の修理を担った。1951年9月8日、サンフランシスコで対日平和条約と日米安全保障条約が別々に結ばれた。前者は連合国による占領の終了に道を開き、後者は占領終了後も米軍が日本に駐留する根拠となった。"
+        }
+      },
+      {
+        "title": {
+          "zh": "北京怎样看待停战？",
+          "en": "What did the armistice mean to Beijing?",
+          "ja": "北京は休戦をどう受け止めたか"
+        },
+        "body": {
+          "zh": "到了1953年7月，停火线在半岛中部，已远离中国当年担心战火逼近的鸭绿江。那年9月，毛泽东在总结这场战争时，把保卫中国的安全列为出兵的重要成果。这是北京对战争的评价；停战协定本身规定的，是交战各方如何停火。",
+          "en": "By July 1953 the line of contact lay in central Korea, far from the Yalu border that Beijing had feared was at risk. That September, Mao Zedong described protecting China’s security as a major result of the intervention. That was Beijing’s assessment. The armistice document itself dealt with how the opposing armies were to stop fighting.",
+          "ja": "1953年7月、停戦ラインは半島中部にあり、北京が戦火の接近を恐れた鴨緑江からは遠ざかっていた。その年の9月、毛沢東は戦争を振り返り、中国の安全を守ったことを参戦の大きな成果とした。これは北京による戦争の評価で、休戦協定そのものが定めたのは、交戦する軍がどう停戦するかだった。"
+        }
+      }
+    ]
+  },
+  "close": {
+    "chapter": {
+      "zh": "板门店停战",
+      "en": "Armistice",
+      "ja": "板門店の休戦"
+    },
+    "sections": [
+      {
+        "title": {
+          "zh": "板门店：谁签了停战协定？",
+          "en": "Panmunjom: who signed the armistice?",
+          "ja": "板門店で休戦協定に署名したのは誰か"
+        },
+        "body": {
+          "zh": "1953年7月27日，双方代表在板门店签署停战协定。一方代表朝鲜人民军和中国人民志愿军，另一方代表联合国军。韩国政府没有单独签字。按协定，停火在签字十二小时后生效。",
+          "en": "On 27 July 1953 delegates signed the armistice at Panmunjom. One delegation represented the North Korean army and the Chinese People’s Volunteers; the other represented UN Command. The South Korean government did not sign separately. The ceasefire took effect twelve hours after the signing.",
+          "ja": "1953年7月27日、板門店で双方の代表が休戦協定に署名した。一方は朝鮮人民軍と中国人民志願軍を、もう一方は国連軍を代表した。韓国政府は独自には署名していない。協定に従い、署名の12時間後に停戦が発効した。"
+        }
+      },
+      {
+        "title": {
+          "zh": "三八线与军事分界线并不重合",
+          "en": "Two lines, not one",
+          "ja": "38度線と軍事境界線は一致しない"
+        },
+        "body": {
+          "zh": "开战前的三八线是一条纬线，在地图上笔直地横过半岛。停战时划定的军事分界线沿着当时的前线，在西部偏到三八线以南，在东部又伸到三八线以北。两条线靠得很近，但沿线一些城镇已换到了另一侧。",
+          "en": "The prewar boundary followed a latitude: on the map it runs straight across Korea. The military demarcation line followed the front at the armistice. It dips south of the parallel in the west and rises north of it in the east. The lines lie close together, but some towns ended up on the other side.",
+          "ja": "開戦前の境界は北緯38度という緯線で、地図上では半島をまっすぐ横切る。休戦時の軍事境界線は当時の前線に沿っており、西部では38度線の南に、東部ではその北に延びる。二つの線は近いが、その間の町には戦前と反対の側に入ったところもある。"
+        }
+      },
+      {
+        "title": {
+          "zh": "停火之后，半岛仍然分隔",
+          "en": "The ceasefire left Korea divided",
+          "ja": "停戦後も続いた南北の分断"
+        },
+        "body": {
+          "zh": "双方从军事分界线各后撤两公里，之间留下非军事区。枪炮声停下来，并不意味着隔在两边的人就能回家。板门店的协定让持续三年的大规模交战停止了，却没有解决半岛的分治问题：签下的是停战协定，不是和平条约。",
+          "en": "Both sides withdrew two kilometres from the demarcation line, leaving a demilitarized zone between them. For families separated by the fighting, a ceasefire did not mean they could go home. Panmunjom brought three years of large-scale combat to a halt, but it did not settle Korea’s division. The document was an armistice, not a peace treaty.",
+          "ja": "双方は軍事境界線からそれぞれ2キロ後退し、その間に非武装地帯が設けられた。戦火で離れ離れになった人々にとって、停戦はそのまま帰郷を意味しなかった。板門店の合意は3年間の大規模な戦闘を止めたが、南北の分断を解消したわけではない。結ばれたのは平和条約ではなく、休戦協定だった。"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,234 @@
+/* The existing torn sheet is one open spread: type on the left leaf,
+   a complete plate and its credit on the right. Never shrink the reading type to fit. */
+#root [data-journey-chapter="1"] .force-codex {
+  container: force-spread / size;
+  pointer-events: none;
+}
+
+#root .force-codex .codex-stage {
+  flex: 1 1 auto;
+  width: min(100%, 100rem, 88vw);
+}
+
+#root .force-codex .torn-parchment {
+  --ink-soft: #58412d;
+  --paper-rule: #9a593e80;
+  height: 100%;
+  padding-block: clamp(2rem, 10cqh, 4rem);
+}
+
+#root .force-codex .torn-parchment-sheet {
+  flex: 1 1 0;
+  width: auto;
+  margin-inline: 8%;
+  padding: .3rem .5rem;
+  scrollbar-width: thin;
+  scrollbar-color: #967559 transparent;
+  scrollbar-gutter: auto;
+}
+
+#root .force-codex .torn-parchment-split {
+  min-height: 100%;
+  align-items: center;
+  gap: .9rem clamp(2.5rem, 5vw, 5rem);
+}
+
+.force-codex .torn-copy {
+  width: min(100%, 31rem);
+  justify-self: end;
+}
+
+.force-codex .torn-copy:only-child {
+  width: min(100%, 43rem);
+  justify-self: center;
+}
+
+.force-codex .codex-title {
+  margin-bottom: clamp(.65rem, 2cqh, 1.25rem);
+  text-wrap: balance;
+}
+
+.force-codex .torn-parchment .codex-kicker,
+.force-codex .torn-parchment .codex-geo-caution,
+.force-codex .torn-parchment .codex-plate-caption,
+.force-codex .force-scale-note {
+  color: var(--ink-soft);
+}
+
+#root .force-codex .codex-geo-caution,
+.force-codex .codex-plate-caption,
+.force-codex .codex-dual p,
+.force-codex .force-scale-note {
+  font-size: var(--text-meta);
+  line-height: 1.45;
+}
+
+.force-codex .codex-geo-caution {
+  margin-top: 1.35rem;
+  border-top: 1px solid var(--paper-rule);
+  padding-top: .5rem;
+}
+
+.force-codex .force-margin-note,
+.force-codex .force-scale-note {
+  margin-top: .75rem;
+}
+
+.force-scale-note summary {
+  cursor: pointer;
+}
+
+.force-scale-note p {
+  margin-top: .5rem;
+}
+
+.force-codex .torn-parchment .codex-plate figure {
+  text-align: center;
+  overflow: visible;
+}
+
+.force-codex .torn-parchment .codex-plate img,
+.force-codex .torn-parchment .codex-plate[data-aspect="3:4"] img {
+  width: auto;
+  max-width: 100%;
+  max-height: max(8rem, calc(100cqh - clamp(4rem, 20cqh, 8rem) - var(--plate-reserve, 8.4rem)));
+  margin-inline: auto;
+  object-fit: contain;
+  /* These film plates are already colour-graded. Only the surrounding sheet is parchment. */
+  filter: none;
+  mix-blend-mode: normal;
+}
+
+.force-codex[data-beat="scale"] .codex-plate {
+  --plate-reserve: 11.6rem;
+}
+
+.force-codex .codex-dual {
+  width: fit-content;
+  margin: .15rem auto .5rem;
+  text-align: start;
+}
+
+#root .force-codex .codex-footer {
+  margin: 0;
+}
+
+.force-codex .codex-seal {
+  min-width: 4.3rem;
+  min-height: 3rem;
+  padding: .1rem .4rem;
+}
+
+.force-codex .codex-seal-cord {
+  display: none;
+}
+
+.force-codex .codex-seal-clay {
+  width: auto;
+  height: auto;
+  padding: .55em .65em;
+  white-space: nowrap;
+}
+
+#root [data-journey-chapter="1"] .journey-window {
+  display: none; /* The date already sits in the chapter header. */
+}
+
+#root [data-journey-chapter="1"]:has(.force-codex.is-diving) .journey-hints {
+  display: none;
+}
+
+#root [data-journey-chapter="1"] .journey-progress > .journey-play-hint {
+  margin: 0;
+}
+
+/* Edge darkening used to tint a rectangular cutout over the middle of the battle. */
+.force-codex .codex-vignette {
+  display: none;
+}
+
+.force-codex.is-diving .codex-stage,
+.force-codex.is-diving .codex-footer {
+  visibility: hidden;
+  animation: none;
+  transition: opacity .6s ease, transform .6s ease, visibility 0s linear .6s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .force-codex.is-diving .codex-footer {
+    transition: none;
+  }
+}
+
+.force-codex .battle-caption {
+  visibility: hidden;
+}
+
+.force-codex.is-diving-deep .battle-caption {
+  visibility: visible;
+  bottom: 0;
+  width: fit-content;
+  max-width: min(48rem, 95%);
+  padding: .35em .8em;
+  color: #f8ead1;
+  background: #1f160ede;
+  transform: translateX(-50%);
+}
+
+@media (min-width: 721px) {
+  #root .force-codex .torn-parchment-split {
+    height: 100%;
+    grid-template-rows: minmax(0, 1fr);
+  }
+
+  .force-codex .torn-copy {
+    max-height: 100%;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #967559 transparent;
+    padding-inline-end: .25rem;
+  }
+}
+
+@media (min-width: 721px) and (max-height: 760px) {
+  #root .force-codex .torn-parchment-split {
+    column-gap: clamp(1.7rem, 3.5vw, 3.3rem);
+  }
+
+  #root [data-journey-chapter="1"][lang="en"] .torn-parchment.has-plate .torn-parchment-split {
+    grid-template-columns: minmax(0, 1.14fr) minmax(0, .86fr);
+  }
+}
+
+@media (max-width: 720px) {
+  #root .force-codex .codex-stage {
+    width: 100%;
+  }
+
+  #root .force-codex .torn-parchment-sheet {
+    margin-inline: 12%;
+    padding-inline: .12rem;
+  }
+
+  .force-codex .torn-copy {
+    justify-self: center;
+  }
+
+  .force-codex .torn-parchment .codex-plate img,
+  .force-codex .torn-parchment .codex-plate[data-aspect="3:4"] img {
+    max-height: 17rem;
+  }
+}
+.journey-toolbar .force-film-link {
+  display: inline-flex;
+  align-items: center;
+  gap: .35rem;
+  color: #f2dfb9;
+  border-color: #9c8059;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.journey-toolbar .force-film-link:focus-visible {
+  outline: 2px solid #f2dfb9;
+  outline-offset: 2px;
+}

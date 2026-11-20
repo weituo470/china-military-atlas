@@ -1,0 +1,68 @@
+/* The audience sees the current plate without opening a tab, even on an old
+   ?atlas=wide link. Only the text pane scrolls; the peninsula never leaves view. */
+#root .journey-shell.korea-shell.ka-wide .korea-atlas-edition {
+ grid-template-columns:minmax(0,1.24fr) minmax(0,1fr); grid-template-rows:minmax(0,1fr);
+}
+.ka-wide .kr-reader {display:grid}
+#root .journey-shell.korea-shell .kr-reader[data-view=copy] .korea-brief-sheet {
+ display:grid; grid-template-columns:minmax(0,1fr); grid-template-rows:minmax(0,1.24fr) minmax(0,1fr);
+ gap:.6rem; overflow:hidden; animation:none;
+}
+.kr-reader[data-view=copy] .korea-copy {grid-row:2; max-height:none; align-self:stretch; min-height:0; overflow:auto}
+.kr-reader[data-view=copy] .korea-plate, .kr-reader[data-view=plate] .korea-plate {
+ min-height:0; display:grid; grid-template: minmax(0,1fr) auto / minmax(0,1fr); align-items:stretch;
+ padding:0; gap:.25rem; border:0; justify-content:normal; width:100%; overflow:hidden;
+}
+.kr-reader[data-view=copy] .korea-plate {grid-row:1}
+.kr-reader[data-view] .korea-plate img {
+ width:100%; height:100%; min-height:0; max-height:none; object-fit:contain; object-position:center;
+ background:#4538270c; border-block:1px solid #795c352c;
+}
+.kr-reader[data-view] .korea-plate-caption {width:100%; border:0; margin:0; padding:0; min-height:0}
+.kr-reader .korea-plate-caption a {color:#63392a; font:600 .74rem/1.2 var(--brief-mono); text-decoration:underline}
+.kr-reader[data-view=copy] .korea-plate-caption a {display:none}
+.kr-reader[data-view=copy] .korea-plate-caption strong {font-size:clamp(.83rem,1vw,1.06rem); line-height:1.2; margin:.12rem 0}
+.kr-reader[data-view=copy] .korea-plate-meta {font-size:clamp(.66rem,.8vw,.84rem)}
+.kr-reader[data-view=plate] .korea-plate {flex:1; min-height:0; white-space:normal}
+.kr-reader .kr-original {margin-left:auto; background:transparent; border:1px solid #977d62; color:#563b2c; cursor:pointer; padding:.28em .45em; font:600 .73rem var(--brief-mono)}
+.ka-reference {font:600 clamp(.68rem,.91vw,.87rem)/1.35 var(--brief-mono);color:#624b36}
+.ka-camp-key {margin:.55rem 0;padding:.4rem 0;border-block:1px solid #876a464b}
+.ka-camp-key>div {display:flex;align-items:baseline;gap:.38rem; font:600 clamp(.77rem,.98vw,1rem)/1.38 var(--brief-serif)}
+.ka-camp-key b {font-size:.8em}
+.ka-camps text {font:bold 17px Georgia,'Noto Serif SC',serif;stroke:#fff6db;stroke-width:3;paint-order:stroke fill;stroke-linejoin:round}
+.ka-key i {border-top-color:#3e3025}
+.ka-wide .ka-notes h2 {font-size:clamp(1.18rem,1.8vw,1.9rem)}
+@media(max-width:720px) and (orientation:portrait) {
+ #root .journey-shell.korea-shell .korea-atlas-edition,
+ #root .journey-shell.korea-shell.ka-wide .korea-atlas-edition {grid-template-columns:minmax(0,1fr);grid-template-rows:minmax(0,1.21fr) minmax(0,1fr);gap:.4rem;padding-block:clamp(20px,3.5vh,30px)}
+ .ka-wide .korea-atlas {grid-template-columns:minmax(0,1.22fr) minmax(0,1fr);grid-template-rows:auto minmax(0,1fr) auto;row-gap:0}
+ .ka-wide .ka-field {grid-area:2/1}
+ .ka-wide .ka-notes {grid-area:2/2;align-self:center;max-height:100%}
+ .ka-heading {gap:.2rem}.ka-heading b {font-size:.94rem}
+ .ka-camps text {font-size:19px}
+ .ka-camp-key {margin:.25rem 0;padding:.2rem 0}
+ .ka-camp-key>div {font-size:.76rem;line-height:1.28}
+ .ka-notes .ka-key {margin-top:.22rem}
+ #root .journey-shell.korea-shell .kr-reader[data-view=copy] .korea-brief-sheet {
+  grid-template-columns:minmax(0,.87fr) minmax(0,1.13fr);grid-template-rows:minmax(0,1fr); gap:.45rem;
+ }
+ .kr-reader[data-view=copy] .korea-plate {grid-area:1/1}
+ .kr-reader[data-view=copy] .korea-copy {grid-area:1/2}
+ .kr-reader[data-view=copy] .korea-plate-caption strong {font-size:.77rem}
+ .kr-reader[data-view=copy] .korea-plate-caption .korea-plate-meta span:first-child {display:none}
+ .kr-reader[data-view=copy] .korea-title {font-size:1.05rem}
+ .kr-reader[data-view=plate] .korea-plate {display:flex;flex-direction:column;overflow-y:auto;justify-content:flex-start;align-items:stretch}
+ .kr-reader[data-view=plate] .korea-plate img {height:auto;aspect-ratio:auto;min-height:0;flex:none}
+ .kr-reader[data-view=plate] .korea-plate-caption {flex:none}
+}
+
+.ka-camp-key small {display:block;margin:0 0 .18rem;color:#5d4934;font:600 clamp(.6rem,.78vw,.76rem)/1.3 var(--brief-mono)}
+@media(max-width:720px) and (orientation:portrait){
+ .ka-wide .korea-atlas {grid-template-columns:minmax(0,1.56fr) minmax(0,1fr)}
+}
+
+/* Reserve the idle label's footprint: changing Play to Pause must not rewrap
+   the footer and move the peninsula underneath an audience's eyes. */
+.korea-shell .journey-play-button {display:inline-grid; grid-template-columns:minmax(0,1fr)}
+.korea-shell .journey-play-button > span {grid-area:1/1}
+.korea-shell .korea-play-reserve {visibility:hidden; pointer-events:none}

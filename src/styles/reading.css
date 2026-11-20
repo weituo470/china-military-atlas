@@ -1,0 +1,90 @@
+/* Reserve real rows for controls; the paper scrolls rather than shrinking its type. */
+#root .journey-shell {
+  display: grid; grid-template-rows: auto minmax(0, 1fr) auto;
+  padding: max(1rem, env(safe-area-inset-top)) clamp(1rem, 3vw, 3rem) max(.75rem, env(safe-area-inset-bottom));
+  gap: .5rem;
+}
+#root .journey-top, #root .journey-progress { position: relative; inset: auto; z-index: 22; }
+#root .journey-top { grid-row: 1; }
+#root .journey-progress {
+  grid-row: 3; display: flex; flex-wrap: wrap; align-items: center; gap: .4rem 1rem;
+  padding: .5rem .75rem; background: rgba(3, 10, 17, .9); border-top: 1px solid var(--line);
+}
+#root .journey-progress ol { flex-basis: 100%; }
+#root .journey-progress :is(.journey-player-bar,.journey-progress-actions,.journey-hints,.journey-window) { margin: 0; }
+#root .journey-progress .journey-hints { flex-basis: 100%; }
+#root .journey-progress li button { color: #ccd2d0; min-height: 2.25rem; }
+#root .journey-shell > :is(.journey-codex,.korea-codex) {
+  grid-row: 2; position: relative; inset: auto; padding: .35rem 0; min-height: 0;
+  justify-content: center; gap: .25rem;
+}
+#root .journey-shell :is(.codex-stage,.korea-stage) {
+  min-height: 0; max-height: 100%; flex: 0 1 auto; margin-top: 0;
+}
+#root .journey-shell :is(.baseline-paper-cast,.baseline-paper,.korea-brief,.torn-parchment,.industry-paper) {
+  min-height: 0; height: auto; max-height: 100%; aspect-ratio: auto;
+}
+#root .journey-shell :is(.baseline-paper-sheet,.torn-parchment-sheet,.industry-paper-sheet,.korea-brief-sheet) {
+  display: block; overflow: auto; height: auto; max-height: 100%;
+  overscroll-behavior: contain; scrollbar-gutter: stable;
+  padding: clamp(1.5rem, 3.5vh, 2.75rem) clamp(1.75rem, 5vw, 5rem);
+}
+#root .journey-shell :is(.torn-parchment,.baseline-paper,.korea-brief) { display: flex; flex-direction: column; }
+#root .journey-shell :is(.baseline-paper-split,.korea-brief-split,.torn-parchment-split,.industry-split) {
+  display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); min-height: 0; align-items: start;
+}
+#root .journey-shell :is(.baseline-paper-split,.korea-brief-split,.torn-parchment-split,.industry-split) > * {
+  grid-column: auto; grid-row: auto; min-width: 0;
+}
+#root .journey-shell :is(.baseline-paper-split,.korea-brief-split,.torn-parchment-split) > :only-child { grid-column: 1 / -1; }
+#root .baseline-codex[data-beat="review"] { justify-content: flex-start; }
+#root .baseline-codex[data-beat="review"] .baseline-stage { width: min(52rem, 64vw); max-height: 58%; }
+#root .baseline-codex[data-beat="review"] .baseline-paper-split { grid-template-columns: 1fr; }
+/* Keep the scrolling viewport inside the opaque portion of the torn edge. */
+#root .journey-shell :is(.baseline-paper,.korea-brief,.torn-parchment) {
+  padding-block: clamp(1.65rem, 4.8vh, 3rem);
+}
+#root .journey-shell :is(.baseline-paper-sheet,.korea-brief-sheet,.torn-parchment-sheet) {
+  padding-block: .4rem;
+}
+#root .journey-shell :is(.codex-spoken,.industry-spoken,.korea-spoken,.industry-caution,.codex-geo-caution) { font-size: var(--text-copy); line-height: 1.7; }
+#root .journey-shell :is(.codex-footer,.korea-footer) { flex: 0 0 auto; }
+#root .journey-shell .journey-card { z-index: 24; max-height: 70%; overflow: auto; background: #09141c; }
+#root .journey-card :is(p,blockquote,footer), #root .journey-sources :is(li,p) { font-size: var(--text-copy); }
+dialog.journey-sources { position: fixed; border: none; margin: 0; padding: 0; max-width: none; max-height: none; width: 100%; height: 100%; color: var(--ivory); }
+.journey-sources-panel { overscroll-behavior: contain; overflow-wrap: anywhere; }
+.journey-sources a { color: #cfe8fc; }
+.paragraph-reader [role=group] { display: flex; align-items: center; gap: .5rem; }
+.paragraph-reader button, .map-cue { color: inherit; font: inherit; font-size: var(--text-ui); background: transparent; border: 1px solid currentColor; padding: .45em .55em; cursor: pointer; }
+.paragraph-reader button:disabled { opacity: .45; cursor: default; }
+.paragraph-reader p { font-size: var(--text-copy); margin: .25rem 0 0; color: #f8d79f; }
+.structure-key { border-inline-start: 2px solid #98694c; padding-inline-start: 1rem; }
+.structure-key dl { margin: 0; }
+.structure-key dt { font-weight: bold; margin-bottom: .25rem; }
+.structure-key dd { margin: 0 0 .8rem; line-height: 1.6; }
+.structure-key a { color: #58402d; }
+.globe-fallback { position: absolute; inset: 10% 1rem auto; color: var(--ivory); font-size: var(--text-copy); }
+#root .loading-veil { z-index: 1; pointer-events: none; }
+@media (max-width: 720px) {
+  #root .journey-shell { padding: .5rem; gap: .25rem; }
+  #root .journey-top { flex-direction: column; gap: .25rem; }
+  #root .journey-brand span { display: none; }
+  #root .journey-toolbar { flex-wrap: wrap; gap: .25rem; }
+  #root .journey-progress { gap: .3rem .5rem; padding: .35rem; max-height: 43dvh; overflow: auto; }
+  #root .journey-progress ol { flex-wrap: nowrap; overflow-x: auto; }
+  #root .journey-progress li { flex: none; }
+  #root .journey-progress :is(.journey-window,.journey-hints), #root .journey-shell :is(.codex-footer,.korea-footer) { display: none; }
+  #root .journey-shell :is(.codex-stage,.korea-stage) { width: 100%; max-height: 100%; }
+  #root .journey-shell :is(.baseline-paper-sheet,.torn-parchment-sheet,.industry-paper-sheet,.korea-brief-sheet) { padding: 1.4rem 1.5rem; }
+  #root .journey-shell :is(.baseline-paper-split,.korea-brief-split,.torn-parchment-split,.industry-split) { grid-template-columns: minmax(0,1fr); }
+  #root .journey-card { inset: 12% .5rem auto; }
+  #root .baseline-compare-head { display: none; }
+  #root .baseline-compare-row { display: grid; grid-template-columns: 1fr; padding: .7rem 0; }
+  #root .baseline-compare-row [data-axis] { display: grid; grid-template-columns: minmax(6rem,1fr) 1fr; }
+  #root .baseline-compare-row [data-axis]::before { content: attr(data-axis); }
+  #root .baseline-compare-row b { display: none; }
+  #root .industry-titleblock { flex-wrap: wrap; }
+  #root .journey-shell :is(.baseline-paper-sheet,.korea-brief-sheet,.torn-parchment-sheet) { padding-block: .25rem; }
+  .app-chrome { flex-direction: column; }
+  .app-chrome-actions { justify-content: flex-start; }
+}

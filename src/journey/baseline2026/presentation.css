@@ -1,0 +1,373 @@
+/* Keep drei's HTML labels below the reading desk. The unoccupied globe
+   still receives pointer input through the transparent journey shell. */
+.app-root[data-journey="baseline2026"] .earth-canvas {
+  isolation: isolate;
+}
+
+#root .app-root[data-journey="baseline2026"] .globe-fallback,
+.baseline-globe-unavailable {
+  display: none;
+}
+
+.app-root[data-journey="baseline2026"]:has(.globe-fallback) .baseline-globe-unavailable {
+  display: block;
+  position: absolute;
+  inset: auto 0 0 auto;
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+#root .baseline-shell .baseline-codex {
+  --paper-ink: #172630;
+  --paper-note: #3b4a52;
+  --archive-accent: #80392d;
+  --estimate-accent: #365464;
+  --hatching: repeating-linear-gradient(135deg, #52809a15 0 1px, transparent 1px 6px);
+  padding: 0;
+}
+
+.baseline-codex .codex-vignette {
+  display: none;
+}
+
+#root .baseline-shell .baseline-stage {
+  width: min(100%, 100rem);
+  max-height: 100%;
+  height: 100%;
+}
+
+#root .baseline-shell .baseline-paper-cast,
+#root .baseline-shell .baseline-paper {
+  width: 100%;
+  height: 100%;
+}
+
+#root .baseline-shell .baseline-paper {
+  padding-block: clamp(20px, 5%, 38px);
+}
+
+.baseline-paper.is-mixed {
+  --archive-accent: #3b4a52;
+  background: linear-gradient(#f2f4f2, #e9eeeb);
+  border: 1px solid #b0bebc;
+  border-radius: 3px;
+}
+
+#root .baseline-shell .baseline-paper-sheet {
+  flex: 1;
+  padding: 4px clamp(30px, 5.4vw, 86px);
+  scrollbar-color: #53616b transparent;
+  color: var(--paper-ink);
+}
+
+.baseline-reading-spread {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.12fr);
+  align-items: center;
+  min-height: 100%;
+  gap: clamp(18px, 2.5vw, 40px);
+}
+
+.baseline-paper-sheet :focus-visible,
+.baseline-paper-sheet:focus-visible {
+  outline: 2px solid #174f7c;
+  outline-offset: -2px;
+}
+
+.baseline-reading-spread .codex-material-tag {
+  margin: 0 0 12px;
+  color: var(--archive-accent);
+  font: 600 var(--text-meta)/1.35 Inter, "Microsoft YaHei", sans-serif;
+  letter-spacing: .08em;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 4px;
+}
+
+.baseline-reading-spread .codex-title {
+  margin: 0 0 .5em;
+  letter-spacing: .015em;
+  text-wrap: balance;
+}
+
+.baseline-paper.is-estimate .codex-material-tag,
+.baseline-reading-spread .baseline-compare-kicker {
+  color: var(--estimate-accent);
+}
+
+.baseline-reading-spread .codex-spoken {
+  letter-spacing: .01em;
+}
+
+.baseline-copy-note,
+.baseline-illustration figcaption,
+.baseline-source-slip a,
+.baseline-review-notes p {
+  color: var(--paper-note);
+  font: 400 clamp(16px, 1.12vw, 20px)/1.45 Inter, "Microsoft YaHei", sans-serif;
+}
+
+.baseline-shell .baseline-film-link {
+  display: flex; flex-wrap: wrap; align-items: center; gap: .25rem .75rem;
+  color: #18353e; font: 600 16px/1.4 system-ui, sans-serif;
+  text-decoration: underline; text-underline-offset: .2em; min-height: 44px;
+}
+.baseline-shell .baseline-film-link b {font: 20px/1 system-ui, sans-serif;}
+.baseline-shell .baseline-film-link small {font: 13px ui-monospace, monospace;}
+.baseline-shell .baseline-film-link.is-illustrated {
+  display: grid; gap: 5px; margin-bottom: 8px; text-decoration: none;
+}
+.baseline-shell .baseline-film-link video {
+  display: block; width: 100%; aspect-ratio: 16/9; object-fit: cover;
+  background: #314b55; pointer-events: none;
+}
+.baseline-shell .baseline-film-link.is-illustrated span {text-decoration: underline; text-underline-offset: .2em;}
+.baseline-shell .baseline-film-link em {font: normal 14px/1.35 system-ui, sans-serif; color: #425056}
+.baseline-shell .baseline-film-link:focus-visible {outline: 3px solid #305761;outline-offset: 3px;}
+
+.baseline-copy-note {
+  border-top: 1px solid #48596648;
+  margin: .75em 0 0;
+  padding-top: .5em;
+}
+
+.baseline-illustration {
+  min-width: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.baseline-illustration img {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: min(50dvh, calc(100dvh - 375px));
+  margin: 0 auto;
+  /* Trim the printed WebP rule, not global paper or artwork assets. All
+     six illustrations use the same 1152×864 layout and safe margin. */
+  clip-path: inset(3% 3%);
+}
+
+.baseline-paper.is-estimate .baseline-illustration img {
+  filter: grayscale(1);
+}
+
+.baseline-illustration figcaption {
+  margin-top: .15em;
+}
+
+.baseline-source-packets,
+.baseline-review-evidence {
+  display: grid;
+  gap: 8px;
+}
+
+.baseline-source-slip {
+  min-width: 0;
+  padding: 10px 14px;
+  border-inline-start: 3px solid #956f42;
+  color: #483221;
+  background: #faf0da;
+}
+
+.baseline-source-slip.is-estimate {
+  border-color: #557581;
+  color: #203c4d;
+  background: var(--hatching), #e2ebf1;
+}
+
+.baseline-source-slip h2 {
+  margin: 0;
+  font: 650 var(--text-ui)/1.4 Inter, "Microsoft YaHei", sans-serif;
+}
+
+.baseline-source-slip p {
+  margin: .25em 0;
+  font-size: var(--text-copy);
+  line-height: 1.4;
+}
+
+.baseline-review-evidence {
+  grid-template-columns: 1fr 1fr;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.baseline-review-evidence li {
+  display: grid;
+  align-content: start;
+  gap: 2px;
+  padding: 6px 9px;
+  font-size: var(--text-ui);
+  line-height: 1.35;
+}
+
+.baseline-review-notes p {
+  margin: .55em 0 0;
+}
+
+#root .baseline-shell .baseline-codex[data-beat="review"] .baseline-stage {
+  width: min(100%, 76rem);
+  height: auto;
+  max-height: 80%;
+  margin: 0 auto;
+}
+
+#root .baseline-shell [data-beat="review"] .baseline-paper {
+  padding-block: clamp(16px, 3dvh, 28px);
+}
+
+[data-beat="review"] .baseline-reading-spread {
+  grid-template-columns: minmax(0, 1.75fr) minmax(0, 1fr);
+}
+
+#root .baseline-shell [data-beat="review"] .codex-title {
+  font-size: clamp(22px, 2vw, 30px);
+}
+
+#root .baseline-shell [data-beat="review"] .codex-spoken {
+  line-height: 1.48;
+}
+
+#root .baseline-shell [data-beat="scale"] .baseline-paper {
+  padding-block: clamp(22px, 4dvh, 38px);
+  /* Keep the chart's first and last lines inside the opaque paper. */
+  background-size: 100% 112%;
+}
+
+.baseline-reading-spread .baseline-compare-kicker {
+  font-weight: 600;
+  letter-spacing: .035em;
+}
+
+#root .baseline-shell .baseline-compare-head,
+#root .baseline-shell .baseline-compare-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1.12fr) repeat(3, minmax(0, 1fr));
+  align-items: center;
+  padding: 1px 2px;
+  line-height: 1.23;
+  letter-spacing: normal;
+}
+
+#root .baseline-shell .baseline-compare-row [role="cell"] {
+  grid-column: auto;
+  position: relative;
+  padding-bottom: 4px;
+}
+
+.baseline-compare-row small {
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+.baseline-reading-spread .baseline-compare-row b {
+  position: absolute;
+  inset: auto auto 0 0;
+  height: 3px;
+  border: 0;
+}
+
+.baseline-reading-spread .baseline-compare-row span.is-muted,
+.baseline-reading-spread .baseline-compare-head span.is-muted {
+  opacity: 1;
+}
+
+.baseline-reading-spread .baseline-compare-row span.is-muted b {
+  opacity: .4;
+}
+
+#root .baseline-shell [data-beat="scale"] .baseline-compare-chart footer p {
+  font-size: clamp(16px, 1.12vw, 20px);
+  opacity: 1;
+}
+
+#root .baseline-shell .baseline-card.is-estimate {
+  border-color: #6a8895;
+  background: repeating-linear-gradient(135deg, #8ab0c915 0 1px, transparent 1px 6px), #152632;
+}
+
+.journey-globe-label.is-baseline.is-review.is-badge.is-estimate:not(.is-active) {
+  background: repeating-linear-gradient(135deg, #92aab525 0 1px, transparent 1px 5px), #152632;
+}
+
+/* Give the stage the height recovered from redundant lines in the dock.
+   Playback errors are a separate element and remain visible. */
+#root .baseline-shell .journey-progress .journey-hints {
+  font-size: var(--text-meta);
+  margin-top: .15em;
+}
+
+#root .baseline-shell .journey-window { display: none; }
+
+.baseline-shell:lang(ja) .baseline-paper-sheet :is(.codex-title, .codex-spoken) {
+  font-family: "Yu Mincho", "Noto Serif JP", "Hiragino Mincho ProN", serif;
+  line-break: strict;
+}
+
+.baseline-shell:lang(ja) .baseline-paper-sheet :is(figcaption, .baseline-copy-note, .baseline-review-notes p, .baseline-source-slip a) {
+  font-family: "Yu Gothic", Meiryo, "Hiragino Sans", sans-serif;
+}
+
+@media (min-width: 801px) {
+  [data-beat="structure"] .baseline-reading-spread {
+    grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
+  }
+}
+
+@media (min-width: 801px) and (max-height: 780px) {
+  #root .baseline-shell .baseline-copy .codex-spoken {
+    line-height: 1.55;
+  }
+}
+
+@media (max-width: 800px) {
+  .app-root[data-journey="baseline2026"]:has(.globe-fallback) .baseline-globe-unavailable {
+    position: static;
+  }
+
+  .baseline-reading-spread,
+  [data-beat="review"] .baseline-reading-spread {
+    grid-template-columns: minmax(0, 1fr);
+    align-content: start;
+  }
+
+  #root .baseline-shell .baseline-paper-sheet {
+    padding-inline: clamp(20px, 6vw, 48px);
+  }
+
+  /* The landscape texture's edge stretches vertically on portrait screens.
+     Crop it to the paper interior here instead of scrolling text over alpha. */
+  #root .baseline-shell .baseline-paper:not(.is-mixed),
+  #root .baseline-shell [data-beat="scale"] .baseline-paper {
+    background-size: 128% 136%;
+    background-color: var(--dossier-paper);
+    border-radius: 3px;
+  }
+
+  #root .baseline-shell .baseline-paper.is-estimate {
+    background-color: var(--estimate-paper);
+  }
+
+  #root .baseline-shell .baseline-codex[data-beat="review"] .baseline-stage {
+    max-height: 100%;
+  }
+
+  .baseline-illustration img {
+    max-height: none;
+  }
+
+  #root .baseline-shell .baseline-compare-head {
+    font-size: max(14px, var(--text-meta));
+  }
+
+  #root .baseline-shell .baseline-compare-row {
+    min-height: 40px;
+  }
+
+  #root .baseline-shell .baseline-compare-row b {
+    display: block;
+  }
+}

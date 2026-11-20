@@ -1,0 +1,110 @@
+{
+  "zh": [
+    "全部",
+    "图解（非现场照片）",
+    "档案影像",
+    "原文截图 · 发布方 / 文稿日期",
+    "背景与边界",
+    "按年代筛选",
+    "选录按事件日期倒序排列。外交争端、企业政策和跨境犯罪分别记述，收录不代表它们具有相同动机。"
+  ],
+  "en": [
+    "All",
+    "Illustration, not a photograph",
+    "Archive image",
+    "Source screenshot · Publisher / document date",
+    "Context and scope",
+    "Filter by decade",
+    "Selected events, newest first. Diplomatic disputes, company policies and cross-border crimes are recorded separately; inclusion does not imply a common motive."
+  ],
+  "ja": [
+    "すべて",
+    "解説図（現場写真ではありません）",
+    "資料画像",
+    "原文の抜粋 · 発表元／文書日付",
+    "背景と範囲",
+    "年代で絞り込む",
+    "出来事の日付が新しい順です。外交上の対立、企業方針、越境犯罪を区別しており、共通の動機を示すものではありません。"
+  ],
+  "fr": [
+    "Tout",
+    "Schéma, pas une photographie",
+    "Image d’archive",
+    "Capture de la source · Éditeur / date du document",
+    "Contexte et portée",
+    "Filtrer par décennie",
+    "Sélection par date décroissante. Les différends diplomatiques, les politiques d’entreprise et la criminalité transfrontalière ne présupposent pas un motif commun."
+  ],
+  "ru": [
+    "Все",
+    "Схема, не фотография",
+    "Архивное изображение",
+    "Снимок источника · Издатель / дата документа",
+    "Контекст и рамки",
+    "Фильтр по десятилетию",
+    "События приведены от новых к старым. Дипломатические споры, решения компаний и трансграничные преступления не предполагают общего мотива."
+  ],
+  "ko": [
+    "전체",
+    "해설도 · 현장 사진 아님",
+    "기록 이미지",
+    "원문 캡처 · 발행처 / 문서 날짜",
+    "배경과 범위",
+    "연대별 보기",
+    "최신순으로 정리한 선별 기록입니다. 외교 분쟁, 기업 정책, 초국경 범죄의 동기가 같다는 뜻은 아닙니다."
+  ],
+  "fil": [
+    "Lahat",
+    "Ilustrasyon, hindi larawan ng pangyayari",
+    "Larawang pang-arkibo",
+    "Kuha ng orihinal · Tagapaglathala / petsa ng dokumento",
+    "Konteksto at saklaw",
+    "Salain ayon sa dekada",
+    "Mga piling pangyayari mula pinakabago. Magkahiwalay na usapin ang mga alitang diplomatiko, patakaran ng kompanya at krimeng tumatawid sa hangganan."
+  ],
+  "id": [
+    "Semua",
+    "Ilustrasi, bukan foto kejadian",
+    "Gambar arsip",
+    "Cuplikan sumber · Penerbit / tanggal dokumen",
+    "Konteks dan cakupan",
+    "Saring menurut dekade",
+    "Peristiwa pilihan, dari yang terbaru. Sengketa diplomatik, kebijakan perusahaan, dan kejahatan lintas batas tidak diasumsikan memiliki motif yang sama."
+  ],
+  "es": [
+    "Todos",
+    "Ilustración, no fotografía",
+    "Imagen de archivo",
+    "Captura de la fuente · Editor / fecha del documento",
+    "Contexto y alcance",
+    "Filtrar por década",
+    "Selección en orden cronológico inverso. No se presupone un motivo común para las disputas diplomáticas, las políticas empresariales y los delitos transfronterizos."
+  ],
+  "de": [
+    "Alle",
+    "Schaubild, kein Foto",
+    "Archivbild",
+    "Originalausschnitt · Herausgeber / Dokumentdatum",
+    "Hintergrund und Umfang",
+    "Nach Jahrzehnt filtern",
+    "Auswahl, jüngste Ereignisse zuerst. Diplomatische Streitfälle, Unternehmensregeln und grenzüberschreitende Kriminalität werden nicht auf ein gemeinsames Motiv zurückgeführt."
+  ],
+  "pt": [
+    "Tudo",
+    "Ilustração, não fotografia",
+    "Imagem de arquivo",
+    "Captura da fonte · Entidade / data do documento",
+    "Contexto e âmbito",
+    "Filtrar por década",
+    "Seleção por ordem cronológica inversa. Diferendos diplomáticos, políticas empresariais e crimes transfronteiriços não pressupõem um motivo comum."
+  ],
+  "ar": [
+    "الكل",
+    "رسم توضيحي وليس صورة فوتوغرافية",
+    "صورة أرشيفية",
+    "لقطة من المصدر · الناشر / تاريخ الوثيقة",
+    "السياق والنطاق",
+    "تصفية بحسب العقد",
+    "أحداث مختارة من الأحدث إلى الأقدم. إدراج النزاعات الدبلوماسية وسياسات الشركات والجرائم العابرة للحدود لا يعني أن لها دافعًا واحدًا."
+  ]
+}

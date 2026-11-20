@@ -1,0 +1,33 @@
+{
+  "zh": {
+    "audioHash": "d3522926f796b38bc1be9041883e20c37efdc88644cf6cff3ea1337e65c6cbe5",
+    "duration": 58.97,
+    "rate": "-12%",
+    "textHash": "161fa58597ed0ad0babe9275c2db3c33d8841ac9bd7b7bfd2b77a8bb4783fbbc",
+    "voice": "zh-CN-YunyangNeural"
+  },
+  "en": {
+    "duration": 41.35,
+    "voice": "Microsoft Zira Desktop",
+    "textHash": "cf941c6a5078127d828c1ad7ef0037df38823828d4e56dbfd641aaf5caed0d5b",
+    "audioHash": "8b754ac83ef99475f7fbfedfc347cfb10e3ca0336d709c147d63631d082162de"
+  },
+  "ja": {
+    "duration": 67.05,
+    "voice": "Google Translate TTS \u00b7 Japanese",
+    "textHash": "1d629fd8325e411dc3f874f1861723b1c7823d2a317372eca7dfdf9ef34ab28f",
+    "audioHash": "f1c33952a646be91c3e6cc995d8347ab9cfeb20c5d0259947203d677022c671c"
+  },
+  "fr": {
+    "duration": 47.25,
+    "voice": "Google Translate TTS \u00b7 French",
+    "textHash": "ea2e1748159459983a848492ca190283dc1cf66f2d81f329a752dd917966a1ba",
+    "audioHash": "5c10a7dea67ecf4e2cc6e1d37b28bd819dd8bcb6b8be25532fcd69362b1fb72b"
+  },
+  "ru": {
+    "duration": 61.02,
+    "voice": "Google Translate TTS \u00b7 Russian",
+    "textHash": "e6055c4e2c0e44433d0073427d4be2818626daedc6b920d8ee6523e79331aa8d",
+    "audioHash": "9bbb8b5d0ec221e255c015792ebec389f6a0373fc006aa20a660c7212ce5d7dd"
+  }
+}

@@ -1,0 +1,186 @@
+{
+  "2026-02-23": {
+    "motif": "accounts",
+    "mark": "≈24,000",
+    "sources": [
+      [
+        "Anthropic · 2026-02-23",
+        "https://www.anthropic.com/news/detecting-and-preventing-distillation-attacks"
+      ],
+      [
+        "Anthropic · Transparency Hub",
+        "https://www.anthropic.com/transparency/system-trust-reporting"
+      ]
+    ]
+  },
+  "2025-09-04": {
+    "motif": "ownership",
+    "mark": ">50%",
+    "sources": [
+      [
+        "Anthropic · 2025-09-04",
+        "https://www.anthropic.com/news/updating-restrictions-of-sales-to-unsupported-regions"
+      ],
+      [
+        "Anthropic · Supported Regions Policy",
+        "https://www.anthropic.com/legal/supported-regions"
+      ]
+    ]
+  },
+  "2024-01-30": {
+    "motif": "handover",
+    "mark": "10",
+    "sources": [
+      [
+        "中国驻缅甸使馆 · 2024-01-30",
+        "https://mm.china-embassy.gov.cn/chn/sgxw/202401/t20240130_11236557.htm"
+      ],
+      [
+        "OHCHR · 2023",
+        "https://bangkok.ohchr.org/reports/online-scam-operations-and-trafficking-forced-criminality-southeast-asia-recommendations"
+      ]
+    ]
+  },
+  "2022-10-07": {
+    "motif": "chips",
+    "mark": "DS615",
+    "sources": [
+      [
+        "US BIS · 2022-10-07",
+        "https://www.bis.gov/press-release/commerce-implements-new-export-controls-advanced-computing-semiconductor-manufacturing-items-peoples"
+      ],
+      [
+        "WTO · DS615",
+        "https://www.wto.org/english/tratop_e/dispu_e/cases_e/ds615_e.htm"
+      ]
+    ]
+  },
+  "2019-05-16": {
+    "motif": "entity",
+    "mark": "84 FR 22961",
+    "sources": [
+      [
+        "US Federal Register · 84 FR 22961",
+        "https://www.govinfo.gov/app/details/FR-2019-05-21/2019-10616"
+      ],
+      [
+        "US GPO · PDF",
+        "https://www.govinfo.gov/content/pkg/FR-2019-05-21/pdf/2019-10616.pdf"
+      ]
+    ]
+  },
+  "2018-12-01": {
+    "motif": "meng",
+    "mark": "YVR",
+    "sources": [
+      [
+        "Justice Canada · 2018",
+        "https://justice.canada.ca/eng/trans/transition/2019/nov/tab8.html"
+      ],
+      [
+        "US DOJ · 2021",
+        "https://www.justice.gov/usao-edny/pr/huawei-cfo-wanzhou-meng-admits-misleading-global-financial-institution"
+      ],
+      [
+        "Justice Canada · 2021",
+        "https://www.canada.ca/en/department-justice/news/2021/09/statement-from-the-department-of-justice-canada.html"
+      ],
+      [
+        "中国外交部 · 2021",
+        "https://ps.china-office.gov.cn/eng/wjbfyrth/202109/t20210925_9590284.htm"
+      ],
+      [
+        "The Canadian Press · 2022",
+        "https://toronto.citynews.ca/2022/12/02/four-years-after-meng-wanzhous-arrest-u-s-moves-to-drop-remaining-indictment/"
+      ]
+    ]
+  },
+  "2016-07-12": {
+    "motif": "award",
+    "mark": "2013-19",
+    "sources": [
+      [
+        "Permanent Court of Arbitration · 2013-19",
+        "https://docs.pca-cpa.org/2016/07/PH-CN-20160712-Press-Release-No-11-English.pdf"
+      ],
+      [
+        "中国外交部 · 2016-07-12",
+        "https://fm.china-embassy.gov.cn/eng/xwdt/201607/t20160713_1357.htm"
+      ]
+    ]
+  },
+  "2012-09-11": {
+    "motif": "islands",
+    "mark": "3",
+    "sources": [
+      [
+        "日本外務省 · Diplomatic Bluebook",
+        "https://www.mofa.go.jp/policy/other/bluebook/2013/html/chapter2/asia_oceania.html"
+      ],
+      [
+        "中国外交部 · Diaoyu Islands",
+        "https://www.fmprc.gov.cn/eng/zy/jj/diaodao_665718/mn/202406/t20240606_11378071.html"
+      ]
+    ]
+  },
+  "2009-09-11": {
+    "motif": "tyres",
+    "mark": "DS399",
+    "sources": [
+      [
+        "White House Archives · 2009-09-11",
+        "https://obamawhitehouse.archives.gov/the-press-office/statement-press-secretary-remedy-address-market-disruption-imports-certain-passenge"
+      ],
+      [
+        "WTO · DS399",
+        "https://www.wto.org/english/tratop_e/dispu_e/cases_e/ds399_e.htm"
+      ]
+    ]
+  },
+  "2001-04-01": {
+    "motif": "aircraft",
+    "mark": "EP-3",
+    "sources": [
+      [
+        "中国外交部 · 2001-04-04",
+        "https://www.fmprc.gov.cn/mfa_eng/gjhdq_665435/3376_665447/3432_664920/3436_664928/3439_664934/202406/t20240612_11426635.html"
+      ],
+      [
+        "US Naval History and Heritage Command",
+        "https://www.history.navy.mil/research/archives/Collections/ncdu-det-206/2001/ep-3-collision--crew-detainment-and-homecoming.html"
+      ]
+    ]
+  },
+  "1999-05-07": {
+    "motif": "embassy",
+    "mark": "1999.05",
+    "sources": [
+      [
+        "NATO · 1999-05-08",
+        "https://www.nato.int/en/about-us/official-texts-and-resources/official-texts/1999/05/08/statement"
+      ],
+      [
+        "中国外交部 · Belgrade",
+        "https://www.fmprc.gov.cn/mfa_eng/gjhdq_665435/3376_665447/3432_664920/3441_664938/202406/t20240612_11426963.html"
+      ]
+    ]
+  },
+  "1990-02-16": {
+    "motif": "statute",
+    "mark": "§ 902",
+    "sources": [
+      [
+        "US Statutes at Large · 104 Stat. 83",
+        "https://www.govinfo.gov/content/pkg/STATUTE-104/pdf/STATUTE-104-Pg15.pdf"
+      ],
+      [
+        "George H. W. Bush · Signing statement",
+        "https://www.presidency.ucsb.edu/documents/statement-signing-the-foreign-relations-authorization-act-fiscal-years-1990-and-1991"
+      ],
+      [
+        "George H. W. Bush · Report to Congress, 1990-05-16",
+        "https://www.presidency.ucsb.edu/documents/message-the-congress-transmitting-report-united-states-countermeasures-political"
+      ]
+    ]
+  }
+}

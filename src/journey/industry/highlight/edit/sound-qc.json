@@ -1,0 +1,68 @@
+{
+  "zh": {
+    "samples": 1138000,
+    "bedCalibrationDB": -6.2,
+    "voiceAsStereo": {
+      "integratedLUFS": -23.0,
+      "truePeakDBTP": -2.2
+    },
+    "bed": {
+      "integratedLUFS": -46.2,
+      "truePeakDBTP": -28.6
+    },
+    "mix": {
+      "integratedLUFS": -23.0,
+      "truePeakDBTP": -2.1
+    },
+    "speechBand": {
+      "active250msBlocks": 59,
+      "p05VoiceOverBedDB": 17.5,
+      "medianVoiceOverBedDB": 23.7
+    },
+    "mixMinusBedEqualsVoicePCM24": true
+  },
+  "en": {
+    "samples": 1420000,
+    "bedCalibrationDB": -2.4,
+    "voiceAsStereo": {
+      "integratedLUFS": -14.5,
+      "truePeakDBTP": -1.8
+    },
+    "bed": {
+      "integratedLUFS": -42.7,
+      "truePeakDBTP": -24.5
+    },
+    "mix": {
+      "integratedLUFS": -14.6,
+      "truePeakDBTP": -1.8
+    },
+    "speechBand": {
+      "active250msBlocks": 90,
+      "p05VoiceOverBedDB": 17.5,
+      "medianVoiceOverBedDB": 28.7
+    },
+    "mixMinusBedEqualsVoicePCM24": true
+  },
+  "ja": {
+    "samples": 1600000,
+    "bedCalibrationDB": -0.6,
+    "voiceAsStereo": {
+      "integratedLUFS": -15.1,
+      "truePeakDBTP": -1.8
+    },
+    "bed": {
+      "integratedLUFS": -40.4,
+      "truePeakDBTP": -22.6
+    },
+    "mix": {
+      "integratedLUFS": -15.1,
+      "truePeakDBTP": -1.8
+    },
+    "speechBand": {
+      "active250msBlocks": 97,
+      "p05VoiceOverBedDB": 17.5,
+      "medianVoiceOverBedDB": 27.9
+    },
+    "mixMinusBedEqualsVoicePCM24": true
+  }
+}

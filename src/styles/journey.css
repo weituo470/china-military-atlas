@@ -1,0 +1,572 @@
+/* Chapter I guided journey — visual language stays native to 地球往事. */
+
+.experience-root[data-journey] .narrative-shell,
+.experience-root[data-journey] .coordinate-nav,
+.experience-root[data-journey] .timeline-shell,
+.experience-root[data-journey] .planet-portal,
+.experience-root[data-journey] .history-layer-control,
+.experience-root[data-journey] .celestial-clock,
+.experience-root[data-journey] .spacecraft-detail,
+.experience-root[data-journey] .edge-coordinates {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.experience-root[data-journey] .space-switcher {
+  opacity: .42;
+}
+
+.journey-button.is-active {
+  color: #f6dfb2;
+  background: rgba(217, 181, 116, .06);
+}
+
+.journey-shell {
+  position: absolute;
+  inset: 0;
+  z-index: 6;
+  pointer-events: none;
+  color: var(--ivory);
+}
+
+.journey-top,
+.journey-caption,
+.journey-codex,
+.journey-card,
+.journey-progress,
+.journey-sources,
+.journey-globe-label {
+  pointer-events: auto;
+}
+
+.journey-top {
+  position: absolute;
+  top: max(20px, calc(env(safe-area-inset-top) + 16px));
+  left: 38px;
+  right: 38px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.journey-brand small,
+.journey-caption small,
+.journey-card small,
+.journey-sources small,
+.journey-window {
+  color: rgba(221, 187, 120, .78);
+  font-family: "IBM Plex Mono", Consolas, monospace;
+  font-size: var(--text-meta);
+  letter-spacing: .18em;
+  text-transform: uppercase;
+}
+
+.journey-brand span,
+.journey-geo-caution,
+.journey-hints,
+.journey-aside {
+  display: block;
+  margin-top: 6px;
+  color: var(--muted);
+  font-size: var(--text-copy);
+  letter-spacing: .04em;
+  line-height: 1.55;
+}
+
+.journey-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.journey-lang {
+  display: inline-flex;
+  border: 1px solid rgba(192, 218, 224, .16);
+  background: rgba(2, 8, 14, .52);
+}
+
+.journey-lang button,
+.journey-text-button,
+.journey-progress-actions button,
+.journey-card header button,
+.journey-lock-button,
+.journey-sources header button {
+  min-height: 32px;
+  padding: 0 11px;
+  border: 0;
+  color: rgba(240, 236, 227, .72);
+  background: transparent;
+  cursor: pointer;
+  font-size: var(--text-ui);
+  letter-spacing: .12em;
+}
+
+.journey-lang button.is-active {
+  color: #f6dfb2;
+  background: rgba(217, 181, 116, .1);
+}
+
+.journey-text-button,
+.journey-card header button,
+.journey-sources header button,
+.journey-lock-button,
+.journey-progress-actions button {
+  border: 1px solid rgba(192, 218, 224, .16);
+  background: rgba(2, 8, 14, .45);
+}
+
+.journey-text-button:hover,
+.journey-lang button:hover,
+.journey-card header button:hover,
+.journey-sources header button:hover,
+.journey-lock-button:hover,
+.journey-progress-actions button:hover,
+.journey-progress button:hover {
+  color: var(--ivory);
+  border-color: rgba(217, 181, 116, .45);
+}
+
+.journey-caption {
+  position: absolute;
+  top: max(92px, calc(env(safe-area-inset-top) + 80px));
+  bottom: max(196px, calc(env(safe-area-inset-bottom) + 184px));
+  left: clamp(28px, 3.6vw, 76px);
+  width: min(460px, 34vw);
+  display: flex;
+  flex-direction: column;
+  padding-right: 8px;
+  pointer-events: none;
+}
+
+.journey-caption > * {
+  pointer-events: auto;
+}
+
+.journey-caption::before {
+  content: "";
+  position: absolute;
+  inset: -12px 18% -12px -28px;
+  background: linear-gradient(90deg, rgba(2, 8, 14, .58), rgba(2, 8, 14, .2) 62%, transparent);
+  pointer-events: none;
+  z-index: -1;
+}
+
+.journey-caption-head {
+  flex: 0 0 auto;
+}
+
+.journey-caption h1,
+.journey-card h2,
+.journey-sources h2 {
+  margin: 8px 0 10px;
+  font-family: "Noto Serif SC", "Source Han Serif SC", "Songti SC", SimSun, serif;
+  font-size: clamp(24px, 2.8vw, 40px);
+  font-weight: 400;
+  letter-spacing: .06em;
+  line-height: 1.25;
+}
+
+.journey-caption p,
+.journey-card p,
+.journey-sources p,
+.journey-sources li {
+  color: rgba(232, 236, 231, .78);
+  font-size: var(--text-copy);
+  line-height: 1.75;
+}
+
+.journey-caption .journey-lead {
+  margin: 0;
+}
+
+.journey-caption .journey-aside {
+  margin-top: 10px;
+  max-width: 38em;
+}
+
+.journey-narration {
+  flex: 1 1 auto;
+  min-height: 0;
+  margin-top: 12px;
+  padding: 10px 12px 8px 0;
+  overflow: auto;
+  border-top: 1px solid rgba(217, 181, 116, .28);
+  scrollbar-gutter: stable;
+}
+
+.journey-narration small {
+  display: block;
+  margin: 0 0 8px;
+}
+
+.journey-narration p {
+  margin: 0;
+  color: rgba(232, 236, 231, .86);
+  font-family: "Noto Serif SC", "Source Han Serif SC", "Songti SC", Georgia, serif;
+  font-size: var(--text-copy);
+  letter-spacing: .03em;
+  line-height: 1.85;
+}
+
+.journey-narration p + p {
+  margin-top: 0.9em;
+}
+
+.journey-narration::-webkit-scrollbar {
+  width: 6px;
+}
+
+.journey-narration::-webkit-scrollbar-thumb {
+  background: rgba(217, 181, 116, .35);
+}
+
+.journey-geo-caution {
+  flex: 0 0 auto;
+  margin-top: 10px;
+  max-width: 42em;
+  color: rgba(196, 214, 215, .42);
+  font-size: var(--text-copy);
+}
+
+.journey-card {
+  position: absolute;
+  top: 24%;
+  right: clamp(28px, 3.6vw, 72px);
+  width: min(360px, 32vw);
+  padding: 18px 18px 16px;
+  border: 1px solid rgba(188, 216, 224, .18);
+  background: rgba(2, 8, 14, .78);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, .36);
+  backdrop-filter: blur(14px);
+}
+
+.journey-card header,
+.journey-sources header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.journey-card h2 { font-size: 24px; margin: 8px 0 10px; }
+.journey-card blockquote {
+  margin: 12px 0 0;
+  padding: 8px 0 0 12px;
+  border-left: 1px solid rgba(217, 181, 116, .44);
+  color: rgba(203, 218, 216, .7);
+  font-size: var(--text-copy);
+  line-height: 1.65;
+}
+.journey-card footer {
+  margin-top: 12px;
+  color: rgba(190, 208, 208, .45);
+  font-size: var(--text-copy);
+  line-height: 1.55;
+}
+.journey-lock-button { margin-top: 14px; }
+
+.journey-progress {
+  position: absolute;
+  left: clamp(28px, 3.6vw, 76px);
+  right: clamp(28px, 3.6vw, 76px);
+  bottom: max(24px, env(safe-area-inset-bottom));
+}
+
+.journey-progress ol {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px 4px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.journey-progress li button {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 30px;
+  padding: 0 8px 0 5px;
+  border: 1px solid transparent;
+  color: rgba(226, 237, 234, .48);
+  background: transparent;
+  cursor: pointer;
+  font-size: var(--text-ui);
+  letter-spacing: .02em;
+}
+
+.journey-progress li button i {
+  width: 14px;
+  color: rgba(221, 187, 120, .7);
+  font-family: "IBM Plex Mono", Consolas, monospace;
+  font-style: normal;
+  font-size: var(--text-ui);
+}
+
+.journey-progress li button.is-active {
+  color: var(--ivory);
+  border-color: rgba(217, 181, 116, .38);
+  background: rgba(217, 181, 116, .08);
+}
+
+.journey-progress-actions { display: flex; gap: 8px; margin-top: 10px; }
+.journey-progress-actions button:disabled { opacity: .35; cursor: default; }
+.journey-hints { margin-top: 10px; }
+
+.journey-sources {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: flex-end;
+  background: rgba(2, 5, 10, .46);
+}
+
+.journey-sources-panel {
+  width: min(520px, 100%);
+  height: 100%;
+  overflow: auto;
+  padding: 28px 28px 40px;
+  border-left: 1px solid rgba(188, 216, 224, .16);
+  background: rgba(4, 9, 14, .94);
+}
+
+.journey-sources h2 { font-size: 32px; }
+.journey-sources h3 {
+  margin: 22px 0 10px;
+  color: #ead7ad;
+  font-family: "Noto Serif SC", "Songti SC", serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+.journey-sources ul { margin: 0; padding-left: 18px; }
+.journey-sources li + li { margin-top: 10px; }
+
+.journey-globe-label {
+  min-width: 120px;
+  max-width: 220px;
+  padding: 7px 9px 6px;
+  border: 1px solid rgba(188, 216, 224, .2);
+  color: rgba(245, 242, 232, .94);
+  background: rgba(2, 8, 14, .8);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, .36);
+  backdrop-filter: blur(8px);
+  text-align: left;
+  cursor: pointer;
+}
+
+.journey-globe-label strong,
+.journey-globe-label span { display: block; }
+.journey-globe-label strong {
+  font-size: var(--text-ui);
+  font-weight: 600;
+  letter-spacing: .08em;
+}
+.journey-globe-label span {
+  margin-top: 3px;
+  color: rgba(196, 214, 215, .58);
+  font-size: var(--text-ui);
+  letter-spacing: .03em;
+  line-height: 1.4;
+  white-space: normal;
+}
+.journey-globe-label.is-active {
+  border-color: rgba(217, 181, 116, .62);
+  box-shadow: 0 0 24px rgba(217, 181, 116, .16);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .journey-card,
+  .journey-sources-panel,
+  .journey-caption h1 { transition: none; }
+}
+
+@media (max-width: 1100px) {
+  .journey-caption,
+  .journey-card { width: min(420px, calc(100vw - 48px)); }
+  .journey-caption { bottom: max(214px, calc(env(safe-area-inset-bottom) + 200px)); }
+  .journey-card { top: auto; bottom: 176px; }
+}
+
+@media (max-width: 720px) {
+  .journey-top,
+  .journey-caption,
+  .journey-progress { left: 16px; right: 16px; }
+  .journey-caption {
+    top: 124px;
+    bottom: max(200px, calc(env(safe-area-inset-bottom) + 188px));
+    width: auto;
+  }
+  .journey-card {
+    right: 16px;
+    left: 16px;
+    width: auto;
+    bottom: 208px;
+  }
+  .journey-caption h1 { font-size: 26px; }
+}
+
+.experience-root[data-display-profile="compact-2k"] .journey-caption h1 { font-size: 30px; }
+.experience-root[data-display-profile="compact-2k"] .journey-top { top: 76px; }
+.experience-root[data-display-profile="compact-2k"] .journey-caption { top: 132px; }
+
+/* Narration player and typological war-demo labels */
+
+.journey-player {
+  pointer-events: auto;
+}
+
+.journey-player-cta {
+  margin: 12px 0 4px;
+}
+
+.journey-play-cta,
+.journey-play-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 38px;
+  padding: 0 16px;
+  border: 1px solid rgba(217, 181, 116, .46);
+  color: #f6dfb2;
+  background: rgba(217, 181, 116, .1);
+  cursor: pointer;
+  font-family: inherit;
+  font-size: var(--text-ui);
+  letter-spacing: .14em;
+}
+
+.journey-play-cta:hover,
+.journey-play-button:hover:not(:disabled),
+.journey-play-button.is-cta {
+  border-color: rgba(217, 181, 116, .7);
+  background: rgba(217, 181, 116, .16);
+  color: #fff4dc;
+}
+
+.journey-play-button.is-playing {
+  color: #ead7ad;
+  background: rgba(217, 181, 116, .08);
+}
+
+.journey-play-button:disabled,
+.journey-player-actions .journey-text-button:disabled {
+  opacity: .4;
+  cursor: default;
+}
+
+.journey-play-hint,
+.journey-play-error {
+  margin: 8px 0 0;
+  color: var(--muted);
+  font-size: var(--text-copy);
+  letter-spacing: .04em;
+  line-height: 1.55;
+}
+
+.journey-play-error {
+  color: rgba(224, 186, 150, .82);
+}
+
+.journey-player-bar {
+  margin-top: 8px;
+  max-width: min(560px, 100%);
+}
+
+.journey-player-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.journey-player-time {
+  color: rgba(221, 187, 120, .78);
+  font-family: "IBM Plex Mono", Consolas, monospace;
+  font-size: var(--text-meta);
+  letter-spacing: .08em;
+}
+
+.journey-player-track {
+  position: relative;
+  height: 2px;
+  margin: 10px 0 2px;
+  background: rgba(192, 218, 224, .16);
+}
+
+.journey-player-track i {
+  position: absolute;
+  inset: 0 auto 0 0;
+  display: block;
+  background: linear-gradient(90deg, rgba(217, 181, 116, .3), rgba(217, 181, 116, .92));
+  pointer-events: none;
+}
+
+.journey-narration.is-active p {
+  color: rgba(232, 236, 231, .46);
+  transition: color .25s ease, background-color .25s ease;
+}
+
+.journey-narration p.is-spoken {
+  color: rgba(245, 242, 232, .96);
+  padding-left: 10px;
+  border-left: 1px solid rgba(217, 181, 116, .7);
+  background: linear-gradient(90deg, rgba(217, 181, 116, .08), transparent 72%);
+}
+
+.journey-progress li button.is-playing {
+  box-shadow: inset 0 -1px 0 rgba(217, 181, 116, .55);
+}
+
+.journey-progress li button.is-playing i {
+  color: #f6dfb2;
+}
+
+.journey-war-label {
+  min-width: 110px;
+  max-width: 240px;
+  padding: 6px 8px 5px;
+  border: 1px solid rgba(188, 216, 224, .18);
+  color: rgba(245, 242, 232, .92);
+  background: rgba(2, 8, 14, .78);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, .32);
+  backdrop-filter: blur(8px);
+  text-align: left;
+  pointer-events: none;
+}
+
+.journey-war-label strong,
+.journey-war-label span {
+  display: block;
+}
+
+.journey-war-label strong {
+  font-size: var(--text-ui);
+  font-weight: 600;
+  letter-spacing: .08em;
+}
+
+.journey-war-label span {
+  margin-top: 3px;
+  color: rgba(196, 214, 215, .58);
+  font-size: var(--text-ui);
+  letter-spacing: .03em;
+  line-height: 1.4;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .journey-narration.is-active p,
+  .journey-narration p.is-spoken {
+    transition: none;
+  }
+}
+
+@media (max-width: 720px) {
+  .journey-player-bar {
+    max-width: 100%;
+  }
+  .journey-caption {
+    bottom: max(240px, calc(env(safe-area-inset-bottom) + 228px));
+  }
+}

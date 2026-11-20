@@ -1,0 +1,82 @@
+.lm-moment {
+ --mc-ink:#25241e; --mc-muted:#5e584b; --mc-line:#bbaf99; --mc-paper:#f7f1e5; --mc-red:#882f25;
+ max-width:1460px; margin:12px auto 24px; padding:clamp(16px,2.7vw,37px); color:var(--mc-ink);
+ background:var(--mc-paper); border:1px solid var(--mc-line); font-family:var(--sans,system-ui,"Microsoft YaHei UI",sans-serif); text-align:start;
+}
+.lm-moment,.lm-moment * {box-sizing:border-box}
+.lm-moment button {font:inherit;color:inherit;cursor:pointer}
+.lm-moment :focus-visible {outline:2px solid var(--mc-red);outline-offset:3px}
+.lm-moment a {color:var(--mc-red);text-underline-offset:3px}
+.lm-moment .lm-moment-mast {display:flex;justify-content:space-between;align-items:center;gap:12px;border-bottom:1px solid var(--mc-line);font-size:14px;font-weight:650;color:var(--mc-muted)}
+.lm-moment-mast button {min-height:44px;background:none;border:none;font-size:16px;color:var(--mc-red);padding:0}
+.lm-moment .lm-moment-heading {display:grid;grid-template-columns:1.45fr minmax(220px, .75fr);align-items:end;gap:24px;padding:22px 0}
+.lm-moment .lm-moment-heading h2 {font:700 clamp(32px,4.2vw,64px)/1.12 var(--serif,Georgia,"SimSun",serif);margin:0;color:var(--mc-ink);text-wrap:balance}
+.lm-moment-heading h2:focus:not(:focus-visible) {outline:none}
+.lm-moment .lm-moment-heading p {margin:0;color:var(--mc-muted);font-size:17px;line-height:1.6}
+.lm-moment-dates {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border:1px solid var(--mc-line)}
+.lm-moment .lm-moment-dates button {display:flex;align-items:baseline;justify-content:space-between;gap:8px;text-align:start;border:0;border-right:1px solid var(--mc-line);color:var(--mc-ink);background:transparent;padding:10px clamp(9px,1vw,17px);min-height:48px}
+.lm-moment .lm-moment-dates button:last-child {border-right:0}
+.lm-moment .lm-moment-dates button[aria-pressed=true] {color:#fff8ea;background:#2a3029;box-shadow:inset 0 -3px #cb907e}
+.lm-moment .lm-moment-dates button:hover:not([aria-pressed=true]) {background:#e8dfcd}
+.lm-moment-dates time {font-weight:700;font-size:clamp(15px,1.4vw,20px)}
+.lm-moment-dates span {font-size:14px}
+.lm-moment .lm-moment-thesis {font:600 clamp(18px,1.6vw,25px)/1.53 var(--serif,Georgia,"SimSun",serif);color:var(--mc-ink);margin:19px 0 16px}
+.lm-moment-work {display:grid;grid-template-columns:minmax(0,1.3fr) minmax(320px,1fr);gap:clamp(16px,2.4vw,34px);align-items:start}
+.lm-moment .lm-moment-map {margin:0}
+.lm-moment-map svg {width:100%;height:auto;display:block;border:1px solid #a99b7e}
+.lm-moment-gridline {fill:none;stroke:#766d59;stroke-width:.6;stroke-dasharray:3 6;opacity:.75}
+.lm-moment-axis {font:12px var(--mono,monospace);fill:#5d5647;paint-order:stroke;stroke:#eae1cd;stroke-width:1.5}
+.lm-moment-pin {cursor:pointer;pointer-events:bounding-box}
+.lm-moment-pin:focus-visible {outline:none}
+.lm-moment-pin:focus-visible .lm-moment-hit,.lm-moment-pin:hover .lm-moment-hit {stroke:#91382b;stroke-width:1.5}
+.lm-moment-pin-label {font:700 17px var(--sans,system-ui,sans-serif);fill:#312c23;paint-order:stroke;stroke:#f3ebd8;stroke-width:4;stroke-linejoin:round;pointer-events:all}
+.lm-moment-pin.is-current .lm-moment-pin-label {fill:#832a20}
+.lm-moment-map figcaption {font-size:14px;line-height:1.55;color:var(--mc-muted);padding-top:8px}
+.lm-moment-map figcaption p {margin:6px 0 0;display:inline}
+.lm-moment-map figcaption a {display:inline-block;margin-left:8px}
+.lm-moment-key {display:flex;gap:12px;flex-wrap:wrap;color:var(--mc-ink)}
+.lm-moment-key span {display:inline-flex;align-items:center;gap:5px}
+.lm-moment-key i {border:2px dashed #3e3b32;width:11px;height:11px;border-radius:50%;display:block}
+.lm-moment-key .is-solid {background:#3e3b32;border-style:solid}
+.lm .lm-moment-register h3,.lm-moment-register h3 {font:700 25px/1.3 var(--serif,Georgia,"SimSun",serif);margin:0}
+.lm-moment .lm-moment-register>p {font-size:14px;color:var(--mc-muted);margin:1px 0 9px}
+.lm-moment .lm-moment-row {display:flex;gap:12px;align-items:center;justify-content:flex-start;text-align:start;border:none;border-top:1px solid var(--mc-line);background:transparent;width:100%;min-height:64px;padding:7px 9px;}
+.lm-moment .lm-moment-row:last-child {border-bottom:1px solid var(--mc-line)}
+.lm-moment .lm-moment-row:hover,.lm-moment .lm-moment-row[aria-pressed=true] {background:#e9dfcb}
+.lm-moment .lm-moment-row[aria-pressed=true] {box-shadow:inset 3px 0 var(--mc-red)}
+.lm-moment-rank {font:650 14px var(--mono,monospace)}
+.lm-moment-rowwords {flex:1;min-width:0;line-height:1.42}
+.lm-moment-rowwords strong,.lm-moment-rowwords>span {display:block}
+.lm-moment-rowwords strong {font-size:18px}
+.lm-moment-rowwords>span {font-size:15px;color:var(--mc-muted)}
+.lm-moment-tag {color:var(--mc-muted);font-size:14px;line-height:1.3;max-width:11ch}
+.lm-moment .t-on {color:#713024;font-weight:650}
+.lm-moment .lm-moment-document {margin-top:19px;border-block:1px solid var(--mc-line);border-left:3px solid var(--mc-red);padding:16px clamp(12px,1.2vw,19px);display:grid;gap:15px;grid-template-columns:minmax(170px,.55fr) minmax(0,1.5fr);align-items:start;background:#fcf9f1}
+.lm-moment-document-head>span {font-size:14px;color:var(--mc-red);font-weight:700}
+.lm-moment .lm-moment-document-head h3 {font:700 25px/1.33 var(--serif,Georgia,"SimSun",serif);margin:6px 0;color:var(--mc-ink)}
+.lm-moment-document-head b {font-size:14px;color:var(--mc-muted)}
+.lm-moment .lm-moment-body {font:500 18px/1.78 var(--serif,Georgia,"SimSun",serif);margin:0}
+.lm-moment .lm-moment-cites {margin-top:8px}
+.lm-moment .lm-moment-cites summary {display:list-item;list-style:revert;cursor:pointer;min-height:44px;line-height:1.5;padding:10px 0;font-size:16px;color:var(--mc-red);font-weight:650}
+.lm-moment-cites ol {padding-left:22px;margin:0}
+.lm-moment-cites li {padding:6px 0;font-size:16px}
+.lm-moment-cites small {display:block;color:var(--mc-muted);font-size:14px;line-height:1.55;margin-top:2px}
+@media (max-width:870px){
+ .lm-moment-work {grid-template-columns:minmax(0,1fr)}
+ .lm-moment .lm-moment-heading {grid-template-columns:1fr;gap:7px}
+ .lm-moment .lm-moment-dates button {flex-direction:column;justify-content:center;gap:2px}
+}
+@media (max-width:540px){
+ .lm-moment {padding:12px;margin-top:8px}
+ .lm-moment .lm-moment-heading {padding:15px 0}
+ .lm-moment .lm-moment-thesis {margin:12px 0}
+ .lm-moment .lm-moment-document {grid-template-columns:1fr;gap:7px}
+ .lm-moment-dates time {font-size:15px;line-height:1.35}
+ .lm-moment .lm-moment-dates button {padding:6px;min-height:55px}
+ .lm-moment-mast>span {font-size:13px}
+ .lm-moment-pin-label {font-size:25px}
+ .lm-moment-axis {font-size:16px}
+ .lm-moment .lm-moment-row {gap:7px}
+ .lm-moment-tag {max-width:9ch}
+}
+

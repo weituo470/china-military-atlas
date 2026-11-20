@@ -1,0 +1,47 @@
+{
+  "zh": {
+    "inputSha256": "ff3ecb5d88829f834cbccbe54d9541c1f554de49d4cb4e1076bbab979950f063",
+    "input": {
+      "integratedLUFS": -23.0,
+      "truePeakDBTP": -2.1
+    },
+    "master": {
+      "integratedLUFS": -19.1,
+      "truePeakDBTP": -1.8
+    },
+    "samplesPerChannel": 1138000,
+    "gainDB": 4.5,
+    "maxLimiterReductionDB": 4.15,
+    "timeReductionExceeds0p1DBPercent": 4.4
+  },
+  "en": {
+    "inputSha256": "fc48b37ffa7516f73e0910df23630a52306b9438f8201f1e2c20ba9ada063450",
+    "input": {
+      "integratedLUFS": -14.6,
+      "truePeakDBTP": -1.8
+    },
+    "master": {
+      "integratedLUFS": -19.0,
+      "truePeakDBTP": -6.2
+    },
+    "samplesPerChannel": 1420000,
+    "gainDB": -4.4,
+    "maxLimiterReductionDB": 0.0,
+    "timeReductionExceeds0p1DBPercent": 0.0
+  },
+  "ja": {
+    "inputSha256": "86b75238591d5d4d1bb7f4c798df8dc4ae1d93d7170b7f4ee122a3cbcd7b66e5",
+    "input": {
+      "integratedLUFS": -15.1,
+      "truePeakDBTP": -1.8
+    },
+    "master": {
+      "integratedLUFS": -19.0,
+      "truePeakDBTP": -5.7
+    },
+    "samplesPerChannel": 1600000,
+    "gainDB": -3.9,
+    "maxLimiterReductionDB": 0.0,
+    "timeReductionExceeds0p1DBPercent": 0.0
+  }
+}

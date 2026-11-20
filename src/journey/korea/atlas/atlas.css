@@ -1,0 +1,145 @@
+/* Stationary atlas and an independent reading pane. Neither the spoken paragraph
+   nor the selected plate is allowed to reflow or scroll the geography. */
+#root .journey-shell.korea-shell .korea-atlas-edition {
+  display:grid; grid-template-columns:minmax(0,1.18fr) minmax(0,1fr); grid-template-rows:minmax(0,1fr);
+  gap:clamp(18px,2.6vw,42px); padding:clamp(24px,4.3vh,48px) clamp(30px,4.8vw,80px);
+  color:var(--brief-ink); font-family:var(--brief-serif); pointer-events:auto;
+}
+.korea-atlas, .kr-reader { min-width:0; min-height:0; }
+.korea-atlas { display:grid; grid-template-rows:auto minmax(0,1fr) auto auto; overflow:hidden; }
+.ka-heading,.ka-phase,.kr-tabs,.ka-tools>div { display:flex; align-items:center; justify-content:space-between; gap:.4rem; }
+.ka-heading,.kr-tabs { min-height:2.3rem; border-top:2px solid #623c28; border-bottom:1px solid #826346; padding:.23rem 0; }
+.ka-heading b { font-size:clamp(1rem,1.5vw,1.5rem); letter-spacing:.065em; }
+.ka-heading>span,.ka-phase,.ka-key,.ka-tools,.kr-tabs { font-family:var(--brief-mono); }
+.ka-heading>span,.ka-phase { font-size:clamp(.72rem,1.05vw,.92rem); letter-spacing:.06em; }
+.ka-field { position:relative; min-height:0; overflow:hidden; isolation:isolate; margin-top:.45rem; border:1px solid #968d73; background:#cbdad2; }
+.ka-geography { display:block; width:100%; height:100%; }
+.ka-place { font:600 15px/1 Georgia,'Noto Serif SC',serif; fill:#282c27; stroke:#f4eed5; stroke-width:3.5; paint-order:stroke fill; }
+.ka-event .ka-place { fill:#812f23; }
+.ka-lat { font:bold 12px Consolas,monospace; fill:#3c5654; }
+.ka-current { animation:ka-expose .6s ease-out both; }
+@keyframes ka-expose { from {opacity:.23} to {opacity:1} }
+.ka-key { position:absolute; left:.5rem; top:.5rem; display:grid; gap:.21rem; padding:.4rem .48rem; border-left:2px solid #737f70; background:#f1ead8ed; color:#354539; font-size:clamp(.65rem,.86vw,.84rem); line-height:1.25; }
+.ka-key small { font:inherit; font-weight:bold; margin-bottom:.14rem; }
+.ka-key span { display:flex; align-items:center; gap:.3em; }
+.ka-key i { width:1.55em; height:0; border-top:3px solid #a03622; }
+.ka-key span:nth-of-type(2) i { border-top:2px dashed #594937; }
+.ka-key span:nth-of-type(3) i { border-top:2px dotted #345d6b; }
+.ka-notes { padding:.5rem 0 .15rem; }
+.ka-phase { color:var(--brief-mark); font-weight:700; }
+.ka-phase small { font:inherit; }
+.ka-notes h2 { margin:.14rem 0; font-size:clamp(1.14rem,1.7vw,1.8rem); line-height:1.2; }
+.ka-notes p { margin:.18rem 0 0; font-size:clamp(.88rem,1.08vw,1.1rem); line-height:1.45; }
+.ka-tools { display:flex; align-items:center; flex-wrap:wrap; column-gap:1rem; }
+.ka-tools input { appearance:auto; min-width:74px; width:0; flex:1 1 72px; height:28px; margin:0; cursor:pointer; accent-color:#843925; }
+.ka-tools>div { justify-content:flex-start; }
+.korea-atlas-edition button:is(.ka-play,.ka-follow,.kr-read-copy,.kr-read-plate) { appearance:none; border:1px solid #84664c; background:#f7eaca80; border-radius:0; padding:.35em .58em; min-height:29px; font:600 clamp(.69rem,.94vw,.94rem)/1.18 var(--brief-mono); color:#4f3829; cursor:pointer; }
+.korea-atlas-edition .ka-tools button[aria-pressed=true],.korea-atlas-edition .kr-tabs button[aria-pressed=true] { color:#fff4df; background:#62422e; border-color:#62422e; }
+.korea-atlas-edition :is(button,input,.korea-copy):focus-visible { outline:2px solid #803623; outline-offset:-2px; }
+.kr-reader { display:grid; grid-template-rows:auto minmax(0,1fr); }
+.kr-tabs { justify-content:flex-start; }
+#root .journey-shell.korea-shell .kr-reader .korea-brief-sheet { width:100%; min-height:0; height:100%; display:flex; flex-direction:column; gap:.6rem; overflow:hidden; scrollbar-gutter:auto; padding:.65rem 0 .12rem; }
+.kr-reader .korea-copy { flex:0 1 auto; max-height:70%; width:100%; align-self:stretch; overflow:auto; padding:0 .25rem 0 0; }
+.kr-reader .korea-copy header { margin-bottom:.46rem; padding-bottom:.38rem; }
+.kr-reader .korea-material-tag { margin-bottom:.3rem; }
+.kr-reader .korea-title { font-size:clamp(1.35rem,2.24vw,2.5rem); }
+#root .journey-shell.korea-shell .kr-reader .korea-spoken { font-size:clamp(1.04rem,1.3vw,1.45rem); line-height:1.58; }
+.kr-reader .korea-map-note { margin-top:.45rem; }
+.kr-reader .korea-plate { flex:1 1 0; width:100%; min-height:0; align-items:center; justify-content:flex-end; overflow:auto; }
+.kr-reader .korea-plate img { width:100%; height:0; min-height:0; flex:1 1 0; object-fit:contain; object-position:center bottom; }
+.kr-reader .korea-plate-caption { width:100%; margin-top:.28rem; padding-top:.28rem; }
+.kr-reader[data-view=copy] .korea-plate-caption p { display:none; }
+.kr-reader[data-view=plate] .korea-copy { display:none; }
+.kr-reader[data-view=plate] .korea-plate { justify-content:center; }
+.kr-reader[data-view=plate] .korea-plate img { max-height:75%; }
+@media(max-width:720px) and (orientation:portrait) {
+  #root .journey-shell.korea-shell .korea-atlas-edition { grid-template-columns:minmax(0,1fr); grid-template-rows:minmax(0,1.5fr) minmax(0,1fr); gap:.55rem; padding:clamp(17px,3vh,30px) clamp(17px,5vw,32px); }
+  .korea-atlas { grid-template-columns:minmax(0,1.22fr) minmax(0,1fr); grid-template-rows:auto minmax(0,1fr) auto; column-gap:.55rem; }
+  .ka-heading,.ka-tools { grid-column:1/-1; }
+  .ka-field { grid-column:1; grid-row:2; margin-top:.28rem; }
+  .ka-notes { grid-row:2; grid-column:2; align-self:center; max-height:100%; overflow:auto; padding:0; }
+  .ka-notes h2 { font-size:1.02rem; line-height:1.19; }
+  .ka-notes p { font-size:.81rem; line-height:1.36; }
+  .ka-phase { flex-wrap:wrap; font-size:.67rem; }
+  .ka-key { position:static; background:none; border:none; padding:0; font-size:.63rem; gap:.06rem; }
+  .ka-field .ka-key { display:none; }
+  .ka-heading,.kr-tabs { min-height:1.75rem; }
+  .ka-tools { column-gap:.42rem; }
+  .ka-tools>div { gap:.18rem; }
+  .kr-reader .korea-copy { flex:1; max-height:none; }
+  .kr-reader[data-view=copy] .korea-plate { display:none; }
+  .kr-reader .korea-material-tag { font-size:.68rem; }
+  .kr-reader .korea-title { font-size:1.2rem; }
+  #root .journey-shell.korea-shell .kr-reader .korea-brief-sheet { padding-top:.22rem; }
+  #root .journey-shell.korea-shell .kr-reader .korea-spoken { font-size:1rem; line-height:1.55; }
+  .kr-reader[data-view=plate] .korea-plate { display:block; overflow-y:auto; }
+  .kr-reader[data-view=plate] .korea-plate img { height:auto; max-height:none; aspect-ratio:4/3; }
+}
+.ka-notes>.ka-key { display:none; }
+@media(max-width:720px) and (orientation:portrait) {
+  .ka-notes>.ka-key { display:grid; margin-top:.35rem; }
+}
+@media(max-height:550px) and (orientation:landscape) {
+  #root .journey-shell.korea-shell .korea-atlas-edition { padding:10px 3vw; gap:1rem; }
+  .ka-heading,.kr-tabs { min-height:1.6rem; }
+  .ka-heading b { font-size:.9rem; }
+  .ka-notes p,.kr-reader[data-view=copy] .korea-plate { display:none; }
+  .kr-reader .korea-copy { max-height:100%; flex:1; }
+}
+@media(prefers-reduced-motion:reduce) { .ka-current { animation:none; } }
+/* Use the same chart aperture for every date, including stages with longer notes. */
+@media (min-width:721px), (orientation:landscape) {
+  .korea-atlas { grid-template-columns:minmax(0,1.85fr) minmax(0,1fr); grid-template-rows:auto minmax(0,1fr) auto; gap:.45rem clamp(.6rem,1.3vw,1.4rem); }
+  .ka-heading,.ka-tools { grid-column:1/-1; }
+  .ka-field { margin:0; grid-column:1; grid-row:2; }
+  .ka-notes { grid-column:2; grid-row:2; min-height:0; align-self:center; overflow:auto; max-height:100%; padding:0; }
+  .ka-notes h2 { margin:.45rem 0; }
+  .ka-notes p { line-height:1.5; }
+  .ka-phase { align-items:flex-start; flex-wrap:wrap; }
+  .ka-field>.ka-key { display:none; }
+  .ka-notes>.ka-key { display:grid; border:0; border-top:1px solid #826346; margin-top:1rem; padding:.65rem 0 0; background:none; font-size:clamp(.72rem,.9vw,.9rem); gap:.28rem; }
+}
+@media(max-height:790px) and (min-width:721px) {
+  .kr-reader[data-view=copy] .korea-plate { flex-direction:row; align-items:center; gap:.6rem; justify-content:flex-start; border-top:1px solid #805a3966; padding-top:.3rem; }
+  .kr-reader[data-view=copy] .korea-plate img { flex:0 1 48%; width:48%; height:100%; object-position:left center; }
+  .kr-reader[data-view=copy] .korea-plate-caption { flex:1; min-width:0; border:0; padding:0; margin:0; }
+}
+@media(max-width:720px) and (orientation:portrait) {
+  .ka-place { font-size:21px; }
+  .ka-lat { font-size:15px; }
+}
+.ka-region { font:600 13px Georgia,'Noto Serif SC',serif; fill:#515c52; letter-spacing:1px; }
+.ka-river { font:italic 13px Georgia,'Noto Serif SC',serif; fill:#435d60; paint-order:stroke fill; stroke:#d6d4b9; stroke-width:2; }
+#root:has(.korea-shell) .globe-fallback { clip-path:inset(50%); width:1px; height:1px; overflow:hidden; }
+.ka-notes>.ka-key { position:static; }
+@media(max-width:720px) and (orientation:portrait) {
+  #root .korea-shell .journey-toolbar button { padding:.4em .48em; font-size:.81rem; }
+  #root .korea-shell .journey-player-actions { display:grid; grid-template-columns:minmax(0,1fr) auto auto; gap:.32rem; align-items:center; }
+  #root .korea-shell .journey-player-actions button { padding:.36em .48em; font-size:.84rem; min-height:2rem; }
+  #root .korea-shell .journey-player-time { font-size:.77rem; white-space:nowrap; }
+  #root .korea-shell .paragraph-reader button { font-size:.82rem; }
+  #root .korea-shell .journey-progress-actions button { font-size:.82rem; }
+}
+@media(max-width:720px) and (orientation:portrait) {
+  #root .journey-shell.korea-shell .korea-atlas-edition { padding-block:clamp(24px,4vh,36px); }
+}
+.ka-heading>span { margin-left:auto; }
+.korea-atlas-edition .ka-size { padding:.28em .46em; font:600 clamp(.64rem,.84vw,.83rem)/1.25 var(--brief-mono); color:#4c3829; background:#f7eaca80; border:1px solid #84664c; cursor:pointer; }
+#root .korea-shell.ka-wide .korea-atlas-edition { grid-template-columns:minmax(0,1fr); grid-template-rows:minmax(0,1fr); }
+.ka-wide .kr-reader { display:none; }
+#root .korea-shell.ka-wide .journey-progress > :is(ol,.journey-progress-actions,.journey-hints,.journey-window,.paragraph-reader) { display:none; }
+#root .korea-shell.ka-wide .journey-progress { display:flex; justify-content:center; }
+#root .korea-shell.ka-wide .journey-player-bar { width:min(100%,37rem); }
+.ka-wide .ka-notes h2 { font-size:clamp(1.32rem,2.5vw,2.6rem); }
+.ka-wide .ka-notes>p { font-size:clamp(.94rem,1.35vw,1.5rem); }
+.ka-wide .ka-notes { scrollbar-color:#886e52 transparent; }
+.ka-subtitle { margin-top:1rem; border-top:1px solid #826346; padding-top:.55rem; }
+.ka-subtitle small { font:600 .8rem var(--brief-mono); color:var(--brief-mark); }
+.ka-subtitle p { margin:.2rem 0; line-height:1.5; font-size:clamp(.96rem,1.25vw,1.3rem); }
+@media(max-width:720px) and (orientation:portrait) {
+  .ka-wide .korea-atlas { grid-template-columns:minmax(0,1fr); grid-template-rows:auto minmax(0,1fr) minmax(6.5rem,24%) auto; row-gap:.25rem; }
+  .ka-wide .ka-field { grid-area:2/1; }
+  .ka-wide .ka-notes { grid-area:3/1; max-height:100%; align-self:stretch; }
+  .ka-wide .ka-notes>.ka-key { display:flex; flex-wrap:wrap; gap:.35rem; }
+  .ka-wide .ka-subtitle { margin-top:.35rem; }
+}

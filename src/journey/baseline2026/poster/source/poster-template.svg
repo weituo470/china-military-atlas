@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1000 1414.21356" preserveAspectRatio="none" width="100%" height="100%">
+<title>中国军力｜交互地球数字展厅</title>
+<defs>
+<style>
+text{fill:#192e32;font-family:'Noto Sans SC','Microsoft YaHei',sans-serif}
+.serif{font-family:'Noto Serif SC','SimSun',serif;font-weight:670}
+.latin{font-family:Georgia,serif}
+.mono{font-family:Consolas,'Courier New',monospace}
+.jp{font-family:'Yu Gothic','Microsoft YaHei',sans-serif}
+.white{fill:#f5efe0}.light{fill:#c2c9bf}.red{fill:#b93d2a}.brass{fill:#e7b781}
+</style>
+<pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r=".6" fill="#b4a991"/></pattern>
+<linearGradient id="ground" x1="0" y1="0" x2=".9" y2="1" gradientUnits="objectBoundingBox"><stop stop-color="#f7f2e7"/><stop offset="1" stop-color="#efe8d9"/></linearGradient>
+<g id="mark" fill="none" stroke="currentColor" stroke-width="1.7"><circle r="14"/><ellipse rx="20" ry="5.8" transform="rotate(-34)"/><path d="M0 -14C-8 -8 -8 8 0 14M0 -14C7 -8 7 8 0 14" stroke-width="1"/></g>
+<clipPath id="hero"><rect x="0" y="310" width="1000" height="710"/></clipPath>
+</defs>
+<rect width="1000" height="1415" fill="url(#ground)"/>
+<!-- Masthead -->
+<use xlink:href="#mark" transform="translate(65 44)" color="#ab3d2e"/>
+<text x="96" y="49" font-size="15" font-weight="620" letter-spacing="2.4">交互地球数字展厅</text>
+<text x="285" y="48" font-size="12" class="mono" letter-spacing="1.4">INTERACTIVE EARTH ATLAS</text>
+<text x="948" y="50" text-anchor="end" class="mono" font-size="17" letter-spacing="1.5">EXHIBITION  /  2026</text>
+<path d="M49 70H951" stroke="#375055" stroke-width="1.35"/>
+<rect x="49" y="68.2" width="87" height="3.4" fill="#ac3929"/>
+<!-- Large, live vector lettering retained in the press PDF -->
+<text x="43" y="242" font-size="184" class="serif" style="font-weight:900" textLength="911" lengthAdjust="spacingAndGlyphs">中国军力</text>
+<text x="53" y="299" font-size="43" class="latin" font-style="italic">China’s Military Power</text>
+<text x="948" y="294" font-size="16" text-anchor="end" class="jp" letter-spacing="3.6" lang="ja">中国の軍事力</text>
+<path d="M50 320H950" stroke="#7c837b" stroke-width=".7"/>
+<!-- Astronomical plate: schematic orbit, not a route or a deployment map. -->
+<g clip-path="url(#hero)">
+<rect x="0" y="322" width="1000" height="698" fill="url(#grid)" opacity=".34"/>
+<g transform="translate(630 662) rotate(-23)">
+<ellipse rx="402" ry="77" fill="none" stroke="#a84c35" stroke-width="1.65"/>
+<ellipse rx="414" ry="82" fill="none" stroke="#ab9b7e" stroke-width=".6" stroke-dasharray="2.5 5"/>
+</g>
+<image x="279" y="338" width="679" height="679" xlink:href="{{GLOBE}}"/>
+<g transform="translate(630 662) rotate(-23)">
+<path d="M -402 0 A 402 77 0 0 0 402 0" fill="none" stroke="#f3e0b0" stroke-width="4.7"/>
+<path d="M -402 0 A 402 77 0 0 0 402 0" fill="none" stroke="#b73c29" stroke-width="2.8"/>
+</g>
+</g>
+<!-- Marginal headline / reading key -->
+<path d="M52 397H87" stroke="#ad3b29" stroke-width="3.5"/>
+<text x="52" y="427" class="mono red" font-size="12" letter-spacing="2">ACROSS TIME</text>
+<text x="48" y="499" class="serif" font-size="58" letter-spacing="-1.5">从战国，</text>
+<text x="48" y="571" class="serif" font-size="58" letter-spacing="-1.5">到月背。</text>
+<text x="53" y="617" class="latin" font-style="italic" font-size="19.2">From the Warring States</text>
+<text x="53" y="643" class="latin" font-style="italic" font-size="19.2">to the lunar far side.</text>
+<text x="53" y="683" class="jp" font-size="14.5" lang="ja">戦国時代から、月の裏側へ。</text>
+<g transform="translate(53 849)">
+<path d="M0 0H145" fill="none" stroke="#89908a" stroke-width=".85"/>
+<circle cx="0" cy="0" r="3.1" fill="#b73c29"/>
+<text y="27" class="mono" font-size="11.5" letter-spacing="1.6">GLOBE  /  01</text>
+<text y="57" font-size="17" class="serif">东亚与西太平洋</text>
+<text y="83" class="latin" font-style="italic" font-size="15">East Asia and the</text>
+<text y="103" class="latin" font-style="italic" font-size="15">Western Pacific</text>
+</g>
+<!-- The lower gallery is made of three actual pieces from the project. -->
+<rect x="0" y="1022" width="1000" height="394" fill="#152e34"/>
+<path d="M0 1022H1000" stroke="#ba503a" stroke-width="3"/>
+<text x="50" y="1078" font-size="31" class="serif white" letter-spacing="1">转动地球，走进历史现场。</text>
+<text x="948" y="1076" text-anchor="end" class="mono brass" font-size="12.4" letter-spacing="1.6">INSIDE THE EXHIBITION</text>
+<image x="51" y="1102" width="289" height="121" preserveAspectRatio="xMidYMid slice" xlink:href="{{WAR}}"/>
+<image x="356" y="1102" width="289" height="121" preserveAspectRatio="xMidYMid slice" xlink:href="{{SHIP}}"/>
+<image x="661" y="1102" width="289" height="121" preserveAspectRatio="xMidYMid slice" xlink:href="{{MOON}}"/>
+<g class="mono" style="font-size:13px">
+<text x="51" y="1258" class="mono brass">01</text><text x="356" y="1258" class="mono brass">02</text><text x="661" y="1258" class="mono brass">03</text></g>
+<g style="font-size:22px;letter-spacing:1.2px">
+<text x="82" y="1259" class="serif white">战国行军图</text><text x="387" y="1259" class="serif white">海上阅舰式</text><text x="692" y="1259" class="serif white">嫦娥六号着陆点</text></g>
+<text x="82" y="1283" font-size="14.5" class="latin light">Warring States · illustration</text>
+<text x="387" y="1283" font-size="14.5" class="latin light">Fleet review · live 3D scene</text>
+<text x="692" y="1283" font-size="14.5" class="latin light">Chang’e 6 · lunar orbital image</text>
+<path d="M51 1305H950" stroke="#698082" stroke-width=".8"/>
+<text x="51" y="1340" class="brass" font-size="16" letter-spacing="2">展览专题</text>
+<text x="162" y="1341" font-size="17.5" class="white" textLength="787" lengthAdjust="spacingAndGlyphs">古代战争　·　红军长征　·　抗美援朝　·　抗灾动员　·　工业实力　·　军力现状　·　科研航天</text>
+<text x="52" y="1381" font-size="11.5" class="light">地球底图：NASA Blue Marble　 /　 月面影像：NASA / Goddard / Arizona State University</text>
+<text x="949" y="1381" text-anchor="end" class="mono brass" font-size="12.5" letter-spacing="1">CHINA’S MILITARY POWER</text>
+</svg>

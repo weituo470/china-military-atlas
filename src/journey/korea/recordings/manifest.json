@@ -1,0 +1,152 @@
+{
+  "en": {
+    "voice": "Microsoft Zira Desktop",
+    "beats": {
+      "hook": {
+        "duration": 75.1764,
+        "starts": [
+          0.0,
+          24.6755,
+          56.3447
+        ],
+        "textHash": "a54c6f9df2660f25f6f2808902b94374856994dd50e8472b572672995d16c44f",
+        "audioHash": "bf289f8619e4cecb08cbdb98f2d627bcffa684957cf77eaef27d696881bc56bb"
+      },
+      "why": {
+        "duration": 84.8548,
+        "starts": [
+          0.0,
+          27.9346,
+          56.2099
+        ],
+        "textHash": "d1b28168a7a73368bfd90e1689272295a39490cc35ead41a44d1c14d77632b6c",
+        "audioHash": "d69eacf0e5effe85465d890f06c847ba82f9e65c0875b64c6274ad1955cac3f9"
+      },
+      "means": {
+        "duration": 83.5355,
+        "starts": [
+          0.0,
+          29.6799,
+          60.8147
+        ],
+        "textHash": "a9be16fd521cd9057a1d58b08dc86da2ad9d32bcf85d8f32cdf2ef9b9562e21f",
+        "audioHash": "89847b54b97a347381cfb5c0390eee3a2a712b6074f017462277c5289836dd0c"
+      },
+      "hardship": {
+        "duration": 99.3277,
+        "starts": [
+          0.0,
+          36.084,
+          66.4687
+        ],
+        "textHash": "4610cabe7a85477bdc6b1202f7639e09e8714e5acab81dee59a391aa5d4c2fd7",
+        "audioHash": "c95eab65ff6880ba9a775711efe61590e68dae1dd52ca24e06a357fc712c65bc"
+      },
+      "unexpected": {
+        "duration": 75.4164,
+        "starts": [
+          0.0,
+          14.3672,
+          46.1816
+        ],
+        "textHash": "7be29e4c4d05f8c48262065da4f245592f248928573262be346a7e1aadce8812",
+        "audioHash": "d063c0e4f68b60da4dd5cf2552254413b292e1a3c073f2bb92dd47fd0030a934"
+      },
+      "world": {
+        "duration": 70.8915,
+        "starts": [
+          0.0,
+          21.161,
+          44.0567
+        ],
+        "textHash": "f7d4efb9d3f004268fe8588d1a9df0ff7f42e71055489221e12394095e74838c",
+        "audioHash": "d8cb2162c9d595b59356a56cce43f1604a9f61e12bd9599b1fedc0ff1ce6ecfb"
+      },
+      "close": {
+        "duration": 42.8072,
+        "starts": [
+          0.0,
+          11.0678,
+          29.4545
+        ],
+        "textHash": "96e6d9b305d6db3b34e51aa2193ede0904f04fbee16b33bc3e104a0fecc22754",
+        "audioHash": "ddb14116d3a60d95c89f4b2c1cf297cd13f8d4aedc3f020652e7e4b78af3e9b2"
+      }
+    }
+  },
+  "ja": {
+    "voice": "Google Translate Japanese TTS",
+    "beats": {
+      "hook": {
+        "duration": 102.6,
+        "starts": [
+          0.0,
+          38.004,
+          77.856
+        ],
+        "textHash": "aa042718138ed6b1409af911ddb454c9c9c093598aa9262d7a3fdc38a8e009de",
+        "audioHash": "07e2aca887c591ef8bd9aec8f304e2ea14f1fe3bdf9abfc8535ece1cd0adb9f0"
+      },
+      "why": {
+        "duration": 107.208,
+        "starts": [
+          0.0,
+          37.404,
+          70.512
+        ],
+        "textHash": "9aa67cba96701bfa65a1c707a82ad837f135b5b0e67b503975e961a3bde8baef",
+        "audioHash": "81e27de00066ba1153461c03d88712940ddfe2c5efaf4e2ef990ddc204b43076"
+      },
+      "means": {
+        "duration": 102.96,
+        "starts": [
+          0.0,
+          35.58,
+          69.816
+        ],
+        "textHash": "4896e5a159b29378031a7300fa4b25a111284d7df7b68bfb34a174a9b7379fc5",
+        "audioHash": "162b9cf9cdd871ed2fc2fbc45a3068cc2db6636c26ae1d6b77f20205acfe36e8"
+      },
+      "hardship": {
+        "duration": 117.528,
+        "starts": [
+          0.0,
+          41.676,
+          80.208
+        ],
+        "textHash": "9c269d796def1abdc8ddda47c8189d0a8f37cfd5d14ca11bd8564d991bb33e2e",
+        "audioHash": "770b1ed3da6b82fc450016290a42d169c666183486b5c5796b1145e37bca477f"
+      },
+      "unexpected": {
+        "duration": 81.312,
+        "starts": [
+          0.0,
+          18.228,
+          55.632
+        ],
+        "textHash": "2ae2999be346f658d2616c09b57f583ebed6ee1d02871e8170cecfed65344bad",
+        "audioHash": "cae1ac4f148f3a4befd47bd391066670127b164dd810e74d4a2b4efa1f076db0"
+      },
+      "world": {
+        "duration": 93.312,
+        "starts": [
+          0.0,
+          26.076,
+          58.608
+        ],
+        "textHash": "84f528c6c205fc0d770f5322f523c95c93bc5d91c391fcff9e725b8462d89f97",
+        "audioHash": "6a05e7c0b250c30cbfbcda5150b5d4721ae50157317125f9b467198ca88533f9"
+      },
+      "close": {
+        "duration": 52.44,
+        "starts": [
+          0.0,
+          15.084,
+          37.992
+        ],
+        "textHash": "bc6af67d2b439247db17b9f47542f386f8b3a9c60f90bff7776dafc184c896d1",
+        "audioHash": "0f795b52132f230bf1808d349d379006a28c608b9b1f8d06ff76fa13237294a3"
+      }
+    }
+  }
+}

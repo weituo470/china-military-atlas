@@ -1,0 +1,94 @@
+{
+  "opening": {
+    "title": {
+      "zh": "月球地平线上的地球",
+      "en": "Earthrise over the lunar horizon"
+    },
+    "alt": {
+      "zh": "灰色的月面延伸至画面右下方，蓝白色地球悬在黑暗中。",
+      "en": "A blue and white Earth hangs in black space above the grey lunar horizon."
+    },
+    "note": {
+      "zh": "1968 年，比尔·安德斯从阿波罗 8 号拍下《地出》。用作地月尺度的开场，不是中国航天任务照片。",
+      "en": "Bill Anders took Earthrise from Apollo 8 in 1968. It sets the Earth–Moon scale; this is not a photograph from a Chinese mission."
+    },
+    "author": "NASA / Bill Anders",
+    "license": "NASA Image and Media Usage Guidelines",
+    "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+    "sourceUrl": "https://science.nasa.gov/resource/apollo-8s-iconic-earthrise/",
+    "originalTitle": "Apollo 8’s Iconic Earthrise (AS08-14-2383)",
+    "edits": {
+      "zh": "将原始胶片扫描旋转至月面在下，裁为 16:9，调整黑白点，转为 WebP。",
+      "en": "Film scan rotated to put the lunar horizon below Earth, cropped to 16:9, levels adjusted and converted to WebP."
+    }
+  },
+  "moon": {
+    "title": {
+      "zh": "嫦娥六号着陆点：来自月球轨道的目击",
+      "en": "Chang’e 6 landing site from lunar orbit"
+    },
+    "alt": {
+      "zh": "灰色月面上布满阴影长短不一的环形坑，中央分段圆环圈出着陆器的亮点。",
+      "en": "Craters and their shadows cover a grey lunar landscape. A broken ring marks the bright point of the lander in the centre."
+    },
+    "note": {
+      "zh": "2024 年 6 月 7 日，美国月球勘测轨道器 LRO 在月背阿波罗盆地拍到嫦娥六号着陆器；并非着陆器自拍。",
+      "en": "NASA’s Lunar Reconnaissance Orbiter imaged the Chang’e 6 lander in the Apollo basin on 7 June 2024. It is not an image taken by the lander."
+    },
+    "author": "NASA / Goddard / Arizona State University",
+    "license": "NASA Image and Media Usage Guidelines",
+    "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+    "sourceUrl": "https://www.nasa.gov/centers-and-facilities/goddard/nasas-lro-spots-chinas-change-6-spacecraft-on-lunar-far-side/",
+    "originalTitle": "NASA’s LRO Spots China’s Chang’e 6 Spacecraft on Lunar Far Side",
+    "edits": {
+      "zh": "从原图中心裁为 16:9，轻调对比度，加分段圆环标示着陆器位置，转为 WebP。",
+      "en": "Centre-cropped to 16:9, slightly increased contrast, added a broken ring around the lander and converted to WebP."
+    }
+  },
+  "beidou": {
+    "title": {
+      "zh": "北斗三号展品细节：星体与网状天线",
+      "en": "BeiDou-3 model detail: spacecraft body and mesh antennas"
+    },
+    "alt": {
+      "zh": "金色星体居中，上下两副网状天线的杆件清晰可见；紫色太阳翼向两侧伸出，翼端未入画。",
+      "en": "A gold spacecraft body sits between two mesh antennas. The purple solar wings extend beyond both edges of the frame."
+    },
+    "note": {
+      "zh": "2022 年香港创科博览展览现场的北斗三号卫星模型，不是在轨飞行器的照片。",
+      "en": "A BeiDou-3 model exhibited at Hong Kong’s InnoTech Expo in 2022; not a photograph of an orbiting satellite."
+    },
+    "author": "AKAMGO yalms",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Beidou-3_Satellite_Mockup.jpg",
+    "originalTitle": "Beidou-3 Satellite Mockup.jpg",
+    "edits": {
+      "zh": "从 1920×1441 展览照片原生裁取 1280×720 局部。太阳翼端部及上方网状天线的一部分未入画，未放大或擦除内容；转为 WebP，本改编图沿用 CC BY-SA 4.0。",
+      "en": "A native 1280×720 detail crop from a 1920×1441 photograph; wing tips and part of the upper mesh antenna are outside the frame. No upscaling or retouching. Converted to WebP and shared under CC BY-SA 4.0."
+    }
+  },
+  "closing": {
+    "title": {
+      "zh": "从轨道看黄海夜色",
+      "en": "Night lights over the Yellow Sea"
+    },
+    "alt": {
+      "zh": "黄色的微弱大气辉光勾出弯曲的地球边缘，沿岸城市和海面灯光在云间发亮。",
+      "en": "Faint amber airglow traces Earth’s curved limb. City lights and lights on the water shine through gaps in the clouds."
+    },
+    "note": {
+      "zh": "2021 年 10 月 30 日摄于国际空间站。画面展示黄海周边的夜间灯光，不是天宫空间站拍摄。",
+      "en": "Photographed from the International Space Station on 30 October 2021, this view shows night lights around the Yellow Sea. It was not taken from Tiangong."
+    },
+    "author": "NASA / ISS Crew Earth Observations Facility, Johnson Space Center",
+    "license": "NASA Image and Media Usage Guidelines",
+    "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+    "sourceUrl": "https://science.nasa.gov/earth/earth-observatory/yellow-sea-night-lights-149388/",
+    "originalTitle": "Yellow Sea Night Lights (ISS066-E-25062)",
+    "edits": {
+      "zh": "沿地球边缘与城市灯光裁为 16:9，缩小并转为 WebP。",
+      "en": "Cropped to 16:9 to retain the limb and city lights, downsampled and converted to WebP."
+    }
+  }
+}

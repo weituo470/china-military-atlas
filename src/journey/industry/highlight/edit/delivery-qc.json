@@ -1,0 +1,71 @@
+{
+  "resolution": [
+    1920,
+    1080
+  ],
+  "fps": 24,
+  "colorSpace": "BT.709",
+  "deliverables": [
+    {
+      "file": "films/industry-zh.mp4",
+      "frames": 569,
+      "duration": "23.708333",
+      "video": "h264",
+      "profile": "High",
+      "bytes": 27673416,
+      "sha256": "b337a5794fc82b93a256d63004edb19a8ee8db6b7e40d0e42f098b8497cba9ed",
+      "decode": "pass"
+    },
+    {
+      "file": "edit/industry-clean.mov",
+      "frames": 569,
+      "duration": "23.708333",
+      "video": "prores",
+      "profile": "LT",
+      "bytes": 255064893,
+      "sha256": "b499c6c1f30ee1207dcdb65db271696d188f175d130bdc9d1a09cc5b6271557d",
+      "decode": "pass"
+    },
+    {
+      "file": "films/industry-en.mp4",
+      "frames": 710,
+      "duration": "29.583333",
+      "video": "h264",
+      "profile": "High",
+      "bytes": 33227099,
+      "sha256": "041253de1696023c21ce689b2645dc2a3876ee3780a92c726427f267cab0a13a",
+      "decode": "pass"
+    },
+    {
+      "file": "edit/industry-clean-en.mov",
+      "frames": 710,
+      "duration": "29.583333",
+      "video": "prores",
+      "profile": "LT",
+      "bytes": 318019733,
+      "sha256": "94d805764fe060b86e87ebe13cf9316f83e10e1ae740fe026d7d3c6eee317909",
+      "decode": "pass"
+    },
+    {
+      "file": "films/industry-ja.mp4",
+      "frames": 800,
+      "duration": "33.333333",
+      "video": "h264",
+      "profile": "High",
+      "bytes": 37573764,
+      "sha256": "faadb53cfad6fc9725a52aea61d205c05c2e46d375b3d876e1ba31f5393162ee",
+      "decode": "pass"
+    },
+    {
+      "file": "edit/industry-clean-ja.mov",
+      "frames": 800,
+      "duration": "33.333333",
+      "video": "prores",
+      "profile": "LT",
+      "bytes": 359125269,
+      "sha256": "dfa5b3148efc83b79064632554779f976c7b9261721295281f4aabc00df34015",
+      "decode": "pass"
+    }
+  ],
+  "editorKitCRC": "pass"
+}

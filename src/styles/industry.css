@@ -1,0 +1,386 @@
+/* Industry chassis lore surface — a contemporary technical dossier / blueprint sheet.
+   Distinguished from the 2026 cream torn 卷宗, the Warring States parchment, and Korea briefing cards.
+   Single-line engineering drawings live in the plate; the globe must stay visible around the edges. */
+
+@import './codex.css';
+
+.industry-shell {
+  --ind-paper: #f4f7f9;
+  --ind-ink: #163048;
+  --ind-ink-soft: #4a6578;
+  --ind-rule: #1e4d6b;
+  --ind-cyan: #2a6f8f;
+  --ind-grid: rgba(30, 77, 107, 0.09);
+}
+
+.industry-codex {
+  padding-bottom: max(148px, calc(env(safe-area-inset-bottom) + 136px));
+}
+
+.industry-codex .codex-vignette {
+  background:
+    radial-gradient(ellipse at 50% 42%, transparent 36%, rgba(2, 8, 14, .28) 72%, rgba(2, 8, 14, .55) 100%);
+  opacity: .7;
+}
+
+.industry-stage {
+  width: min(1680px, 86vw);
+  transform-origin: 50% 50%;
+}
+
+.industry-stage.is-compact {
+  width: min(1680px, 84vw);
+}
+
+.industry-stage.is-opening {
+  animation: industry-sheet-settle .72s cubic-bezier(.18, .75, .2, 1) both;
+}
+
+.industry-stage.is-closing {
+  animation: industry-sheet-lift .42s ease both;
+}
+
+@keyframes industry-sheet-settle {
+  0% { opacity: 0; transform: translateY(16px) scale(.975); }
+  100% { opacity: 1; transform: none; }
+}
+
+@keyframes industry-sheet-lift {
+  0% { opacity: 1; transform: none; }
+  100% { opacity: 0; transform: translateY(8px) scale(.985); }
+}
+
+.industry-paper {
+  position: relative;
+  width: 100%;
+  max-height: min(72vh, calc(100vh - 200px));
+  background:
+    linear-gradient(to right, rgba(30, 77, 107, 0.05) 1px, transparent 1px) 0 0 / 28px 28px,
+    linear-gradient(to bottom, rgba(30, 77, 107, 0.05) 1px, transparent 1px) 0 0 / 28px 28px,
+    var(--ind-paper);
+  border: 1px solid rgba(22, 48, 72, 0.45);
+  box-shadow:
+    0 18px 32px rgba(0, 0, 0, .48),
+    0 1px 0 rgba(255, 255, 255, .6) inset;
+  color: var(--ind-ink);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.industry-paper::before,
+.industry-paper::after {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border-color: var(--ind-rule);
+  border-style: solid;
+  pointer-events: none;
+}
+
+.industry-paper::before { top: 6px; left: 6px; border-width: 1px 0 0 1px; }
+.industry-paper::after { top: 6px; right: 6px; border-width: 1px 1px 0 0; }
+
+.industry-paper-sheet {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 18px 22px 16px;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  gap: 8px;
+}
+
+.industry-titleblock {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  border-bottom: 1px solid rgba(22, 48, 72, 0.28);
+  padding-bottom: 8px;
+  font-family: "IBM Plex Mono", Consolas, monospace;
+}
+
+.industry-titleblock small {
+  color: var(--ind-cyan);
+  font-size: var(--text-ui);
+  letter-spacing: .16em;
+  text-transform: uppercase;
+}
+
+.industry-titleblock .industry-en-title {
+  color: var(--ind-ink-soft);
+  font-size: var(--text-ui);
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.industry-paper-sheet .codex-title {
+  margin: 0;
+  color: var(--ind-ink);
+  font-family: "Noto Serif SC", "Source Han Serif SC", "Songti SC", serif;
+  font-size: clamp(20px, 2.1vw, 30px);
+  font-weight: 600;
+  letter-spacing: .08em;
+  line-height: 1.25;
+}
+
+.industry-split {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px 16px;
+  min-height: 0;
+  align-items: start;
+}
+
+.industry-paper.has-plate .industry-split {
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+}
+
+.industry-copy { min-width: 0; }
+
+.industry-spoken {
+  margin: 0;
+  font-family: "Noto Serif SC", "Source Han Serif SC", "Songti SC", serif;
+  font-size: var(--text-copy);
+  line-height: 1.7;
+  color: var(--ind-ink);
+}
+
+.industry-motto {
+  margin: 8px 0 0;
+  font-size: var(--text-copy);
+  letter-spacing: .12em;
+  color: var(--ind-rule);
+}
+
+.industry-caution {
+  margin: 8px 0 0;
+  font-family: "IBM Plex Mono", Consolas, monospace;
+  font-size: var(--text-copy);
+  line-height: 1.55;
+  color: var(--ind-ink-soft);
+}
+
+.industry-source-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 8px 0 0;
+}
+
+.industry-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 3px 8px;
+  font-family: "IBM Plex Mono", Consolas, monospace;
+  font-size: var(--text-ui);
+  letter-spacing: .06em;
+  color: var(--ind-rule);
+  border: 1px solid var(--ind-rule);
+  background: rgba(255, 255, 255, 0.55);
+}
+
+.industry-tag.is-dashed {
+  border-style: dashed;
+  color: #35586c;
+}
+
+.industry-tag.is-law {
+  border-width: 1.5px;
+}
+
+.industry-plate {
+  position: relative;
+  min-height: 0;
+  padding: 8px 8px 4px;
+  border: 1px solid rgba(22, 48, 72, 0.28);
+  background: rgba(255, 255, 255, 0.46);
+}
+
+.industry-plate.is-dashed {
+  border-style: dashed;
+}
+
+.industry-plate-corners {
+  position: absolute;
+  inset: 3px;
+  pointer-events: none;
+}
+
+.industry-plate-corners i {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-color: var(--ind-cyan);
+  border-style: solid;
+}
+
+.industry-plate-corners i:nth-child(1) { top: 0; left: 0; border-width: 1px 0 0 1px; }
+.industry-plate-corners i:nth-child(2) { top: 0; right: 0; border-width: 1px 1px 0 0; }
+.industry-plate-corners i:nth-child(3) { bottom: 0; left: 0; border-width: 0 0 1px 1px; }
+.industry-plate-corners i:nth-child(4) { bottom: 0; right: 0; border-width: 0 1px 1px 0; }
+
+.industry-schematic-tag {
+  position: absolute;
+  top: 6px;
+  right: 8px;
+  z-index: 1;
+  font-family: "IBM Plex Mono", Consolas, monospace;
+  font-size: var(--text-ui);
+  letter-spacing: .12em;
+  color: var(--ind-cyan);
+}
+
+.industry-plate-draw { width: 100%; }
+
+.industry-svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.industry-plate-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+  object-position: center;
+  background: #fff;
+}
+
+.industry-plate.is-dense {
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+  min-height: 0;
+}
+
+.industry-plate.is-dense .industry-plate-draw {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: stretch;
+}
+
+.industry-plate.is-dense .industry-svg,
+.industry-plate.is-dense .industry-plate-img {
+  width: 100%;
+  height: auto;
+}
+
+.industry-plate-caption {
+  margin: 2px 6px 4px;
+  font-family: "IBM Plex Mono", Consolas, monospace;
+  font-size: var(--text-copy);
+  color: var(--ind-ink-soft);
+  line-height: 1.45;
+}
+
+.industry-plate-caption span {
+  display: block;
+  margin-top: 2px;
+}
+
+.industry-quote {
+  margin: 8px 0 0;
+  padding: 8px 10px;
+  border-left: 2px solid var(--ind-rule);
+  font-size: var(--text-copy);
+  line-height: 1.65;
+  color: var(--ind-ink);
+}
+
+.industry-quote footer {
+  margin-top: 4px;
+  font-family: "IBM Plex Mono", Consolas, monospace;
+  font-size: var(--text-copy);
+  color: var(--ind-ink-soft);
+}
+
+.industry-jumps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.industry-jump {
+  pointer-events: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+  padding: 6px 10px;
+  border: 1px solid var(--ind-rule);
+  background: rgba(255, 255, 255, 0.7);
+  color: var(--ind-ink);
+  cursor: pointer;
+  font: inherit;
+  text-align: left;
+}
+
+.industry-jump:hover,
+.industry-jump:focus-visible {
+  background: #e7eef3;
+}
+
+.industry-jump small {
+  font-family: "IBM Plex Mono", Consolas, monospace;
+  font-size: var(--text-ui);
+  color: var(--ind-ink-soft);
+}
+
+.industry-jump strong {
+  font-size: var(--text-ui);
+  letter-spacing: .04em;
+}
+
+.industry-player-codex .industry-seal {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 1px solid var(--ind-rule);
+  background:
+    radial-gradient(circle at 50% 50%, #f7fafc 0 58%, #d5e2ea 59% 100%);
+  color: var(--ind-rule);
+  cursor: pointer;
+  font-family: "Noto Serif SC", serif;
+  font-size: var(--text-ui);
+  letter-spacing: .08em;
+}
+
+.industry-player-codex .industry-seal.is-playing {
+  box-shadow: 0 0 0 2px rgba(30, 77, 107, 0.25);
+}
+
+.industry-player-codex .industry-seal:disabled {
+  opacity: .45;
+  cursor: not-allowed;
+}
+
+.industry-shell .journey-progress button.is-active {
+  border-color: var(--ind-cyan);
+}
+
+@media (max-width: 860px) {
+  .industry-stage,
+  .industry-stage.is-compact {
+    width: min(92vw, 1680px);
+  }
+  .industry-paper {
+    max-height: min(70vh, calc(100vh - 180px));
+  }
+  .industry-paper.has-plate .industry-split {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .industry-stage.is-opening,
+  .industry-stage.is-closing {
+    animation: none;
+  }
+}

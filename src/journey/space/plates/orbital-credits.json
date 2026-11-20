@@ -1,0 +1,96 @@
+{
+  "dfh": {
+    "title": {
+      "zh": "东方红一号展览复制品",
+      "en": "Dong Fang Hong 1 exhibit replica"
+    },
+    "alt": {
+      "zh": "展厅中一颗带细长天线的多面体卫星悬挂在蓝色背景前，金属表面反射着顶灯的光。",
+      "en": "A faceted satellite replica hangs against a blue exhibition wall. Thin antennas extend sideways and the metal faces reflect the overhead light."
+    },
+    "note": {
+      "zh": "摄于 2011 年呼和浩特航天科技展。图中是复制品，不是 1970 年升空的卫星。",
+      "en": "Photographed at a space technology exhibition in Hohhot in 2011. This is a replica, not the satellite launched in 1970."
+    },
+    "author": "Brücke-Osteuropa",
+    "license": "CC0 1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "originalTitle": "DFH-1 Satellite.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:DFH-1_Satellite.jpg",
+    "edits": {
+      "zh": "裁为 16:9，轻微调整色调，缩放并转为 WebP。",
+      "en": "Cropped to 16:9, lightly tone-adjusted, resized and encoded as WebP."
+    }
+  },
+  "launch": {
+    "title": {
+      "zh": "文昌，长征五号遥八转运",
+      "en": "Long March 5 Y8 rollout at Wenchang"
+    },
+    "alt": {
+      "zh": "白色火箭与橙色转运平台直立在林地间的道路上，远处可见水面和海岸。",
+      "en": "A white rocket stands on an orange mobile platform on a route through low coastal woodland."
+    },
+    "note": {
+      "zh": "本次嫦娥六号任务的长征五号遥八。画面记录的是发射前垂直转运，不是点火瞬间。",
+      "en": "The Long March 5 Y8 assigned to Chang’e 6. This pre-launch rollout is not a picture of liftoff."
+    },
+    "author": "中国新闻社 / China News Service",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+    "originalTitle": "Long March 5 Y8 rollout 02.png",
+    "originalMediaUrl": "https://www.youtube.com/watch?v=mvcW4FIMhlA",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Long_March_5_Y8_rollout_02.png",
+    "edits": {
+      "zh": "沿用署名文件页提供的节目截帧，裁为 16:9，轻微调整色调，转为 WebP。",
+      "en": "Based on the credited Commons video still, cropped to 16:9, lightly tone-adjusted and encoded as WebP."
+    }
+  },
+  "tiangong": {
+    "title": {
+      "zh": "天宫，三舱构型示意",
+      "en": "Tiangong: three-module configuration"
+    },
+    "alt": {
+      "zh": "以地球弧面为背景的空间站渲染图。白色舱段在画面中央相连，深蓝色太阳翼向上下两侧伸展。",
+      "en": "In a rendering above Earth’s curved horizon, white modules meet at the center of the station while blue solar wings extend above and below."
+    },
+    "note": {
+      "zh": "2022 年初公开论文中的建成构型渲染，用于识别舱段关系，不是在轨实拍。",
+      "en": "An early-2022 research publication illustrated the planned completed configuration. This is a rendering, not an in-orbit photograph."
+    },
+    "author": "Jiang Zhihong et al.",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "originalTitle": "CSSphase1.jpg",
+    "originalMediaUrl": "https://spj.sciencemag.org/journals/space/2022/9832053/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:CSSphase1.jpg",
+    "edits": {
+      "zh": "裁为 16:9，轻微调整色调，缩放并转为 WebP。",
+      "en": "Cropped to 16:9, lightly tone-adjusted, resized and encoded as WebP."
+    }
+  },
+  "fast": {
+    "title": {
+      "zh": "贵州平塘，中国天眼 FAST",
+      "en": "FAST in Pingtang, Guizhou"
+    },
+    "alt": {
+      "zh": "巨大的银色碗状反射面嵌在绿色群山间，周围分布着支撑塔与缆索。",
+      "en": "A vast silver dish sits in a hollow among green mountains, surrounded by support towers and cables."
+    },
+    "note": {
+      "zh": "贵州平塘 FAST 现场照片，摄于 2025 年 8 月；不是 2020 年验收活动照片。",
+      "en": "Photographed at FAST, Pingtang, in August 2025. This does not depict the 2020 acceptance review."
+    },
+    "author": "SCJiang",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "originalTitle": "202508 FAST (Five-hundred-meter Aperture Spherical radio Telescope).jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:202508_FAST_(Five-hundred-meter_Aperture_Spherical_radio_Telescope).jpg",
+    "edits": {
+      "zh": "裁为 16:9，轻微调整色调，缩放并转为 WebP。",
+      "en": "Cropped to 16:9, lightly tone-adjusted, resized and encoded as WebP."
+    }
+  }
+}

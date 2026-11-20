@@ -1,0 +1,8 @@
+On-device screenshot OCR assets — loaded from this site only, on demand.
+worker.min.js: tesseract.js 7.0.0, https://github.com/naptha/tesseract.js
+tesseract-core-lstm.wasm.js: tesseract.js-core 7.0.0, https://github.com/naptha/tesseract.js-core
+Single non-SIMD LSTM core with embedded WASM, for compatibility.
+chi_sim.traineddata.gz, eng.traineddata.gz: Tesseract tessdata_fast 4.1.0
+https://github.com/tesseract-ocr/tessdata_fast/tree/4.1.0
+The upstream traineddata files are gzip-compressed without content changes.
+Apache License 2.0; see accompanying license and third-party notices.

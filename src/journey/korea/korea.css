@@ -1,0 +1,239 @@
+/* Korea only: a steady, torn-paper briefing with an uncropped illustration. */
+.korea-shell {
+  --brief-ink: #301c11;
+  --brief-muted: #64452c;
+  --brief-mark: #752c20;
+  --brief-serif: 'EB Garamond', 'Noto Serif SC', 'Songti SC', SimSun, Georgia, serif;
+  --brief-mono: 'IBM Plex Mono', Consolas, monospace;
+}
+
+.korea-shell .journey-brand small,
+.korea-shell .journey-window {
+  color: #e0c896;
+}
+
+.korea-codex {
+  z-index: 7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  isolation: isolate;
+  pointer-events: none;
+}
+
+.korea-vignette {
+  position: absolute;
+  inset: 0 -3vw;
+  background: radial-gradient(ellipse at center, transparent 48%, rgba(4, 9, 14, .55) 100%);
+  mask-image: linear-gradient(transparent, black 18% 80%, transparent);
+}
+
+/* The shared reading grid reserves the surrounding rows for controls.
+   Size against the remaining row, not the viewport height. */
+#root .journey-shell.korea-shell .korea-stage {
+  position: relative;
+  width: min(100%, 96rem);
+  flex: 1 1 0;
+  margin: 0;
+  min-height: 0;
+  display: flex;
+}
+
+#root .journey-shell.korea-shell .korea-brief {
+  width: 100%;
+  box-sizing: border-box;
+  padding: clamp(2rem, 5.5vh, 3.5rem) clamp(2.5rem, 6vw, 6rem);
+  background: linear-gradient(115deg,#ede3ca,#e5d5b7);
+  filter: drop-shadow(0 16px 20px rgba(0, 0, 0, .52));
+}
+
+#root .journey-shell.korea-shell .korea-brief-sheet {
+  box-sizing: border-box;
+  width: 100%;
+  flex: 1 1 auto;
+  min-height: 0;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: minmax(0, 1fr);
+  column-gap: clamp(1.25rem, 3.3vw, 3.5rem);
+  padding: .25rem 0;
+  overflow: visible;
+  color: var(--brief-ink);
+  font-family: var(--brief-serif);
+  pointer-events: auto;
+  animation: korea-sheet-change .25s ease-out both;
+}
+
+#root .journey-shell.korea-shell .korea-brief-sheet.has-plate {
+  grid-template-columns: minmax(0, 1.12fr) minmax(0, 1fr);
+}
+
+@keyframes korea-sheet-change {
+  from { opacity: .68; }
+  to { opacity: 1; }
+}
+
+.korea-copy {
+  min-width: 0;
+  min-height: 0;
+  align-self: center;
+  max-height: 100%;
+  overflow: auto;
+  overscroll-behavior: contain;
+  scrollbar-color: #987452 transparent;
+}
+
+.korea-copy header {
+  border-block-end: 1px solid #805a394d;
+  padding-block-end: clamp(.55rem, 1.4vh, 1rem);
+  margin-block-end: clamp(.55rem, 1.6vh, 1.15rem);
+}
+
+.korea-material-tag,
+.korea-plate-meta {
+  color: var(--brief-mark);
+  font-family: var(--brief-mono);
+  font-size: var(--text-meta);
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: .055em;
+}
+
+.korea-material-tag { margin: 0 0 .6rem; }
+.korea-material-tag span { margin-inline: .25em; }
+
+.korea-title {
+  margin: 0;
+  font-size: clamp(1.55rem, 2.5vw, 2.8rem);
+  font-weight: 700;
+  line-height: 1.18;
+  text-wrap: balance;
+}
+
+#root .journey-shell.korea-shell .korea-spoken {
+  margin: 0;
+  font-size: clamp(1.125rem, 1.42vw, 1.55rem);
+  line-height: 1.7;
+  text-wrap: pretty;
+}
+
+.korea-aside {
+  margin: .65rem 0 0;
+  color: var(--brief-muted);
+  font-size: var(--text-meta);
+  line-height: 1.5;
+}
+
+.korea-map-note {
+  margin-block-start: .75rem;
+  color: var(--brief-muted);
+}
+
+.korea-map-note p { margin: 0; font-size: var(--text-ui); }
+
+.korea-map-note .map-cue {
+  border: 1px solid #805a3966;
+  padding: .4em .65em;
+  background: #ffefd543;
+  text-align: start;
+}
+
+.korea-map-note .map-cue:hover { background: #ffefd5; }
+.korea-map-note .map-cue:focus-visible { outline: 2px solid var(--brief-mark); outline-offset: -2px; }
+
+.korea-plate {
+  min-width: 0;
+  min-height: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.korea-plate img {
+  display: block;
+  width: 100%;
+  height: auto;
+  min-height: 0;
+  flex: 0 1 auto;
+  object-fit: contain;
+  /* When height is limited, bring the whole photo down to the caption. */
+  object-position: center bottom;
+}
+
+.korea-plate-caption {
+  flex: none;
+  margin-block-start: .5rem;
+  padding-block-start: .45rem;
+  border-block-start: 1px solid #805a3966;
+  line-height: 1.4;
+  color: var(--brief-muted);
+}
+
+.korea-plate-meta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: .15rem .65rem;
+}
+
+.korea-plate-caption strong {
+  display: block;
+  margin-block-start: .28rem;
+  color: var(--brief-ink);
+  font-size: var(--text-copy);
+}
+
+.korea-plate-caption p { margin: .15rem 0 0; font-size: var(--text-ui); }
+
+/* Keep the single playback bar and reading controls accessible on the bottom row. */
+#root .korea-shell .journey-hints { flex-basis: auto; font-size: var(--text-meta); }
+
+
+@media (max-width: 880px), (max-height: 550px) {
+  #root .journey-shell.korea-shell .korea-brief {
+    padding: clamp(1.65rem, 5vh, 3rem) clamp(1.5rem, 8vw, 4.25rem);
+  }
+
+  #root .journey-shell.korea-shell .korea-brief-sheet {
+    display: flex;
+    flex-direction: column;
+    gap: 1.15rem;
+    overflow: auto;
+    scrollbar-gutter: stable;
+    scrollbar-color: #987452 transparent;
+  }
+
+  /* Stack at natural heights; scroll the sheet instead of compressing photos. */
+  .korea-copy,
+  .korea-plate { flex: none; }
+  .korea-copy { align-self: stretch; max-height: none; overflow: visible; padding-inline-end: .3rem; }
+  .korea-plate { width: min(100%, 30rem); align-self: center; }
+  .korea-plate img { flex: none; }
+}
+
+@media (max-width: 720px) {
+  /* Reserve the same control rows before and after fonts / narration load. */
+  #root .journey-shell.korea-shell .journey-progress {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+  }
+
+  .korea-shell .journey-progress > :is(ol, .journey-player-bar),
+  .korea-shell[lang='en'] .paragraph-reader { grid-column: 1 / -1; }
+  .korea-shell .paragraph-reader [role='group'] {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+    gap: .3rem;
+  }
+  .korea-shell .paragraph-reader [role='group'] span { white-space: nowrap; }
+  .korea-shell .paragraph-reader button { padding-inline: .3em; }
+}
+
+@media (max-width: 365px) {
+  .korea-shell .paragraph-reader { grid-column: 1 / -1; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #root .journey-shell.korea-shell .korea-brief-sheet { animation: none; }
+}

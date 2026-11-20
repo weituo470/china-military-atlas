@@ -1,0 +1,9 @@
+{
+  "title": "Below the Waterline",
+  "width": 1920,
+  "height": 1080,
+  "fps": 24,
+  "timing": "../edit/timing.json",
+  "renderer": "render.py",
+  "voices": "existing I7 recordings; unaltered speed"
+}

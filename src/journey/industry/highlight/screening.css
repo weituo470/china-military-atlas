@@ -1,0 +1,90 @@
+.industry-shell .industry-film-trigger {
+  display: inline-flex;
+  align-items: center;
+  gap: .36em;
+  white-space: nowrap;
+}
+
+.industry-screening {
+  box-sizing: border-box;
+  width: min(61rem, calc(100vw - 2rem));
+  max-width: none;
+  max-height: calc(100dvh - 2rem);
+  margin: auto;
+  padding: 0;
+  overflow: auto;
+  overscroll-behavior: contain;
+  pointer-events: auto;
+  border: 1px solid #9ba19f;
+  color: #edeeeb;
+  background: #1c1f1f;
+  box-shadow: 0 1rem 6rem #0009;
+  color-scheme: dark;
+}
+.industry-screening::backdrop { background: rgba(10, 12, 12, .90); }
+.industry-screening-sheet :is(header, footer) {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .5rem 1.25rem;
+  padding: .7rem clamp(.8rem, 2.6vw, 1.5rem);
+}
+.industry-screening-sheet header { border-bottom: 1px solid #777c79; }
+.industry-screening-sheet small,
+.industry-screening-sheet footer {
+  font: 500 .81rem/1.35 "IBM Plex Mono", Consolas, monospace;
+  color: #ced2ce;
+}
+.industry-screening-sheet small { letter-spacing: .1em; }
+.industry-screening-sheet small span { margin: 0 .3em; }
+.industry-screening-sheet h2 {
+  margin: .2rem 0 0;
+  color: #f5f5f2;
+  font-size: clamp(1.1rem, 2.15vw, 1.6rem);
+  line-height: 1.15;
+  letter-spacing: .025em;
+}
+.industry-screening-sheet video {
+  display: block;
+  width: 100%;
+  max-height: calc(100dvh - 13rem);
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+  background: #0c0e0d;
+}
+.industry-screening-sheet footer { flex-wrap: wrap; border-top: 1px solid #787d7a; }
+.industry-screening-files { display: flex; flex-wrap: wrap; gap: .4rem; }
+.industry-screening-sheet :is(button, a) {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .65rem;
+  min-height: 2.5rem;
+  padding: .3rem .8rem;
+  border: 1px solid #9ba19e;
+  background: transparent;
+  color: #f0f2ef;
+  font-family: inherit;
+  font-size: .9rem;
+  line-height: 1.3;
+  text-decoration: none;
+  cursor: pointer;
+}
+.industry-screening-sheet :is(button, a):hover { background: #393e3c; }
+.industry-screening-sheet :is(button, a, video):focus-visible {
+  outline: 2px solid white;
+  outline-offset: -3px;
+}
+.industry-screening-notice {
+  display: grid;
+  place-items: center;
+  min-height: 9rem;
+  margin: 0;
+  padding: 1rem;
+  text-align: center;
+}
+@media (max-width: 35rem), (max-height: 30rem) {
+  .industry-screening { width: calc(100vw - 1rem); max-height: calc(100dvh - 1rem); }
+  .industry-screening-sheet :is(header, footer) { padding: .4rem .65rem; }
+  .industry-screening-sheet video { max-height: max(7rem, calc(100dvh - 9rem)); }
+}

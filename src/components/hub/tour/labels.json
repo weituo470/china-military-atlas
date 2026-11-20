@@ -1,0 +1,14 @@
+{
+ "zh":["事件导览","暂停","继续","点击开始播讲","重新播放","上一段","下一段","重试音频","作者的追问","普通话"],
+ "en":["Audio tour","Pause","Resume","Start audio","Replay","Previous","Next","Retry audio","The author’s question","English"],
+ "ja":["音声ガイド","一時停止","再開","音声を開始","もう一度聴く","前へ","次へ","再試行","作者の問い","日本語"],
+ "fr":["Parcours audio","Pause","Reprendre","Démarrer l’audio","Réécouter","Précédent","Suivant","Réessayer","La question de l’auteur","Français"],
+ "ru":["Аудиогид","Пауза","Продолжить","Начать прослушивание","Сначала","Назад","Далее","Повторить","Вопрос автора","Русский"],
+ "ko":["오디오 가이드","일시 정지","계속 듣기","재생 시작","다시 듣기","이전","다음","다시 시도","저자의 질문","영어 음성"],
+ "fil":["Gabay na audio","I-pause","Ipagpatuloy","Simulang pakinggan","Ulitin","Nakaraan","Susunod","Subukan muli","Tanong ng may-akda","Audio sa Ingles"],
+ "id":["Tur audio","Jeda","Lanjutkan","Putar audio","Putar ulang","Sebelumnya","Berikutnya","Coba lagi","Pertanyaan penulis","Audio bahasa Inggris"],
+ "es":["Recorrido sonoro","Pausar","Continuar","Iniciar audio","Repetir","Anterior","Siguiente","Reintentar","La pregunta del autor","Audio en inglés"],
+ "de":["Audiotour","Pause","Fortsetzen","Audio starten","Wiederholen","Zurück","Weiter","Erneut versuchen","Die Frage des Autors","Audio auf Englisch"],
+ "pt":["Visita em áudio","Pausar","Continuar","Iniciar áudio","Repetir","Anterior","Seguinte","Tentar novamente","A pergunta do autor","Áudio em inglês"],
+ "ar":["الجولة الصوتية","إيقاف مؤقت","متابعة","بدء الصوت","إعادة التشغيل","السابق","التالي","إعادة المحاولة","سؤال المؤلف","الصوت بالإنجليزية"]
+}

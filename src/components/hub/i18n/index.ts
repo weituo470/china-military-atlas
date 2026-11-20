@@ -1,0 +1,15 @@
+import type { HubCopy, HubLocale } from './locales'
+import zh from './zh'
+import en from './en'
+import ja from './ja'
+import ko from './ko'
+import fil from './fil'
+import id from './id'
+import es from './es'
+import fr from './fr'
+import de from './de'
+import pt from './pt'
+import ru from './ru'
+import ar from './ar'
+
+export const catalog = { zh, en, ja, ko, fil, id, es, fr, de, pt, ru, ar } satisfies Record<HubLocale, HubCopy>

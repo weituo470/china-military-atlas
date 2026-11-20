@@ -1,0 +1,51 @@
+:root {
+  font-size: 100%;
+  --text-copy: 1.125rem;
+  --text-ui: 1rem;
+  --text-meta: .875rem;
+  font-family: Inter, "Microsoft YaHei UI", "PingFang SC", system-ui, sans-serif;
+  color: #f0ece3;
+  background: #02050a;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  --space-black: #02050a;
+  --ink-blue: #07101a;
+  --ivory: #f0ece3;
+  --muted: rgba(225, 232, 230, 0.57);
+  --faint: rgba(220, 232, 234, 0.28);
+  --line: rgba(192, 218, 224, 0.16);
+  --atmosphere: #76d9f4;
+  --human: #d9b574;
+  --heat: #e66c45;
+}
+
+* { box-sizing: border-box; }
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  background: var(--space-black);
+}
+
+body { font-size: var(--text-copy); }
+button, input, select { font: inherit; }
+
+button,
+a { -webkit-tap-highlight-color: transparent; }
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible {
+  outline: 1px solid var(--atmosphere);
+  outline-offset: 4px;
+}
+
+::selection {
+  color: var(--space-black);
+  background: var(--human);
+}

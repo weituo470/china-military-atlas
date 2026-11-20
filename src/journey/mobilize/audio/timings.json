@@ -1,0 +1,200 @@
+{
+  "zh": {
+    "hook": {
+      "duration": 52.604,
+      "starts": [
+        0.0,
+        19.978,
+        37.076
+      ]
+    },
+    "system": {
+      "duration": 58.748,
+      "starts": [
+        0.0,
+        17.914,
+        41.42
+      ]
+    },
+    "floods": {
+      "duration": 58.8,
+      "starts": [
+        0.0,
+        20.218,
+        42.36
+      ]
+    },
+    "wenchuan": {
+      "duration": 49.172,
+      "starts": [
+        0.0,
+        16.042,
+        33.26
+      ]
+    },
+    "epidemic": {
+      "duration": 59.756,
+      "starts": [
+        0.0,
+        18.658,
+        39.62
+      ]
+    },
+    "warning": {
+      "duration": 57.096,
+      "starts": [
+        0.0,
+        22.474,
+        42.456
+      ]
+    },
+    "rebuild": {
+      "duration": 46.344,
+      "starts": [
+        0.0,
+        15.422,
+        33.12
+      ]
+    },
+    "close": {
+      "duration": 47.228,
+      "starts": [
+        0.0,
+        15.778,
+        32.66
+      ]
+    }
+  },
+  "en": {
+    "hook": {
+      "duration": 66.524,
+      "starts": [
+        0.0,
+        22.426,
+        46.1
+      ]
+    },
+    "system": {
+      "duration": 72.524,
+      "starts": [
+        0.0,
+        22.666,
+        49.7
+      ]
+    },
+    "floods": {
+      "duration": 69.778,
+      "starts": [
+        0.0,
+        20.842,
+        51.586
+      ]
+    },
+    "wenchuan": {
+      "duration": 58.748,
+      "starts": [
+        0.0,
+        20.53,
+        39.452
+      ]
+    },
+    "epidemic": {
+      "duration": 68.252,
+      "starts": [
+        0.0,
+        20.53,
+        44.588
+      ]
+    },
+    "warning": {
+      "duration": 69.468,
+      "starts": [
+        0.0,
+        28.738,
+        52.954
+      ]
+    },
+    "rebuild": {
+      "duration": 53.026,
+      "starts": [
+        0.0,
+        17.64,
+        37.81
+      ]
+    },
+    "close": {
+      "duration": 50.732,
+      "starts": [
+        0.0,
+        17.962,
+        35.156
+      ]
+    }
+  },
+  "ja": {
+    "hook": {
+      "duration": 78.284,
+      "starts": [
+        0.0,
+        24.298,
+        52.268
+      ]
+    },
+    "system": {
+      "duration": 81.812,
+      "starts": [
+        0.0,
+        26.314,
+        58.364
+      ]
+    },
+    "floods": {
+      "duration": 82.186,
+      "starts": [
+        0.0,
+        29.314,
+        57.442
+      ]
+    },
+    "wenchuan": {
+      "duration": 69.14,
+      "starts": [
+        0.0,
+        23.002,
+        47.036
+      ]
+    },
+    "epidemic": {
+      "duration": 85.868,
+      "starts": [
+        0.0,
+        26.53,
+        56.228
+      ]
+    },
+    "warning": {
+      "duration": 83.364,
+      "starts": [
+        0.0,
+        34.546,
+        60.994
+      ]
+    },
+    "rebuild": {
+      "duration": 69.322,
+      "starts": [
+        0.0,
+        20.76,
+        49.906
+      ]
+    },
+    "close": {
+      "duration": 61.292,
+      "starts": [
+        0.0,
+        23.362,
+        46.412
+      ]
+    }
+  }
+}

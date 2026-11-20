@@ -1,0 +1,1195 @@
+/* 2026 baseline lore surface — torn 卷宗 paper, laid flat at the center.
+   Official voice: cream dossier sheet. External estimates: cool-gray hatched sheet.
+   Motion matches Chapter I parchment (720ms settle / 420ms lift + fade).
+   Does not reuse Chapter I bamboo or parchment-sheet.webp. */
+
+@import './codex.css';
+
+.baseline-codex {
+  --dossier-paper: #f3efe4;
+  --dossier-ink: #1b2430;
+  --dossier-ink-soft: #4a5562;
+  --dossier-rule: #8a3b32;
+  --estimate-paper: #e7edf2;
+  --estimate-ink: #1c2a34;
+  --estimate-band: #5b6f7c;
+}
+
+.baseline-stage {
+  width: min(1680px, 86vw);
+  max-height: min(62vh, calc(100vh - 340px));
+  transform-origin: 50% 50%;
+}
+
+.baseline-stage.is-compact {
+  width: min(1680px, 84vw);
+  max-height: min(62vh, calc(100vh - 340px));
+}
+
+.baseline-stage.is-opening {
+  animation: baseline-sheet-settle .72s cubic-bezier(.18, .75, .2, 1) both;
+}
+
+.baseline-stage.is-closing {
+  animation: baseline-sheet-lift .42s ease both;
+}
+
+@keyframes baseline-sheet-settle {
+  0% {
+    opacity: 0;
+    transform: translateY(18px) scale(.97);
+    filter: brightness(.92);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+    filter: none;
+  }
+}
+
+@keyframes baseline-sheet-lift {
+  0% {
+    opacity: 1;
+    transform: none;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(10px) scale(.98);
+  }
+}
+
+/* Drop-shadow lives on the wrapper so mix-blend-mode: multiply on
+   printed plates composites against the sheet, not an isolated
+   (transparent = black) filter group. */
+.baseline-paper-cast {
+  width: 100%;
+  max-width: 100%;
+  max-height: min(62vh, calc(100vh - 340px));
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  filter:
+    drop-shadow(0 22px 36px rgba(0, 0, 0, .62))
+    drop-shadow(0 4px 8px rgba(0, 0, 0, .4));
+}
+
+.baseline-paper {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  max-height: min(62vh, calc(100vh - 340px));
+  aspect-ratio: 2000 / 1208;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  min-height: 0;
+  background: linear-gradient(110deg,#f3f1e8,#e2e4df);
+}
+
+.baseline-paper.is-estimate {
+  background-image: linear-gradient(110deg,#e9e8df,#d9dfdd);
+}
+
+.baseline-paper-sheet {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  /* Vertical padding in vh, not width-%, so a wide sheet does not
+     collapse the right-column plate into a short box. */
+  padding: 5.2vh 10.5% 6.8vh 9.5%;
+  overflow: hidden;
+  color: var(--dossier-ink);
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  min-height: 0;
+  height: 100%;
+}
+
+.baseline-paper.is-estimate .baseline-paper-sheet {
+  color: var(--estimate-ink);
+}
+
+.baseline-paper-split {
+  flex: 1 1 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.55em 1.3em;
+  min-height: 0;
+  align-items: start;
+}
+
+.baseline-paper.has-plate .baseline-paper-split {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.22fr);
+  align-items: stretch;
+  flex: 1 1 0%;
+  min-height: min(38vh, 380px);
+}
+
+.baseline-copy {
+  min-width: 0;
+}
+
+.baseline-paper-sheet .codex-material-tag {
+  color: var(--dossier-rule);
+}
+
+.baseline-paper.is-estimate .codex-material-tag {
+  color: var(--estimate-band);
+}
+
+.baseline-paper-sheet .codex-kicker {
+  margin: 0 0 4px;
+  color: var(--dossier-rule);
+  font-family: "IBM Plex Mono", Consolas, monospace;
+  font-size: var(--text-meta);
+  font-style: normal;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+}
+
+.baseline-paper.is-estimate .codex-kicker {
+  color: var(--estimate-band);
+}
+
+.baseline-paper-sheet .codex-title {
+  margin: 0 0 8px;
+  color: var(--dossier-ink);
+  font-family: "Noto Serif SC", "Source Han Serif SC", "Songti SC", serif;
+  font-size: clamp(22px, 2.3vw, 34px);
+  font-weight: 600;
+  letter-spacing: .06em;
+  line-height: 1.25;
+}
+
+.baseline-paper.is-estimate .codex-title {
+  color: var(--estimate-ink);
+}
+
+.baseline-paper-sheet .codex-aside,
+.baseline-paper-sheet .codex-spoken,
+.baseline-paper-sheet .codex-geo-caution,
+.baseline-paper-sheet .codex-plate-caption,
+.baseline-paper-sheet .codex-overlay-caption {
+  font-family: "Noto Serif SC", "Source Han Serif SC", "Songti SC", Inter, serif;
+}
+
+.baseline-paper-sheet .codex-spoken {
+  color: var(--dossier-ink);
+  text-shadow: none;
+}
+
+.baseline-paper.is-estimate .codex-spoken {
+  color: var(--estimate-ink);
+}
+
+.baseline-paper-sheet .codex-geo-caution,
+.baseline-paper-sheet .codex-plate-caption {
+  color: rgba(70, 80, 90, .7);
+}
+
+/* Paintings sit in the paper — no boxed frame, no hanging inset. */
+.baseline-plate {
+  margin: 0;
+  min-width: 0;
+  min-height: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+}
+
+.baseline-plate .codex-plate-caption {
+  flex: 0 0 auto;
+}
+
+.baseline-plate figure {
+  border: 0;
+  box-shadow: none;
+  background: transparent;
+  overflow: hidden;
+  flex: 1 1 0%;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.baseline-plate img,
+.baseline-plate[data-aspect="3:4"] img,
+.baseline-plate[data-aspect="4:3"] img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  object-position: center;
+  background: transparent;
+  /* Never combine mix-blend-mode and filter on this element: a CSS
+     filter isolates the image, so multiply composites against black
+     and the plate goes near-black. The SVGs already have a cream
+     ground (#f7f4ee) that sits on the sheet. */
+  mix-blend-mode: normal;
+  filter: none;
+}
+
+.baseline-paper.is-estimate .baseline-plate img {
+  filter: none;
+}
+
+.baseline-plate .codex-overlay-caption {
+  position: static;
+  flex: 0 0 auto;
+  padding: 4px 2px 0;
+  background: none;
+  color: var(--dossier-ink-soft);
+  text-shadow: none;
+}
+
+.baseline-card blockquote {
+  margin: 10px 0 0;
+  padding: 8px 0 0;
+  border-top: 1px dashed rgba(192, 218, 224, .2);
+  color: rgba(232, 236, 231, .7);
+  font-size: var(--text-copy);
+  line-height: 1.65;
+}
+
+.baseline-seal {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 92px;
+  min-height: 92px;
+  padding: 8px 10px;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.baseline-seal-face {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 86px;
+  height: 86px;
+  border-radius: 50%;
+  border: 3px solid #9b2c2c;
+  background:
+    radial-gradient(circle at 50% 50%, rgba(155, 44, 44, .08), transparent 62%),
+    #f4efe4;
+  box-shadow:
+    inset 0 0 0 6px rgba(155, 44, 44, .12),
+    0 6px 14px rgba(0, 0, 0, .28);
+  color: #9b2c2c;
+  font-family: "Noto Serif SC", "Songti SC", serif;
+  font-size: var(--text-ui);
+  font-weight: 500;
+  letter-spacing: .18em;
+  transform: rotate(-8deg);
+  transition: transform .2s ease, box-shadow .2s ease, filter .2s ease;
+}
+
+.baseline-seal-face em {
+  font-style: normal;
+  max-width: 4.5em;
+  text-align: center;
+  line-height: 1.25;
+}
+
+.baseline-seal:hover:not(:disabled) .baseline-seal-face,
+.baseline-seal:focus-visible .baseline-seal-face {
+  filter: brightness(1.06);
+  transform: rotate(-8deg) translateY(-1px);
+  box-shadow:
+    inset 0 0 0 6px rgba(155, 44, 44, .16),
+    0 0 0 1px rgba(217, 181, 116, .45),
+    0 10px 18px rgba(0, 0, 0, .35);
+}
+
+.baseline-seal:focus-visible { outline: none; }
+
+.baseline-seal:disabled {
+  cursor: default;
+  opacity: .45;
+}
+
+.baseline-seal.is-playing .baseline-seal-face {
+  background:
+    radial-gradient(circle at 50% 50%, rgba(155, 44, 44, .18), transparent 62%),
+    #f0e4d6;
+  box-shadow:
+    inset 0 0 0 6px rgba(155, 44, 44, .2),
+    0 0 0 1px rgba(155, 44, 44, .35),
+    0 6px 14px rgba(0, 0, 0, .28);
+}
+
+.baseline-label-gate,
+.baseline-label-gate .journey-globe-label,
+.journey-globe-label.is-baseline {
+  box-sizing: border-box;
+  min-width: 9em;
+  width: max-content !important;
+  max-width: 18em;
+  white-space: nowrap;
+}
+
+/* Compact review / compare chips must not inherit the 9em gate minimum. */
+.baseline-label-gate:has(.is-review),
+.baseline-label-gate:has(.is-review) .journey-globe-label,
+.journey-globe-label.is-baseline.is-review,
+.journey-globe-label.is-baseline.is-review.is-badge,
+.baseline-label-gate:has(.is-compare),
+.baseline-label-gate:has(.is-compare) .journey-globe-label {
+  min-width: 0 !important;
+  max-width: none;
+}
+
+.journey-globe-label.is-baseline strong,
+.journey-globe-label.is-baseline span,
+.journey-globe-label.is-baseline em,
+.journey-globe-label.is-baseline .baseline-review-badge {
+  letter-spacing: .08em;
+  white-space: nowrap !important;
+  word-break: keep-all;
+  overflow-wrap: normal;
+}
+
+.journey-globe-label.is-baseline.is-compare {
+  min-width: 4.8em;
+  max-width: 118px;
+  padding: 4px 7px 5px;
+  border-color: rgba(200, 216, 222, .28);
+  background: rgba(8, 16, 22, .78);
+}
+
+.journey-globe-label.is-baseline.is-compare strong {
+  font-size: var(--text-ui);
+  letter-spacing: .06em;
+  white-space: nowrap;
+}
+
+.journey-globe-label.is-baseline.is-compare span {
+  margin-top: 1px;
+  font-size: var(--text-ui);
+  letter-spacing: .04em;
+  white-space: nowrap;
+}
+
+.baseline-label-gate {
+  transition: opacity .2s ease;
+}
+
+.baseline-compare-legend {
+  position: absolute;
+  left: 38px;
+  top: auto;
+  bottom: max(220px, calc(env(safe-area-inset-bottom) + 200px));
+  z-index: 6;
+  width: min(220px, 22vw);
+  padding: 10px 12px 11px;
+  border: 1px solid rgba(188, 208, 216, .22);
+  color: rgba(236, 240, 242, .92);
+  background: rgba(10, 18, 24, .72);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, .32);
+  backdrop-filter: blur(10px);
+  pointer-events: none;
+}
+
+.baseline-compare-legend small {
+  display: block;
+  margin-bottom: 8px;
+  color: rgba(196, 214, 215, .7);
+  font-family: "IBM Plex Mono", Consolas, monospace;
+  font-size: var(--text-ui);
+  letter-spacing: .16em;
+  text-transform: uppercase;
+}
+
+.baseline-compare-legend ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.baseline-compare-legend li {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+  margin: 0 0 7px;
+}
+
+.baseline-compare-legend i,
+.baseline-compare-swatches i,
+.baseline-compare-row b {
+  display: block;
+  flex: 0 0 auto;
+  background-image: repeating-linear-gradient(135deg, rgba(12, 22, 32, .55) 0 1px, transparent 1px 5px);
+}
+
+.baseline-compare-legend i {
+  width: 10px;
+  height: 22px;
+  margin-top: 1px;
+  border: 1px solid rgba(12, 22, 32, .35);
+}
+
+.baseline-compare-legend i.is-personnel,
+.baseline-compare-swatches i.is-personnel,
+.baseline-compare-row .is-personnel b { background-color: #8fb4c6; }
+
+.baseline-compare-legend i.is-spending,
+.baseline-compare-swatches i.is-spending,
+.baseline-compare-row .is-spending b { background-color: #c4a36a; }
+
+.baseline-compare-legend i.is-aircraft,
+.baseline-compare-swatches i.is-aircraft,
+.baseline-compare-row .is-aircraft b { background-color: #8aa392; }
+
+.baseline-compare-legend span {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  min-width: 0;
+}
+
+.baseline-compare-legend b {
+  font-size: var(--text-ui);
+  font-weight: 600;
+  letter-spacing: .04em;
+  background: none;
+}
+
+.baseline-compare-legend em {
+  color: rgba(196, 214, 215, .62);
+  font-size: var(--text-ui);
+  font-style: normal;
+  line-height: 1.35;
+}
+
+.baseline-compare-legend p {
+  margin: 6px 0 0;
+  color: rgba(196, 214, 215, .7);
+  font-size: var(--text-ui);
+  line-height: 1.5;
+}
+
+/* Comparison chart is a painting printed on the estimate sheet, not a UI card. */
+.baseline-compare-chart {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  min-width: 0;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.baseline-compare-kicker {
+  margin: 0 0 6px;
+  color: var(--estimate-band);
+  font-family: "IBM Plex Mono", Consolas, monospace;
+  font-size: var(--text-meta);
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+
+.baseline-compare-swatches {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 12px;
+  margin: 0 0 8px;
+  padding: 0;
+  list-style: none;
+}
+
+.baseline-compare-swatches li {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--estimate-ink);
+  font-size: var(--text-ui);
+}
+
+.baseline-compare-swatches i {
+  width: 8px;
+  height: 12px;
+  border: 1px solid rgba(12, 22, 32, .28);
+}
+
+.baseline-compare-table {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.baseline-compare-head,
+.baseline-compare-row {
+  display: grid;
+  grid-template-columns: minmax(64px, 0.8fr) 1.15fr 1.35fr 1.05fr;
+  gap: 6px;
+  align-items: center;
+}
+
+.baseline-compare-head {
+  padding: 0 2px 3px;
+  color: var(--estimate-band);
+  font-family: "IBM Plex Mono", Consolas, monospace;
+  font-size: var(--text-ui);
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+.baseline-compare-row {
+  margin: 0;
+  padding: 2px 2px 3px;
+  border: 0;
+  border-bottom: 1px solid rgba(91, 111, 124, .16);
+  border-radius: 0;
+  color: var(--estimate-ink);
+  background: transparent;
+  text-align: left;
+  cursor: pointer;
+}
+
+.baseline-compare-row:hover,
+.baseline-compare-row:focus-visible {
+  background: rgba(91, 111, 124, .08);
+  outline: none;
+}
+
+.baseline-compare-row.is-active {
+  background: rgba(91, 111, 124, .12);
+}
+
+.baseline-compare-row strong {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  font-size: var(--text-ui);
+  font-weight: 600;
+  letter-spacing: .04em;
+}
+
+.baseline-compare-row strong em {
+  color: var(--estimate-band);
+  font-family: "IBM Plex Mono", Consolas, monospace;
+  font-size: var(--text-ui);
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.baseline-compare-row span[role="cell"] {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.baseline-compare-row b {
+  height: 6px;
+  max-width: 100%;
+  border: 1px solid rgba(12, 22, 32, .18);
+}
+
+.baseline-compare-row small {
+  color: var(--estimate-ink);
+  font-family: "IBM Plex Mono", Consolas, monospace;
+  font-size: var(--text-ui);
+  letter-spacing: .01em;
+  line-height: 1.25;
+}
+
+.baseline-compare-chart footer p {
+  margin: 6px 0 0;
+  color: var(--estimate-ink);
+  font-size: var(--text-copy);
+  line-height: 1.5;
+  opacity: .86;
+}
+
+
+.journey-globe-label.is-baseline.is-review,
+.journey-globe-label.is-baseline.is-review.is-badge {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: baseline;
+  gap: 0.45em;
+  min-width: 0;
+  max-width: none;
+  padding: 3px 8px;
+  border-color: rgba(200, 216, 222, .3);
+  background: rgba(8, 16, 22, .78);
+  text-align: left;
+  white-space: nowrap;
+}
+
+.journey-globe-label.is-baseline.is-review strong {
+  font-size: var(--text-ui);
+  letter-spacing: .06em;
+  white-space: nowrap;
+}
+
+.journey-globe-label.is-baseline.is-review .baseline-review-badge,
+.journey-globe-label.is-baseline.is-review span.baseline-review-badge,
+.journey-globe-label.is-baseline.is-review em {
+  display: inline;
+  margin: 0;
+  color: rgba(196, 214, 215, .78);
+  font-size: var(--text-ui);
+  font-style: normal;
+  letter-spacing: .03em;
+  line-height: 1.2;
+  white-space: nowrap !important;
+}
+
+.journey-globe-label.is-baseline.is-review.is-official .baseline-review-badge {
+  color: rgba(236, 224, 196, .92);
+}
+
+.journey-globe-label.is-baseline.is-review.is-estimate .baseline-review-badge {
+  color: rgba(196, 214, 222, .92);
+}
+
+.journey-globe-label.is-baseline.is-review.is-spoken:not(.is-active) {
+  border-color: rgba(220, 230, 234, .48);
+  background: rgba(10, 20, 26, .86);
+}
+
+.journey-globe-label.is-baseline.is-review-ground {
+  max-width: 200px;
+  padding: 4px 8px 5px;
+  border-color: rgba(200, 216, 222, .2);
+  background: rgba(8, 16, 22, .62);
+  pointer-events: none;
+}
+
+.journey-globe-label.is-baseline.is-review-ground strong {
+  font-size: var(--text-ui);
+  letter-spacing: .08em;
+}
+
+.journey-globe-label.is-baseline.is-review-ground span {
+  display: block;
+  margin-top: 2px;
+  font-size: var(--text-ui);
+  letter-spacing: .03em;
+  line-height: 1.35;
+  white-space: normal;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .baseline-stage,
+  .baseline-paper,
+  .baseline-seal-face,
+  .baseline-label-gate,
+  .baseline-compare-row b {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+@media (max-width: 1100px) {
+  .baseline-compare-legend {
+    left: 16px;
+    width: min(200px, 24vw);
+  }
+}
+
+@media (max-width: 900px) {
+  .baseline-paper.has-plate .baseline-paper-split {
+    grid-template-columns: 1fr;
+  }
+  .baseline-plate img,
+  .baseline-plate[data-aspect="3:4"] img,
+  .baseline-plate[data-aspect="4:3"] img {
+    max-height: min(36vh, 320px);
+  }
+}
+
+@media (max-width: 720px) {
+  .baseline-compare-legend { display: none; }
+  .baseline-compare-head,
+  .baseline-compare-row {
+    grid-template-columns: 56px 1fr;
+    gap: 2px 6px;
+  }
+  .baseline-compare-head span:nth-child(n+2),
+  .baseline-compare-row span[role="cell"] {
+    grid-column: 2;
+  }
+  .baseline-stage,
+  .baseline-stage.is-compact {
+    width: min(100vw, 100%);
+  }
+  .baseline-codex[data-beat="review"] .baseline-stage:not(.is-compact) {
+    width: min(92vw, 680px);
+    margin-right: max(12px, 2vw);
+  }
+  .baseline-codex[data-beat="review"] .baseline-stage.is-compact {
+    width: min(90vw, 640px);
+  }
+}
+
+@media (max-height: 740px) {
+  .baseline-seal { min-width: 76px; min-height: 76px; }
+  .baseline-seal-face { width: 72px; height: 72px; font-size: var(--text-ui); }
+}
+
+
+
+/* ---------- Fable 5.2 framing, paper, and seal ---------- */
+
+/* Hide the floating red seal, play hint, and error pile on every beat.
+   The progress dock already has the primary play / pause control. */
+.baseline-codex .codex-footer {
+  display: none !important;
+}
+
+/* Raised papers leave an ocean / globe belt under and beside the sheet. */
+.baseline-codex.journey-codex {
+  justify-content: flex-start;
+  padding-top: max(72px, calc(env(safe-area-inset-top) + 56px));
+  padding-bottom: max(200px, calc(env(safe-area-inset-bottom) + 188px));
+  pointer-events: none;
+}
+
+.baseline-codex .codex-stage,
+.baseline-codex .baseline-paper,
+.baseline-codex .baseline-paper-cast {
+  pointer-events: auto;
+}
+
+/* Dock must sit above the inset-0 paper overlay (codex z-index 7). */
+.baseline-shell .journey-progress {
+  z-index: 20;
+  pointer-events: auto;
+}
+
+.baseline-stage {
+  margin-top: 2.4vh;
+}
+
+/* Review papers sit as a compact top banner so the sea-level formation
+   keeps the main frame. Torn-paper language and the centered settle /
+   lift motion are unchanged; only size and vertical placement change.
+   Does not touch Chapter I (codex.css is not edited). */
+.baseline-codex[data-beat="review"].journey-codex {
+  justify-content: flex-start;
+  padding-top: max(56px, calc(env(safe-area-inset-top) + 40px));
+  padding-bottom: max(200px, calc(env(safe-area-inset-bottom) + 188px));
+}
+
+.baseline-codex[data-beat="review"] .baseline-stage:not(.is-compact) {
+  width: min(720px, 42vw);
+  max-height: min(36vh, 380px);
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: max(20px, 2.4vw);
+}
+
+.baseline-codex[data-beat="review"] .baseline-stage.is-compact {
+  width: min(700px, 42vw);
+  max-height: min(22vh, 240px);
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.baseline-codex[data-beat="review"] .baseline-paper-cast,
+.baseline-codex[data-beat="review"] .baseline-paper,
+.baseline-codex[data-beat="review"] .baseline-paper.has-plate {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  max-height: inherit;
+  aspect-ratio: auto;
+}
+
+.baseline-codex[data-beat="review"] .baseline-paper-sheet,
+.baseline-codex[data-beat="review"] .baseline-paper.has-plate .baseline-paper-sheet,
+.baseline-codex[data-beat="review"] .baseline-paper.is-review-key.has-plate .baseline-paper-sheet {
+  overflow: hidden;
+  padding: 1.6vh 6.5% 1.8vh;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  grid-template-columns: none;
+  grid-template-rows: none;
+}
+
+.baseline-codex[data-beat="review"] .baseline-paper.has-plate .codex-material-tag,
+.baseline-codex[data-beat="review"] .baseline-paper.has-plate .codex-kicker,
+.baseline-codex[data-beat="review"] .baseline-paper.has-plate .codex-title,
+.baseline-codex[data-beat="review"] .baseline-paper.has-plate .baseline-copy,
+.baseline-codex[data-beat="review"] .baseline-paper.has-plate .baseline-review-key {
+  grid-column: auto;
+  grid-row: auto;
+}
+
+.baseline-codex[data-beat="review"] .baseline-paper-split,
+.baseline-codex[data-beat="review"] .baseline-paper.has-plate .baseline-paper-split,
+.baseline-codex[data-beat="review"] .baseline-paper.is-review-key.has-plate .baseline-paper-split {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  min-height: 0;
+  gap: 0.4em 1em;
+}
+
+.baseline-codex[data-beat="review"] .baseline-review-key {
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.35em 0.9em;
+  margin: 0.15em 0 0;
+}
+
+.baseline-codex[data-beat="review"] .baseline-review-key li {
+  font-size: var(--text-ui);
+}
+
+.baseline-codex[data-beat="review"] .baseline-review-key i {
+  width: 10px;
+  height: 10px;
+}
+
+.baseline-codex[data-beat="review"] .codex-spoken {
+  font-size: var(--text-copy);
+  line-height: 1.42;
+}
+
+.baseline-codex[data-beat="review"] .codex-kicker,
+.baseline-codex[data-beat="scale"] .codex-kicker {
+  margin-bottom: 2px;
+}
+
+.baseline-codex[data-beat="review"] .codex-title {
+  margin: 0 0 4px;
+  font-size: var(--text-ui);
+  line-height: 1.2;
+}
+
+.baseline-codex[data-beat="review"] .codex-aside,
+.baseline-codex[data-beat="scale"] .codex-aside {
+  margin: 0 0 0.4em;
+}
+
+.baseline-codex[data-beat="review"] .codex-spoken,
+.baseline-codex[data-beat="scale"] .codex-spoken {
+  margin-bottom: 0.2em;
+}
+
+/* Scale compact paper is no wider than the qa4 sheet, so the disc
+   stays visible on both sides. Last-line room comes from padding and
+   typography, not from a wider sheet. */
+/* Modest upward shift of the scale sheet only, to open a larger lower
+   belt under the paper. Width stays at the qa4/qa6 size. Review papers
+   are not moved. */
+.baseline-codex[data-beat="scale"].journey-codex {
+  padding-top: max(48px, calc(env(safe-area-inset-top) + 32px));
+  padding-bottom: max(214px, calc(env(safe-area-inset-bottom) + 200px));
+}
+
+.baseline-codex[data-beat="scale"] .baseline-stage {
+  margin-top: 0.4vh;
+}
+
+.baseline-codex[data-beat="scale"] .baseline-stage.is-compact {
+  width: min(1520px, 80vw);
+}
+
+.baseline-codex[data-beat="scale"] .baseline-paper-sheet,
+.baseline-codex[data-beat="structure"] .baseline-paper-sheet {
+  padding-bottom: 6.8vh;
+}
+
+.baseline-codex[data-beat="scale"] .is-quiet .codex-spoken {
+  line-height: 1.34;
+  margin-bottom: 0.1em;
+}
+
+/* Compact spoken copy: keep the last line off the torn edge without shrinking type. */
+.baseline-paper.is-quiet .codex-spoken {
+  line-height: 1.45;
+  margin: 0;
+}
+
+.baseline-paper.is-quiet .codex-geo-caution {
+  display: none;
+}
+
+/* Always keep the scale chart in the right column at desktop widths.
+   A 1-column wrap would drop the chart below the torn edge (overflow hidden). */
+.baseline-paper.has-plate .baseline-paper-split,
+.baseline-codex[data-beat="scale"] .baseline-paper.has-plate .baseline-paper-split {
+  grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.18fr);
+  align-items: stretch;
+  flex: 1 1 0%;
+  min-height: min(38vh, 380px);
+}
+
+.baseline-compare-chart {
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+  justify-content: flex-start;
+}
+
+.baseline-codex[data-beat="scale"] .baseline-compare-kicker {
+  margin: 0 0 3px;
+  font-size: var(--text-meta);
+}
+
+.baseline-codex[data-beat="scale"] .baseline-compare-swatches {
+  gap: 4px 8px;
+  margin: 0 0 4px;
+}
+
+.baseline-codex[data-beat="scale"] .baseline-compare-head,
+.baseline-codex[data-beat="scale"] .baseline-compare-row {
+  gap: 4px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+.baseline-codex[data-beat="scale"] .baseline-compare-row strong {
+  font-size: var(--text-ui);
+}
+
+.baseline-codex[data-beat="scale"] .baseline-compare-row b {
+  height: 5px;
+}
+
+/* Table must not shrink under a flex-fixed footer — that overlap
+   garbled the UK row and the footnote on scale p1. */
+.baseline-codex[data-beat="scale"] .baseline-compare-chart {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 0;
+  overflow: visible;
+}
+
+.baseline-codex[data-beat="scale"] .baseline-compare-table {
+  flex: 0 0 auto;
+  overflow: visible;
+}
+
+.baseline-codex[data-beat="scale"] .baseline-compare-chart footer {
+  flex: 0 0 auto;
+  position: relative;
+  margin-top: 8px;
+  padding-top: 4px;
+}
+
+.baseline-codex[data-beat="scale"] .baseline-compare-chart footer p {
+  margin: 2px 0 0;
+  font-size: var(--text-copy);
+  line-height: 1.3;
+}
+
+.baseline-codex[data-beat="scale"] .baseline-compare-chart footer p.baseline-compare-keep {
+  margin-top: 0;
+  font-size: var(--text-copy);
+  line-height: 1.35;
+}
+
+/* Compact review papers keep only the official / estimate / schematic key at body size. */
+.baseline-review-key {
+  margin: 0.2em 0 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45em;
+  align-self: start;
+}
+.baseline-review-key li {
+  display: flex;
+  align-items: center;
+  gap: 0.45em;
+  color: var(--dossier-ink);
+  font-family: "Noto Serif SC", "Source Han Serif SC", "Songti SC", serif;
+  font-size: var(--text-ui);
+  letter-spacing: .04em;
+  line-height: 1.35;
+  white-space: normal;
+}
+.baseline-paper.is-estimate .baseline-review-key li {
+  color: var(--estimate-ink);
+}
+.baseline-review-key i {
+  display: block;
+  flex: 0 0 auto;
+  width: 14px;
+  height: 14px;
+  border: 1px solid rgba(27, 36, 48, .45);
+}
+.baseline-review-key .is-official i { background: #8a7348; }
+.baseline-review-key .is-estimate i {
+  background: #c5d0d6;
+  background-image: linear-gradient(135deg, #5b6f7c 0 1px, transparent 1px 50%);
+  background-size: 6px 6px;
+}
+.baseline-review-key .is-schematic i { background: #9aa4aa; }
+.baseline-review-key .is-scale i {
+  background: #d8d0c4;
+  box-shadow: inset 0 0 0 1px rgba(27, 36, 48, .25);
+  width: 18px;
+  height: 8px;
+  border-radius: 1px;
+}
+
+/* Camp banners: typological grouping labels, not alliance flags. */
+.baseline-review-camp {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 7px 12px 6px;
+  background: rgba(12, 18, 24, 0.72);
+  border: 1px solid rgba(196, 179, 154, 0.45);
+  color: #efe7d8;
+  font-family: "Noto Serif SC", "Source Han Serif SC", "Songti SC", serif;
+  letter-spacing: .08em;
+  pointer-events: none;
+  white-space: nowrap;
+}
+.baseline-review-camp strong {
+  font-size: var(--text-ui);
+  font-weight: 600;
+  line-height: 1.25;
+}
+.baseline-review-camp span {
+  font-size: var(--text-ui);
+  letter-spacing: .06em;
+  opacity: 0.82;
+  line-height: 1.3;
+}
+.baseline-review-camp.is-china {
+  border-color: rgba(210, 186, 140, 0.7);
+}
+.baseline-review-camp.is-other {
+  border-color: rgba(166, 186, 198, 0.65);
+}
+
+.baseline-plate .codex-plate-caption {
+  margin: 0 0 0.45em;
+  padding: 0;
+  line-height: 1.45;
+}
+.baseline-plate .codex-plate-caption span {
+  display: block;
+  margin-top: 0.15em;
+}
+
+.baseline-compare-swatches li.is-muted,
+.baseline-compare-head span.is-muted,
+.baseline-compare-row span.is-muted {
+  opacity: .38;
+}
+.baseline-compare-swatches li.is-spoken,
+.baseline-compare-head span.is-spoken,
+.baseline-compare-row span.is-spoken {
+  opacity: 1;
+}
+
+.baseline-paper.is-review-key.has-plate .baseline-paper-split {
+  grid-template-columns: minmax(0, 1.55fr) minmax(0, 0.7fr);
+  align-items: start;
+}
+
+/* Do not let the 900px breakpoint drop the scale chart under the torn edge. */
+@media (max-width: 900px) {
+  .baseline-codex[data-beat="scale"] .baseline-paper.has-plate .baseline-paper-split {
+    grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.18fr);
+  }
+}
+
+@media (max-width: 720px) {
+  .baseline-codex[data-beat="review"] .baseline-stage:not(.is-compact),
+  .baseline-codex[data-beat="review"] .baseline-stage.is-compact {
+    width: min(92vw, 520px);
+  }
+  .baseline-codex[data-beat="scale"] .baseline-stage.is-compact {
+    width: min(100vw, 100%);
+  }
+}
+
+
+/* Plate shares the full sheet height beside the title, so the
+   typological plate is not a short box under the heading. */
+.baseline-paper.has-plate {
+  height: min(62vh, calc(100vh - 340px));
+  max-height: min(62vh, calc(100vh - 340px));
+}
+
+.baseline-paper.has-plate .baseline-paper-sheet {
+  display: grid;
+  grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.18fr);
+  grid-template-rows: auto auto auto minmax(0, 1fr);
+  column-gap: 1.3em;
+  row-gap: 0;
+  align-items: start;
+}
+
+.baseline-paper.has-plate .codex-material-tag {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.baseline-paper.has-plate .codex-kicker {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.baseline-paper.has-plate .codex-title {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.baseline-paper.has-plate .baseline-paper-split {
+  display: contents;
+}
+
+.baseline-paper.has-plate .baseline-copy {
+  grid-column: 1;
+  grid-row: 4;
+  min-height: 0;
+}
+
+.baseline-paper.has-plate .baseline-plate,
+.baseline-paper.has-plate .baseline-compare-chart,
+.baseline-paper.has-plate .baseline-review-key {
+  grid-column: 2;
+  grid-row: 1 / -1;
+  align-self: stretch;
+  min-height: 0;
+  height: auto;
+}
+
+.baseline-paper.is-review-key.has-plate .baseline-paper-sheet {
+  grid-template-columns: minmax(0, 1.55fr) minmax(0, 0.7fr);
+}
+
+@media (max-width: 720px) {
+  .baseline-paper.has-plate .baseline-paper-sheet {
+    display: flex;
+    flex-direction: column;
+  }
+  .baseline-paper.has-plate .baseline-paper-split {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .baseline-paper.has-plate .baseline-plate,
+  .baseline-paper.has-plate .baseline-compare-chart,
+  .baseline-paper.has-plate .baseline-review-key {
+    grid-column: auto;
+    grid-row: auto;
+  }
+}
