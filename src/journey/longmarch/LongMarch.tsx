@@ -218,7 +218,7 @@ export function LongMarch({ returnHref = '/', initialLang }: { returnHref?: stri
             </article>
             {(beat.id==='atlas'||beat.id==='shaanbei'||beat.id==='reunions')&&<button type="button" className="lm-query" data-ask-moment onClick={()=>navigate('compare',true)}>{zh?'这一刻，其他队伍呢？':'Where were the other forces?'} <span aria-hidden="true">↗</span></button>}
             {beat.note && <p className="lm-note">{beat.note[lang]}</p>}
-            <div className="lm-player">
+            {recorded ? <div className="lm-player">
               <audio key={beat.id} ref={audio} src={src} preload="metadata" onLoadedMetadata={e=>applyIntent(e.currentTarget)}
                 onPlay={()=>setPlaying(true)} onPause={()=>setPlaying(false)} onTimeUpdate={e=>report(e.currentTarget)} onError={()=>{setPlaying(false); setError(true)}}
                 onEnded={()=>{ setPlaying(false); if (continuous && !atEnd) choose(index+1,0,true) }} />
@@ -237,6 +237,7 @@ export function LongMarch({ returnHref = '/', initialLang }: { returnHref?: stri
                 {error && <span role="status">{zh?'无法播放，请重试':'Playback failed; try again'}</span>}
               </div>
             </div>
+            : <p className="lm-note">{zh?'阅读版 · 点选上方条目，逐段查看史料。' : 'Reading edition · select a passage above to explore its sources.'}</p>}
             <div className="lm-prev-next">
               <button type="button" disabled={atStart} onClick={()=>choose(index-1)}>{icon('previous')}{zh?'上一章':'Previous'}</button>
               {atEnd ? <button type="button" onClick={()=>choose(0)}>{zh?'回到总览':'Back to overview'}{icon('restart')}</button> : <button type="button" onClick={()=>choose(index+1)}>{zh?'下一章':'Next chapter'}{icon('next')}</button>}

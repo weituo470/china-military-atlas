@@ -117,7 +117,7 @@ export function RouteRegister({lang,unit,stopId,onSelect,onClose}:{lang:Lang;uni
         <div className="lm-reg-meta"><span>{num(n)} / {r.stops.length}</span><time>{stop.date[lang]}</time></div>
         <h3>{stop.place[lang]}</h3><p className="lm-reg-prose">{stop.body[lang]}</p>
         {stop.id.endsWith('shuangshipu')&&<button type="button" className="lm-query" data-same-place onClick={()=>{const other=getDossier(unit==='red25'?'second':'red25');select(other,other.stops.findIndex(s=>s.id.endsWith('shuangshipu')))}}>{zh?'同地对读：另一年来到双石铺的是谁？':'Same place, another year: who else came to Shuangshipu?'} ↗</button>}
-        <div className="lm-reg-player">
+        {src && <div className="lm-reg-player">
           <b>{zh?'听这支队伍的路线':'Listen to this route'}</b><small>{zh?'普通话 · 云扬':'Mandarin · Yunyang'}</small>
           {src?<audio key={src} ref={player} controls preload="metadata" src={src}
             onLoadedMetadata={e=>{if(autoplay.current&&pendingKey.current===unit+':'+stop.id){autoplay.current=false;void e.currentTarget.play().catch(()=>setError(true))}}}
@@ -125,7 +125,7 @@ export function RouteRegister({lang,unit,stopId,onSelect,onClose}:{lang:Lang;uni
             onEnded={()=>{if(playNext&&n+1<r.stops.length)select(r,n+1,true)}}/>:<span>{zh?'本条音频尚未就绪':'Audio not ready'}</span>}
           <label><input type="checkbox" checked={playNext} onChange={e=>setPlayNext(e.target.checked)}/>{zh?'连续听本卷':'Play consecutive entries'}</label>
           {error&&<span role="status">{zh?'请重新点播放；仍可阅读全文。':'Press play again, or continue reading.'}</span>}
-        </div>
+        </div>}
         <div className="lm-reg-sources"><h4>{zh?'这一站的依据':'Evidence for this entry'}</h4>{selectedSources.map(s=><div key={s.id} data-source={s.id}>
           <span>S{num(r.sources.indexOf(s))}</span><div><a href={s.url} target="_blank" rel="noreferrer">{s.title[lang]} ↗</a><small>{s.publisher[lang]}</small><p>{s.locator[lang]}</p></div>
         </div>)}</div>

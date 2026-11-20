@@ -49,3 +49,5 @@ input:focus-visible {
   color: var(--space-black);
   background: var(--human);
 }
+
+.open-reading-note { display: inline-block; font: inherit; font-size: .85rem; letter-spacing: .02em; opacity: .8; }

@@ -396,3 +396,6 @@
   .mobilize-folio { align-items: start; }
   .mobilize-plate { width: min(100%, max(8rem, calc((100cqh - 3.25rem) * 4 / 3))); }
 }
+
+/* The public text edition uses the full folio rather than a vacant image column. */
+.mobilize-folio:not(:has(.mobilize-plate)) { grid-template-columns: minmax(0, 1fr); }
