@@ -49,7 +49,7 @@ npm run build
 npm run preview
 ```
 
-静态站点在 `dist/`，本地预览默认 <http://127.0.0.1:5174/>。纯静态托管可以展示内容，但**不会接收建议**。正式启用收件箱时，使用 HTTPS，在服务端设置上述变量，运行 `node server/space-suggestions.mjs`（默认只监听 `127.0.0.1:4387`），将同源 `/api/space-suggestions` 及其 `/unlock` 路径转发给它；部署在 `/china-military/` 下时，使用 `npm run build -- --base=/china-military/` 构建，并转发对应的带前缀接口。反向代理需允许不小于 2 MiB 的请求体，避免带图建议被提前拒绝；不要把整个收件目录映射为静态资源。收件目录必须位于仓库及 Web 根目录之外，且只对维护者开放。开发服务器不应用作公网服务。
+静态站点在 `dist/`，本地预览默认 <http://127.0.0.1:5174/>。纯静态托管可以展示内容，但**不会接收建议**。正式启用收件箱时，使用 HTTPS，在服务端设置上述变量，运行 `node server/space-suggestions.mjs`（默认只监听 `127.0.0.1:4387`），将同源 `/api/space-suggestions` 及其 `/unlock` 路径转发给它；部署在 `/china-military/` 下时，使用 `npm run build -- --base=/china-military/` 构建，并转发对应的带前缀接口。反向代理需允许不小于 2 MiB 的请求体，避免带图建议被提前拒绝；不要把整个收件目录映射为静态资源。如果由**本机受信任的代理**终止 HTTPS，请为独立服务设置 `SPACE_SUGGESTIONS_TRUST_PROXY=1`，由代理保留原始 `Host` 并覆盖（而非透传客户端提供的）`X-Forwarded-Proto` 和 `X-Real-IP`；否则浏览器的同源校验可能拒绝提交。收件目录必须位于仓库及 Web 根目录之外，且只对维护者开放。开发服务器不应用作公网服务。
 
 ## 哪些内容可以复用
 
